@@ -1,5 +1,5 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
+title: "Getting started with the Documentation for EDISON platform"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -12,6 +12,7 @@ summary: These brief instructions will help you get started quickly with the the
 ## Build the Theme
 
 Follow these instructions to build the theme.
+Inho test
 
 ### 1. Download the theme
 

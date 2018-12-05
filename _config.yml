@@ -9,7 +9,7 @@ topnav_title: Jekyll Documentation Theme
 site_title: Jekyll theme for documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Your company
+company_name: KISTI
 # this appears in the footer
 
 github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -37,7 +37,7 @@ exclude:
 
 feedback_subject_line: Jekyll documentation theme
 
-feedback_email: tomjoht@gmail.com
+feedback_email: edison@kisti.re.kr
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -103,6 +103,7 @@ defaults:
 sidebars:
 - home_sidebar
 - mydoc_sidebar
+- solverDev
 - product1_sidebar
 - product2_sidebar
 - other

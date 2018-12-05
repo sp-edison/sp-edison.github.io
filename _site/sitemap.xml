@@ -23,6 +23,12 @@
 
   
   
+  <url>
+    <loc>http://localhost:4000/00_intro.html</loc>
+  </url>
+  
+  
+  
   
   
   
@@ -545,6 +551,438 @@
   
   <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/01_Linux_Foundation.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/02_Developer_Account/01_Workspace.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/02_Developer_Account/02_Bulb_Server.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/03_Science_app.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/00_Index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Input_programing/00_Intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Input_programing/01_Structured_Data_Editor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Input_programing/02_simrc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/00_Intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/01_simpost.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/03_oneD.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/04_Plotly.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/05_Gnuplot.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/02_Output_programing/06_Gif_Animation.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/01_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/02_Multi_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/03_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/04_Output_program.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/05_oneD.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/03_C/06_Gnuplot.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/01_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/02_Multi_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/03_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/04_Output_program.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/04_Fortran/05_oneD.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/01_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/02_Multi_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/03_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/04_Output_program.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/05_oneD.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/06_Plotly.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/05_Python/99_QnA.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/06_R/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/06_R/01_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/06_R/02_Multifile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/06_R/03_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/06_R/04_Output_program.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/07_Octave/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/07_Octave/01_Inputfile_Open.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/07_Octave/03_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/04_Science_App_Programing/07_Octave/04_Output_program.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/05_Datatype/00_Introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/06_EDITOR/00_EDITOR.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/06_EDITOR/01_SDE.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/06_EDITOR/02_File_Selector.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/06_EDITOR/03_Text_Editor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/06_EDITOR/04_CSV_Editor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/00_Analyzer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/01_OSPPlotViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/02_OSPTextViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/03_OSPImageViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/04_OSPHtmlViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/05_JSmol.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/06_ParaView.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/07_ProteinViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/08_PlotlyViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/07_Analyzer/09_NGLViewer.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/00_Science_App_Registration.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/01_App_Information.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/02_Execute_Environment.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/03_Input_Output_port.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/04_Layout.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/05_Public_Data.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/08_Science_App_Management/06_App_Management.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/09_library/00_atom.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/09_library/01_pecsc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/09_library/02_gcc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/09_library/05_SIESTA.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/solverDev/note.html</loc>
   </url>
   
   

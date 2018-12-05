@@ -1,12 +1,23 @@
 [
 
 
+{
+"title": "EDISON 플랫폼 소개",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "00_intro.html",
+"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
+}
+,
+
+
+
 
 
 
 
 {
-"title": "Getting started with the Documentation Theme for Jekyll",
+"title": "Getting started with the Documentation for EDISON platform",
 "tags": "getting_started",
 "keywords": "sample homepage",
 "url": "index.html",
@@ -926,6 +937,798 @@
 "tags": "",
 "keywords": "",
 "url": "assetscssstyle.css",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "리눅스 기초",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev01_Linux_Foundation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev02_Developer_Account01_Workspace.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "개발자 서버 접속",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev02_Developer_Account02_Bulb_Server.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "사이언스 앱 개요",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev03_Science_app.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 프로그래밍 개요",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing00_Index.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 프로그래밍",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Input_programing00_Intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Structured Data Editor (SDE)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Input_programing01_Structured_Data_Editor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "simrc",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Input_programing02_simrc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "출력 프로그래밍 기초",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing00_Intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "simpost",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing01_simpost.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD file format",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing03_oneD.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Plotly file format",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing04_Plotly.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Gnuplot",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing05_Gnuplot.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "gif animation 파일 만들기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing02_Output_programing06_Gif_Animation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "C 언어",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C01_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C02_Multi_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C03_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C04_Output_program.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "sin() 함수 결과를 oned로 출력하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C05_oneD.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Gnuplot을 이용해 oneD plot 파일을 그림으로 저장하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing03_C06_Gnuplot.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Fortran 언어",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran01_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran02_Multi_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran03_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output programing",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran04_Output_program.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "sin() 함수 결과를 oned로 출력하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing04_Fortran05_oneD.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Python 언어",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python01_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python02_Multi_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python03_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output programing",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python04_Output_program.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "sin() 함수 결과를 oned로 출력하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python05_oneD.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Python을 활용하여 ply 파일 생성하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python06_Plotly.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "matplotlib 사용시 아래와 같은 에러가 발생한다면",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing05_Python99_QnA.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "R 언어",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing06_R00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing06_R01_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing06_R02_Multifile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing06_R03_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output programing",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing06_R04_Output_program.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Octave 언어",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing07_Octave00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing07_Octave01_Inputfile_Open.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing07_Octave03_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output programing",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev04_Science_App_Programing07_Octave04_Output_program.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Datatype",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev05_Datatype00_Introduction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Editor (편집기)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev06_EDITOR00_EDITOR.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Structured Data Editor (SDE)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev06_EDITOR01_SDE.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev06_EDITOR02_File_Selector.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev06_EDITOR03_Text_Editor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev06_EDITOR04_CSV_Editor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Analyzer (분석기)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer00_Analyzer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPPlotViewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer01_OSPPlotViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPTextViewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer02_OSPTextViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPImageViewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer03_OSPImageViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPHtmlViewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer04_OSPHtmlViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "JSmol",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer05_JSmol.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Paraview",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer06_ParaView.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "ProteinViewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer07_ProteinViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Plotly viewer",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer08_PlotlyViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "NGL",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev07_Analyzer09_NGLViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 생성",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management00_Science_App_Registration.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "앱 정보 입력",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management01_App_Information.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "실행환경 정보 입력",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management02_Execute_Environment.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입출력 포트 생성",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management03_Input_Output_port.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "레이아웃 설정",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management04_Layout.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "공개 데이터 등록",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management05_Public_Data.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "사이언스 앱 관리하기",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev08_Science_App_Management06_App_Management.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Atom 4.2.7_2 Install",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev09_library00_atom.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "PETSc install (with gcc 5.3.0)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev09_library01_pecsc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev09_library02_gcc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SIESTA 4.0.1 install (with gcc5.3.0 and openmpi 2.0.2)",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDev09_library05_SIESTA.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 프로그래밍 개요",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDevnote.html",
 "summary": ""
 }
 ,
