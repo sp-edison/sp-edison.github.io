@@ -173,4 +173,4 @@ function <portlet:namespace/>downloadCurrentFile(){
 
 ### 최종 파일 구조
 지금까지 기본 설정을 마친 후 최종적인 파일 구조는 다음 그림과 같습니다.
-![imagetestYejin](/assets/images/analyzerguide1/17.png "프로젝트 최종구조")<br><br>
+![imagetestYejin](/assets/images/analyzerguide/17.png "프로젝트 최종구조")<br><br>

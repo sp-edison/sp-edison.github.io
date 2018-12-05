@@ -222,7 +222,7 @@
           
           
           
-          <li><a href="workbenchanalyzerguide3">스크립트 단위의 뷰 설정</a></li>
+          <li><a href="workbenchanalyzerguide3.html">스크립트 단위의 뷰 설정</a></li>
           
           
           
@@ -471,26 +471,26 @@ $('#toc').on('click', 'a', function() {
 <h2 id="1-liferay-plugin-project--생성">1. Liferay plugin Project  생성</h2>
 <p>이클립스 환경에서 <code class="highlighter-rouge">Liferay Plugins Projects</code>를 생성합니다.
 <br />이클립스 환경에서 New -&gt; Liferay Plugin Project를 선택합니다.<br />
-<img src="/images/analyzerguide1/1.png" alt="imagetestYejin" title="프로젝트 생성" />
+<img src="/images/analyzerguide/1.png" alt="imagetestYejin" title="프로젝트 생성" />
 <br /><br />프로젝트 이름을 작성하고 include sample code 체크를 해지합니다.<br />
-<img src="/images/analyzerguide1/2.png" alt="imagetestYejin" title="프로젝트 생성" />
+<img src="/images/analyzerguide/2.png" alt="imagetestYejin" title="프로젝트 생성" />
 <br /><br />프로젝트 이름을 작성하고 Liferay MVC를 선택하여 최종적으로 프로젝트 생성을 마무리 합니다.<br />
-<img src="/images/analyzerguide1/3.png" alt="imagetestYejin" title="프로젝트 생성" />
+<img src="/images/analyzerguide/3.png" alt="imagetestYejin" title="프로젝트 생성" />
 <br /><br />생성이 완료된 플러그인 프로젝트의 구성은 다음과 같습니다.
-<img src="/images/analyzerguide1/4.png" alt="imagetestYejin" title="프로젝트 생성" /><br /><br /></p>
+<img src="/images/analyzerguide/4.png" alt="imagetestYejin" title="프로젝트 생성" /><br /><br /></p>
 
 <h2 id="2-edison-워크벤치-연동을-위한-analyzer-포틀릿-생성">2. EDISON 워크벤치 연동을 위한 Analyzer 포틀릿 생성</h2>
 <p>EDISON 플랫폼의 워크벤치 연동을 위한 포틀릿을 생성합니다.
 <br />생성된 Liferay Plugins Projects 내에 Liferay Portlet을 생성합니다.<br />
-<img src="/images/analyzerguide1/5.png" alt="imagetestYejin" title="포틀릿 생성" />
+<img src="/images/analyzerguide/5.png" alt="imagetestYejin" title="포틀릿 생성" />
 <br /><br />포틀릿 클래스명, 패키지명은 자유롭게 원하는 형태로 생성합니다.<br />
-<img src="/images/analyzerguide1/6.png" alt="imagetestYejin" title="포틀릿 생성" />
+<img src="/images/analyzerguide/6.png" alt="imagetestYejin" title="포틀릿 생성" />
 <br /><br />포틀릿 클래스 명에 따라 자동으로 설정되는 값입니다.<br /> 나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br />
-<img src="/images/analyzerguide1/7.png" alt="imagetestYejin" title="포틀릿 생성" />
+<img src="/images/analyzerguide/7.png" alt="imagetestYejin" title="포틀릿 생성" />
 <br /><br />마찬가지로 자동으로 설정되는 값입니다. <br />나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br />
-<img src="/images/analyzerguide1/8.png" alt="imagetestYejin" title="포틀릿 생성" />
+<img src="/images/analyzerguide/8.png" alt="imagetestYejin" title="포틀릿 생성" />
 <br /><br />특별히 추가할 인터페이스가 없다면 Finish를 선택하고 포틀릿 생성을 완료합니다.
-<img src="/images/analyzerguide1/9.png" alt="imagetestYejin" title="포틀릿 생성" /><br /><br /></p>
+<img src="/images/analyzerguide/9.png" alt="imagetestYejin" title="포틀릿 생성" /><br /><br /></p>
 
 <h2 id="3-포틀릿-리소스-접근-설정">3. 포틀릿 리소스 접근 설정</h2>
 <p>EDISON 플랫폼에서 워크벤치와 연동을 위해서는 각 포틀릿간의 외부 접근이 가능하도록 권한 설정을 해 주어야 합니다. <br />
@@ -501,20 +501,20 @@ $('#toc').on('click', 'a', function() {
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;add-default-resource&gt;</span>true<span class="nt">&lt;/add-default-resource&gt;</span>
 </code></pre></div></div>
 <p>아래의 그림과 같이 xml 파일 내부에 생성한 포틀릿 내 해당 코드를 추가합니다.
-<img src="/images/analyzerguide1/11.png" alt="imagetestYejin" title="포틀릿 설정" /><br /></p>
+<img src="/images/analyzerguide/11.png" alt="imagetestYejin" title="포틀릿 설정" /><br /></p>
 
 <h2 id="4-기본-플러그인-추가-설정">4. 기본 플러그인 추가 설정</h2>
 <p>현재 Liferay Plugin Project에서 기본적으로 필요한 플러그인들을 추가합니다.<br />
 3번과 마찬가지로 xml 파일을 변경하는 것으로, liferay-plugin-package.properties 파일을 수정합니다.<br />
 기본적으로 이클립스에서 제공해주는 UI 환경에서 플러그인을 추가합니다. 해당 화면은 아래와 같습니다.<br />
-<img src="/images/analyzerguide1/12.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
+<img src="/images/analyzerguide/12.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
 
 <p>Portal Dependency Jars 섹션에서 Add…버튼을 클릭한 후, jstl 을 검색해서 나오는 jstl-api.jar, jstl-impl.jar파일 두개를 추가합니다.<br />
-<img src="/images/analyzerguide1/13.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
+<img src="/images/analyzerguide/13.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
 
 <h2 id="5-워크벤치-연동을-위한-플러그인-추가-설정">5. 워크벤치 연동을 위한 플러그인 추가 설정</h2>
 <p>워크벤치 연동을 위해 필요한 라이브러리들을 현재 생성한 프로젝트 내 WEB-INF/lib 내 추가합니다.
-<img src="/images/analyzerguide1/14.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
+<img src="/images/analyzerguide/14.png" alt="imagetestYejin" title="플러그인 설정" /><br /></p>
 
 <p class="notice--info">필요 라이브러리들을 추가합니다.<br />
 <a href="/OSPLibrary/commons-beanutils.jar">commons-beanutils.jar</a><br />
