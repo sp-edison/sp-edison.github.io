@@ -447,6 +447,12 @@
   
   
   
+  <url>
+    <loc>http://localhost:4000/solverdev_Science_app.html</loc>
+  </url>
+  
+  
+  
   
   
   
@@ -479,12 +485,6 @@
   
   <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/pages/solverDev/03_Science_app.html</loc>
   </url>
   
   

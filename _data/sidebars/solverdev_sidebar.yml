@@ -25,7 +25,7 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /solverdev_Intro.html
+      url: /solverdev_intro.html
       output: web, pdf
 
   - title: Linux Foundation
@@ -46,3 +46,7 @@ entries:
     - title: Bulb Server
       url: /solverdev_Developer_Account_Bulb_Server.html
       output: web, pdf
+
+  - title: Science App
+    url: /solverdev_Science_app.html
+    output: web, pdf
