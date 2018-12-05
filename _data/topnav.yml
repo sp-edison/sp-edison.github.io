@@ -5,3 +5,16 @@ topnav:
   items:
     - title: Solver Dev
       url: /solverdev_intro.html
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Edisonworkbench
+      folderitems:
+        - title: Analyzer 개발
+          url: /workbenchanalyzerguide1.html
+        - title: Editor 개발
+          url: /p1_landing_page.html
+        - title: Event 정의
+          url: /p2_landing_page.html

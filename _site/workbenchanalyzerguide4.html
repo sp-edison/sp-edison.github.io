@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="workbenchanalyzer,  ">
+<title>이벤트처리 | Jekyll theme for documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Jekyll Documentation Theme</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="solverdev_Intro.html">Solver Dev</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Edisonworkbench<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="workbenchanalyzerguide1.html">Analyzer 개발</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Editor 개발</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Event 정의</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=Jekyll documentation theme feedback&body=I have some feedback about the 이벤트처리 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="이벤트처리">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Manual 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a href="#">워크벤치 편집기 개발</a>
+      <ul>
+          
+          
+          
+          <li><a href="workbenchanalyzerguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide2.html">프로젝트 기본 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide3">스크립트 단위의 뷰 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="workbenchanalyzerguide4.html">이벤트 처리</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide5.html">초기값 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide6.html">파일 탐색기 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide7.html">이벤트 처리 함수</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide8.html">공용 함수</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">워크벤치 분석기 개발</a>
+      <ul>
+          
+          
+          
+          <li><a href="workbenchanalyzerguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide2.html">프로젝트 기본 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide3">스크립트 단위의 뷰 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="workbenchanalyzerguide4.html">이벤트 처리</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide5.html">초기값 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide6.html">파일 탐색기 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide7.html">이벤트 처리 함수</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide8.html">공용 함수</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">워크벤치 이벤트 정의</a>
+      <ul>
+          
+          
+          
+          <li><a href="workbenchanalyzerguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide2.html">프로젝트 기본 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide3">스크립트 단위의 뷰 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="workbenchanalyzerguide4.html">이벤트 처리</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide5.html">초기값 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide6.html">파일 탐색기 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide7.html">이벤트 처리 함수</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbenchanalyzerguide8.html">공용 함수</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">이벤트처리</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+    <a target="_blank" href="https://github.com/tomjoht/documentation-theme-jekyll/blob/gh-pages/pages/workbench/2018-08-30-Analyzer-Development-Guide-4.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p>이전에 설정되었던 부분은 서버 사이드에서 실행되는 컨트롤 코드 부분이었습니다.
+워크벤치 기반 분석기 개발을 위해서는 스크립트 단위의 이벤트 프로세싱을 통해 이루어 집니다.</p>
+
+<p>따라서 뷰 부분의 스크립트 단위로 코드를 개발하며, 해당 뷰 부분에서 필요로 하는 기본 코드들이 있습니다. 따라서 그에 따른 스크립트 기본 소스 코드들을 추가하는 방법을 서술하도록 하겠습니다.</p>
+
+<h3 id="initjsp-파일-생성-및-코드-입력"><code class="highlighter-rouge">init.jsp</code> 파일 생성 및 코드 입력</h3>
+<p>생성된 프로젝트 내 <code class="highlighter-rouge">/html</code> 폴더 내 <code class="highlighter-rouge">init.jsp</code> 파일을 생성합니다.</p>
+
+<p>생성된 <code class="highlighter-rouge">init.jsp</code> 파일 내 뷰 개발을 위한 필요 라이브러리 코드를 추가하고 라이프레이 기본 라이브러리들을 추가합니다.
+추가해야 하는 코드는 아래와 같습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://java.sun.com/portlet_2_0"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"portlet"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://alloy.liferay.com/tld/aui"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"aui"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://liferay.com/tld/ui"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"liferay-ui"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://liferay.com/tld/theme"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"theme"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://java.sun.com/jsp/jstl/core"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"c"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://liferay.com/tld/security"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"liferay-security"</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://liferay.com/tld/portlet"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"liferay-portlet"</span> <span class="o">%&gt;</span>
+
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://java.sun.com/jsp/jstl/fmt"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"fmt"</span><span class="o">%&gt;</span>
+<span class="o">&lt;%</span><span class="p">@</span> <span class="nx">taglib</span> <span class="nx">uri</span><span class="o">=</span><span class="s2">"http://java.sun.com/jsp/jstl/functions"</span> <span class="nx">prefix</span><span class="o">=</span><span class="s2">"fn"</span><span class="o">%&gt;</span>
+<span class="c">&lt;!--</span> <span class="nx">JQuery</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery-ui.min.js"</span> <span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery.blockUI.js"</span> <span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/css"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery-ui.css"</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="o">/&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/css"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/css/main.css"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/bootstrap-toggle.min.css"</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/bootstrap-toggle.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span>
+<span class="c">&lt;!--</span> <span class="nx">bootstrap</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/bootstrap.min.css"</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"&lt;%=request.getContextPath()%&gt;/js/jquery/bootstrap.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span>
+
+<span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">defineObjects</span> <span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="nx">theme</span><span class="p">:</span><span class="nx">defineObjects</span> <span class="o">/&gt;</span>
+
+</code></pre></div></div>
+
+<p class="notice--danger"><strong>스크립트 라이브러리:</strong> <br />jqueryxxx.min.js 사용 (워크벤치 시스템과 충돌) 스크립트 라이브러리 충돌이 나서 워크벤치 시뮬레이션이 동작하지 않을 수 있습니다. 따라서 jqery 스크립트를 비롯한 대부분의 스크립트 파일은 <code class="highlighter-rouge">init.jsp</code> 파일에 추가하지 마시기 바랍니다. 하지만 JQuery 스크립트는 플랫폼에 설치되어 있으니 라이브러리를 사용할 수 있습니다.</p>
+
+<h3 id="워크벤치-연동을-위한-css-설정">워크벤치 연동을 위한 CSS 설정</h3>
+
+<p><code class="highlighter-rouge">main.css</code> 파일에서 <a href="/assets/OSPLibrary/osp-analyzer.css" title="분석기 스타일">osp-analyzer.css</a>파일을 호출합니다.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="sx">url("./osp-analyzer.css")</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">osp-analyzer.css</code>파일을 <code class="highlighter-rouge">main.css</code>파일과 같은 폴더(<code class="highlighter-rouge">/css</code>)안에 추가합니다.
+<code class="highlighter-rouge">osp-analyzer.css</code> 스타일 코드는 아래와 같습니다.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.osp-analyzer</span> <span class="p">{</span>
+	<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   	<span class="nl">min-height</span><span class="p">:</span><span class="m">800px</span><span class="p">;</span>
+   	<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.header</span><span class="p">{</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+	<span class="nl">margin</span><span class="p">:</span><span class="m">10px</span> <span class="m">5px</span> <span class="m">10px</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.header</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s1">"col-"</span><span class="o">]</span><span class="p">{</span>
+	<span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="nl">padding-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.no-header-frame</span><span class="p">{</span>
+	<span class="nl">vertical-align</span><span class="p">:</span><span class="nb">middle</span><span class="p">;</span>
+	<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.frame</span><span class="p">{</span>
+	<span class="nl">vertical-align</span><span class="p">:</span><span class="nb">middle</span><span class="p">;</span>
+	<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.canvas</span> <span class="p">{</span>
+   	<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+   	<span class="nl">height</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+   	<span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+   	<span class="nl">padding</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+
+   	<span class="nl">overflow</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.osp-analyzer</span> <span class="nc">.iframe-canvas</span> <span class="p">{</span>
+   	<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+   	<span class="nl">height</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+   	<span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+   	<span class="nl">padding</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+
+   	<span class="nl">overflow</span><span class="p">:</span><span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.osp-analyzer</span> <span class="nc">.icon-menu</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#5cb2d7</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.osp-analyzer</span> <span class="nc">.hidden</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="jsp-파일-뷰와-분석기-호출부-처리">jsp 파일 뷰와 분석기 호출부 처리</h3>
+<p>기본 워크벤치 연동을 위한 이벤트 처리를 하는 jsp 파일(testview.jsp)과 실제 분석하는 부분을 사용자에게 서비스하고 데이터를 가시화하여 제공하는 부분의 jsp 파일(loadAnalyzer.jsp)를 프로젝트 내 생성하여 데이터를 처리한다. 파일명은 임의로 설정할 수 있지만 <code class="highlighter-rouge">portlet.xml</code> 파일에서 설정을 잘 잡아주어야 합니다. 이벤트 처리를 하는 jsp 파일을 포틀릿과 연결된 초기 jsp 파라미터로 설정해 주어야 합니다.</p>
+
+<p>이벤트 처리를 하는 jsp 파일의 파일명을 testview.jsp로 했다면, <code class="highlighter-rouge">portlet.xml</code> 파일의 설정은 다음과 같습니다.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;init-param&gt;</span>
+	<span class="nt">&lt;name&gt;</span>view-template<span class="nt">&lt;/name&gt;</span>
+	<span class="nt">&lt;value&gt;</span>/html/testanalyzer/testview.jsp<span class="nt">&lt;/value&gt;</span>
+<span class="nt">&lt;/init-param&gt;</span>
+</code></pre></div></div>
+
+<p>지금까지 설정에 따른 전체 프로젝트의 구조는 다음과 같습니다.</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">├AnalyzerExample-portlet/
+├─docroot/
+├──css/
+├───main.css
+├───osp-analyzer.css
+├──html/
+├───testanalyzer/
+├────testview.jsp
+├────loadAnalyzer.jsp
+├──js/
+├───main.js
+├──META-INF/
+├───MANIFEST.MF
+├──WEB-INF/
+├───lib/
+├────commons-beanutils.jar
+├────commons-collections.jar
+├────commons-exec-1.1.jar
+├────commons-fileupload.jar
+├────commons-io.jar
+├────commons-lang.jar
+├────SciencePlatform-hook-service.jar
+├───tlb/
+├───liferay-display.xml
+├───liferay-plugin-packkage.properties
+├───liferay-portlet.xml
+├───portlet.xml
+├───web.xml
+</span></code></pre></div></div>
+
+<p>이외에 추가로 파일이 더 있을 수도 있지만 필수적으로 필요한 파일들은 위의 구조와 같으니 비교하여 체크해 보시기 바랍니다.</p>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 KISTI. All rights reserved.
+ Site last generated: Dec 5, 2018 <br />
+<p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
+  <img src="images/edison_logo.png" alt="Company logo" /></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-66296557-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
