@@ -7,7 +7,7 @@
 
  > EDISON에서는 plotly json 파일의 확장자를 ply로 지정하였습니다
 
-![plotly](../asset/image/07/plotly.jpg)
+![plotly](/images/solverdev/07/plotly.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 
@@ -23,4 +23,4 @@
 
 Plotly 활용 데이터 가시화 예시
 
-![plotly](../asset/image/07/plotly.gif)
+![plotly](/images/solverdev/07/plotly.gif)

@@ -1,12 +1,26 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
+
 entries:
 - title: Edison Dev Manual
   product: Edison Dev Manual
   version: 0.1
   folders:
 
-  - title: Overview
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+      
+  - title: Introduction
     output: web, pdf
     folderitems:
 
@@ -14,6 +28,21 @@ entries:
       url: /solverdev_Intro.html
       output: web, pdf
 
+  - title: Linux Foundation
+    output: web, pdf
+    folderitems:
+
     - title: Linux Foundation
       url: /solverdev_Linux_Foundation.html
+      output: web, pdf
+
+  - title: Developer Account
+    output: web, pdf
+    folderitems:
+
+    - title: Workspace
+      url: /solverdev_Developer_Account_Workspace.html
+      output: web, pdf
+    - title: Bulb Server
+      url: /solverdev_Developer_Account_Bulb_Server.html
       output: web, pdf

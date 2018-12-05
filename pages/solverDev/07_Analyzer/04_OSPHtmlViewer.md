@@ -5,4 +5,4 @@ html 파일 형식을 가시화 해주는 뷰어입니다. 출력포트의 포�
 
 > html 뷰어를 통한 가시화가 아닌 Analyzer를 개발하여 등록하면 이러한 문제를 해결할 수 있습니다.
 
-![OSPHtmlViewer](../asset/image/07/osphtml.jpg)
+![OSPHtmlViewer](/images/solverdev/07/osphtml.jpg)

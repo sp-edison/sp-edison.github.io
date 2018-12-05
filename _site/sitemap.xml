@@ -424,6 +424,18 @@
   
   
   <url>
+    <loc>http://localhost:4000/solverdev_Developer_Account_Workspace.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/solverdev_Developer_Account_Bulb_Server.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/solverdev_intro.html</loc>
   </url>
   
@@ -467,18 +479,6 @@
   
   <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/pages/solverDev/02_Developer_Account/01_Workspace.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/pages/solverDev/02_Developer_Account/02_Bulb_Server.html</loc>
   </url>
   
   

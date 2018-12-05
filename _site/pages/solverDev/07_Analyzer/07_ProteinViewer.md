@@ -2,7 +2,7 @@
 
 WebGL 기반 분자 가시화 라이브러리로 pdb, sdf의 3D 단백질 가시화를 제공합니다.
 
-![JSmol](../asset/image/07/pv.jpg)
+![JSmol](/images/solverdev/07/pv.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 |기능|설명|

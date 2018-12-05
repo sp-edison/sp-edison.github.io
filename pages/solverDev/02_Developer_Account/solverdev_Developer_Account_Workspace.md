@@ -1,14 +1,24 @@
+---
+title: 개발자 계정 발급
+tags: [EDISON, Platform]
+keywords:
+summary: "EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개발자 권한을 얻어야 합니다. 개발자 권한을 받은 아이디는 Science App을 등록 할 수 있으며, 앱 개발자를 위한 개발 서버인 Bulb 서버에 접근할 수 있는 계정을 제공해 드립니다. Science App 등록시 메타 정보를 입력해야 하며, 이는 웹 포털에서 할 수 있습니다."
+sidebar: solverdev_sidebar
+permalink: solverdev_Developer_Account_Workspace.html
+folder: solverDev
+---
 
-EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개발자 권한을 얻어야 합니다. 개발자 권한을 받은 아이디는 Science App을 등록 할 수 있으며, 앱 개발자를 위한 개발 서버인 Bulb 서버에 접근할 수 있는 계정을 제공해 드립니다. Science App 등록시 메타 정보를 입력해야 하며, 이는 웹 포털에서 할 수 있습니다.
+
+
 
 
 # 개발자 계정 발급
 
-![EDISON 워크스페이스 메뉴](../asset/image/02/workspace.png)
+![EDISON 워크스페이스 메뉴](/images/solverdev/02/workspace.png)
 
 개발자 계정을 발급 받기 위해서는 EDISON 사이트에서 워크스페이스 요청을 해야합니다. **EDISON 사이트 접속 > My EDISON > 워크스페이스** 에서 **워크스페이스 요청** 을 통해 신청할 수 있습니다.
 
-![EDISON 워크스페이스 메뉴](../asset/image/02/workspace2.png)
+![EDISON 워크스페이스 메뉴](/images/solverdev/02/workspace2.png)
 
 ### 화면 설명
 
@@ -37,12 +47,12 @@ EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개
 
 관리자 승인이 완료되면 개발자 권한을 얻게 되며, **EDISON 사이트 접속 > My EDISON > 워크스페이스** 발급받은 상세정보를 확인할 수 있습니다. Bulb서버 접속에 필요한 아이디와 초기 비밀번호를 확인할 수 있습니다.
 
-![EDISON 워크스페이스 메뉴](../asset/image/02/workspace3.png)
+![EDISON 워크스페이스 메뉴](/images/solverdev/02/workspace3.png)
 
 해당 내용을 클릭하게 되면 워크스페이스 신청과 관련한 상세 내용을 조회할 수 있습니다.
 
-![EDISON 워크스페이스 메뉴](../asset/image/02/workspace4.png)
+![EDISON 워크스페이스 메뉴](/images/solverdev/02/workspace4.png)
 
 추가 요청을 통해 접속 IP 추가등의 요청을 관리자에게 할 수 있습니다.
 
-![EDISON 워크스페이스 메뉴](../asset/image/02/workspace5.png)
+![EDISON 워크스페이스 메뉴](/images/solverdev/02/workspace5.png)

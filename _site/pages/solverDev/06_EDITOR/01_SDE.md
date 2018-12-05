@@ -1,6 +1,6 @@
 # Structured Data Editor (SDE)
 
-![SDE 구조](../asset/image/05/01/sde1.png)
+![SDE 구조](/images/solverdev/05/01/sde1.png)
 
 EDISON 플랫폼에서는 SDE(Structured Data Editor) 이라는 기능을 제공하여, 시뮬레이션 수행에 필요한 변수 값, 문자열, 벡터등의 데이터를 웹에서 바로 입력할 수 있는 기능을 제공하고 있습니다.
 
@@ -11,17 +11,17 @@ EDISON 플랫폼에서는 SDE(Structured Data Editor) 이라는 기능을 제공
 ## SDE Editor 선택
 생성 시 Datatype의 이름과 설명 그리고 사용하고자 하는 Editor를 선택할 수 있습니다. Editor 목록에서 SDE을 선택하고 ```다음``` 버튼을 누르면 SDE을 Editor로 사용하는 Datatype를 생성할 수 있습니다.
 
-![Datatype의 Editor 지정](../asset/image/05/01/sde3.png)
+![Datatype의 Editor 지정](/images/solverdev/05/01/sde3.png)
 
 ## SDE Datatype 편집
 
 ### 샘플 데이터 등록
-![Datatype의 Editor 지정](../asset/image/05/01/sde4.png)
+![Datatype의 Editor 지정](/images/solverdev/05/01/sde4.png)
 
 우선 해당 Datatype의 샘플 파일을 업로드 해야합니다.
 
 ### 데이터 생성 방식 설정
-![Datatype의 Editor 지정](../asset/image/05/01/sde5.png)
+![Datatype의 Editor 지정](/images/solverdev/05/01/sde5.png)
 
 SDE 정의 화면을 통해 변수와 벡터의 데이터가 생성되는 규칙을 설정할 수 있습니다. 해당 규칙으로 입력 파일이 생성됩니다. 각 기능에 대한 설명은 다음과 같습니다.
 
@@ -42,7 +42,7 @@ SDE 정의 화면을 통해 변수와 벡터의 데이터가 생성되는 규칙
 
 변수 생성 화면은 다음과 같습니다. 오른쪽 메뉴를 통해 변수를 생성할 수 있습니다. 생성된 변수들로 실제 데이터를 입력받는 화면은 왼쪽에 표시되게 됩니다.
 
-![Datatype의 Editor 지정](../asset/image/05/01/sde6.png)
+![Datatype의 Editor 지정](/images/solverdev/05/01/sde6.png)
 
 변수 타입은 numeric, string, vector, string, group, comment로 나누어 지며 각 타입별 생성 방법은 다음과 같습니다.
 
@@ -51,7 +51,7 @@ SDE 정의 화면을 통해 변수와 벡터의 데이터가 생성되는 규칙
 
 > sweep 기능 설정시 한번에 여러 개의 시뮬레이션 작업을 생성 할 수 있습니다.
 
-![numeric 타입 생성 화면](../asset/image/05/01/sde7.png)
+![numeric 타입 생성 화면](/images/solverdev/05/01/sde7.png)
 
 |기능 |설명 |
 |--|--|
@@ -73,7 +73,7 @@ SDE 정의 화면을 통해 변수와 벡터의 데이터가 생성되는 규칙
 
 한 줄의 문자열을 입력 받을 때 사용하는 타입입니다.
 
-![string 타입 생성 화면](../asset/image/05/01/sde8.png)
+![string 타입 생성 화면](/images/solverdev/05/01/sde8.png)
 
 
 |기능 |설명 |
@@ -90,7 +90,7 @@ SDE 정의 화면을 통해 변수와 벡터의 데이터가 생성되는 규칙
 
 list 항목을 미리 생성하고, 생성된 list 중 선택한 입력을 받을 때 사용하는 타입입니다.
 
-![list 타입 생성 화면](../asset/image/05/01/sde9.png)
+![list 타입 생성 화면](/images/solverdev/05/01/sde9.png)
 
 |기능 |설명 |
 |--|--|
@@ -106,7 +106,7 @@ list 항목을 미리 생성하고, 생성된 list 중 선택한 입력을 받�
 
 vector 형태의 입력 값을 받을 때 사용하는 타입입니다.
 
-![vector 타입 생성 화면](../asset/image/05/01/sde10.png)
+![vector 타입 생성 화면](/images/solverdev/05/01/sde10.png)
 
 |기능 |설명 |
 |--|--|
@@ -122,7 +122,7 @@ vector 형태의 입력 값을 받을 때 사용하는 타입입니다.
 
 UI에서 변수들을 그룹화하고 싶은경우 사용하는 변수 입니다.
 
-![vector 타입 생성 화면](../asset/image/05/01/sde11.png)
+![vector 타입 생성 화면](/images/solverdev/05/01/sde11.png)
 
 
 |기능 |설명 |

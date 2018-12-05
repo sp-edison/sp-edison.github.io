@@ -2,7 +2,7 @@
 
 사이언스 앱의 입력 파일로 CSV 파일을 읽어와 Spread Sheet 형태로 편집할 수 있는 편집기 입니다.
 
-![csv 에디터](../asset/image/06/csv.png)
+![csv 에디터](/images/solverdev/06/csv.png)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 |기능|설명|

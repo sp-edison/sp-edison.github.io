@@ -4,7 +4,7 @@
 
 
 
-![OSPPlotViewer](../asset/image/07/ospplot.jpg)
+![OSPPlotViewer](/images/solverdev/07/ospplot.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 |기능|설명|

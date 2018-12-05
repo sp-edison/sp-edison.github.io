@@ -1,4 +1,12 @@
-
+---
+title: 개발자 서버 접속
+tags: [EDISON, Platform]
+keywords:
+summary: ""
+sidebar: solverdev_sidebar
+permalink: solverdev_Developer_Account_Bulb_Server.html
+folder: solverDev
+---
 
 
 # 개발자 서버 접속
@@ -20,7 +28,7 @@
 - 호스트 : bulb.edison.re.kr, 포트 : 22002, 프로토콜 : SSH
 - 프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325
 
-![Putty로 Bulb 접속하기 (ssh)](../asset/image/02/noname01.png)
+![Putty로 Bulb 접속하기 (ssh)](/images/solverdev/02/noname01.png)
 
 최초 접속 시 비밀번호를 꼭 변경해 주세요.
 
@@ -36,8 +44,8 @@
 
 
 ![호스트 : bulb.edison.re.kr, 포트 : 22002, 프로토콜 : SFTP
-](../asset/image/02/noname02.png)
-![프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325](../asset/image/02/noname03.png)
+](/images/solverdev/02/noname02.png)
+![프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325](/images/solverdev/02/noname03.png)
 
 
 

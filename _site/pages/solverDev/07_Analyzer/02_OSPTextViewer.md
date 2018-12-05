@@ -4,7 +4,7 @@ text 파일 형식을 가시화 해주는 뷰어입니다.
 
 
 
-![OSPPlotViewer](../asset/image/07/osptext.jpg)
+![OSPPlotViewer](/images/solverdev/07/osptext.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 |기능|설명|
