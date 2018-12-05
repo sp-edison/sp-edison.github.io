@@ -1,4 +1,11 @@
-# Octave 언어
+---
+title: Octave 언어
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Octave_Programing_intro.html
+folder: solverDev
+---
 Octave은 인터프리터 방식의 프로그래밍 언어입니다. Matlab과 호환성이 높은 GNU 소프트웨어로써 계산과학을 위한 도구로 사용됩니다.
 
 > EDISON에서 R을 사용하기 위해서는 ```module load octave/4.0.3``` 명렁어를 통해 사용할 수 있습니다.

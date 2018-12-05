@@ -1,6 +1,12 @@
+---
+title: 입력 파일이 1개인 경우
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_C_Programing_inputfile.html
+folder: solverDev
+---
 
-
-# 입력 파일이 1개인 경우
 [[링크] Github에서 보기](https://github.com/sp-edison/c_example_input1)
 
 [[링크] 소스코드 다운받기](https://github.com/sp-edison/c_example_input1/archive/master.zip)

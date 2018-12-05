@@ -1,3 +1,11 @@
+---
+title: oneD file format
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing_oneD.html
+folder: solverDev
+---
 # oneD file format
 
 1차원 그래프를 EDISON 시스템에서 보여주기 원한다면, 아래와 같은 파일 형태로 데이터를 생성해야 합니다.

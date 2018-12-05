@@ -1,4 +1,12 @@
-# Python 언어
+---
+title: Python 언어
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_intro.html
+folder: solverDev
+---
+
 Python은 인터프리터 방식의 프로그래밍 언어. 별도의 빌드 과정이 없이 실행 할 수 있으며, 코드의 가독성이 좋은 장점을 가지고 있습니다. 또한 PyPI라는 패키지 저장소가 있어 원하는 패키지를 ```pip```명령어를 통해 쉽게 내려받을 수 있습니다. 이러한 장점으로 계산과학분야에서도 Python언어는 많이 활용되고 있습니다.
 
 파이썬 스크립트를 리눅스 Command Line에서 실행하는 방법은 2가지 입니다.

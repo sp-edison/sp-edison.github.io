@@ -1,4 +1,12 @@
-# C 언어
+---
+title: C 언어
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_C_Programing_intro.html
+folder: solverDev
+---
+
 ## 리눅스에서 gcc로 c언어 컴파일하기
 
 리눅스에서 hello world를 출력하는 간단한 C 코드를 컴파일 하고 실행하는 예제 링크 입니다.

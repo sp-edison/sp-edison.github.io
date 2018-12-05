@@ -1,4 +1,11 @@
-# Paraview
+---
+title: Paraview
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_Paraview.html
+folder: solverDev
+---
 
 3D 과학 데이터 가시화 도구로써 [The ParaViewWeb Visualizer application](https://github.com/kitware/visualizer)을 제공하고 있습니다. [VTK file 포멧](https://www.vtk.org/wp-content/uploads/2015/04/file-formats.pdf) 형식의 데이터를 가시화 할 수 있으며, 그외 다른 데이터도 가시화 가능합니다.
 - [가시화 가능 파일 포맷 확인하기](https://www.paraview.org/Wiki/ParaView/Users_Guide/List_of_readers)

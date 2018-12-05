@@ -1,6 +1,13 @@
-# 입력 프로그래밍
+---
+title: 입력 프로그래밍
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Input_Programing.html
+folder: solverDev
+---
 
- EDISON에서 정의한 입출력 형식을 준수해야 합니다.
+EDISON에서 정의한 입출력 형식을 준수해야 합니다.
 시뮬레이션 SW의 실행 방식은 명령행 인자(Command Line Argument) 방식을 따르며, ```./[실행 파일 명] [커맨드 옵션] [인풋 파일의 절대 경로]``` 형태로 실행해야 합니다.
 
 - 실행 파일 이름이 a.out이고 입력 옵션이 “-i”로 설정한 경우 실행되는 명령어는 다음과 같습니다.

@@ -1,5 +1,11 @@
-
-# Output programing
+---
+title: Output progrming
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Fortran_Programing_output.html
+folder: solverDev
+---
 
 ## result 폴더 생성
 

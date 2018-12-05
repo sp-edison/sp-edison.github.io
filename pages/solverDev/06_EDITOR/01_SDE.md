@@ -1,4 +1,11 @@
-# Structured Data Editor (SDE)
+---
+title: Structured Data Editor (SDE)
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_editor_sde.html
+folder: solverDev
+---
 
 ![SDE 구조](/images/solverdev/05/01/sde1.png)
 

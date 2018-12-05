@@ -1,3 +1,11 @@
+---
+title: JSmol
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_JSmol.html
+folder: solverDev
+---
 # JSmol
 
 계산화학 분야에서 사용하는 jmol의 웹 버전으로 Javascript로 제작된 3D 분자 구조를 보여주는 오픈소스입니다.

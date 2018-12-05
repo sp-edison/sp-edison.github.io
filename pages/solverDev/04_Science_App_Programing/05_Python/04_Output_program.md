@@ -1,5 +1,11 @@
-
-# Output programing
+---
+title: Output progrming
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_output.html
+folder: solverDev
+---
 
 ## result 폴더 생성
 

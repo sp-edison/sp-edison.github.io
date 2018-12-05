@@ -1,4 +1,11 @@
-# 입력 파일이 여러개인 경우
+---
+title: 입력 파일이 여러개인 경우
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Fortran_Programing_multiinputfile.html
+folder: solverDev
+---
 
 입력 파일이 여러개인 경우는 1개인 경우 예제에서 ```getopt()``` 함수에 입력 받고자 하는 옵션을 추가하고,  ```switch``` 문에서 추가한 옵션에 대한 코드를 추가하면 됩니다.
 

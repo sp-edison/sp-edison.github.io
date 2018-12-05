@@ -1,4 +1,11 @@
-# OSPPlotViewer
+---
+title: OSPPlotViewer
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_OSPPlotViewer.html
+folder: solverDev
+---
 
 [oneD](../04_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화 해주는 뷰어입니다.
 

@@ -1,4 +1,11 @@
-# R 언어
+---
+title: R 언어
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_R_Programing_intro.html
+folder: solverDev
+---
 R은 인터프리터 방식의 프로그래밍 언어입니다. 파이썬 언어와 마찬가지로 별도의 빌드 과정이 없이 실행 할 수 있으며, 코드의 가독성이 좋은 장점을 가지고 있습니다. R언어의 장점은 다음과 같습니다.
 
  - 오픈소스, 무료 소프트웨어

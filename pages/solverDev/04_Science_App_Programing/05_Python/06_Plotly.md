@@ -1,3 +1,13 @@
+---
+title: Plotly
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_plotly.html
+folder: solverDev
+---
+
+
 # Python을 활용하여 ply 파일 생성하기  
 
 [[링크] Github에서 보기](https://github.com/sp-edison/plotly_python_example)

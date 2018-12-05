@@ -1,5 +1,11 @@
-
-# SDE case study
+---
+title: SDE case study
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_sde.html
+folder: solverDev
+---
 
 [[링크] Github에서 보기](https://github.com/sp-edison/python_example_sde)
 

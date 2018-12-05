@@ -1,4 +1,13 @@
-# 출력 프로그래밍 기초
+---
+title: 출력 프로그래밍 개요
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing.html
+folder: solverDev
+---
+
+# 출력 프로그래밍 개요
 
 해석 결과 데이터는 파일 형태로 출력해야 하며, result 폴더에 생성되어야 합니다.
 

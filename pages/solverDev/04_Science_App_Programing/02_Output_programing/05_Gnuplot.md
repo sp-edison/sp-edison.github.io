@@ -1,3 +1,11 @@
+---
+title: Gnuplot
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing_Gnuplot.html
+folder: solverDev
+---
 # Gnuplot
 그누플롯은 2차원이나 3차원 함수나 자료를 그래프로 그려 주는 명령행 응용 소프트웨어입니다. EDISON 시스템에서 그누플롯을 사용하기 위해서는 ```module load``` 명령어를 통해 gnuplot 모듈을 불러와야 합니다. 설치되어 있는 gnuplot은 다음과 같습니다.
 

@@ -1,4 +1,11 @@
-# Science App 프로그래밍 개요
+---
+title: Science App 프로그래밍 개요
+tags: [EDISON, Platform, Science App, Programing]
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Programing.html
+folder: solverDev 
+---
 
 EDISON 플랫폼은 리눅스(CentOS)기반에서 동작하고 있으며, 시뮬레이션 SW의 경우 리눅스 환경에서 동작해야 합니다. 컴파일이 필요한 언어인 경우 리눅스(CentOS)에서 컴파일이 완료 되어야 합니다. 이를 위해 시뮬레이션 SW 개발자들을 위한 개발자(Bulb) 서버를 제공하고 있으며, Bulb 환경에서 동작하는 실행 파일(or 스크립트)로 개발 되어야 합니다.
 

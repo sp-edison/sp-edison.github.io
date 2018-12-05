@@ -1,4 +1,11 @@
-
+---
+title: Plotly file format
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing_Plotly.html
+folder: solverDev
+---
 # Plotly file format
 
 Plotly file 포멧은 Plotly 라이브러리를 활용하여 생성한 데이터를 json으로 저장한 파일을 의미합니다.

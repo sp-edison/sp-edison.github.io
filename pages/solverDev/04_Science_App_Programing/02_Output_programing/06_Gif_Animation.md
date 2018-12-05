@@ -1,3 +1,11 @@
+---
+title: GIF Animation
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing_gif.html
+folder: solverDev
+---
 # gif animation 파일 만들기
 
 imagemagick을 사용해 여러장의 그림 파일을 하나의 gif 파일로 생성할 수 있습니다. gif animation 생성하기 위해서는, 각 프래임별 그림파일이 생성되어 있어야 합니다. ```bessel[프래임넘버].png```인 그림파일들을 하나의 gif로 생성하는 경우

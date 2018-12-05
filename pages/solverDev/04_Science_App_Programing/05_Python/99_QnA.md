@@ -1,3 +1,11 @@
+---
+title: QnA
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_qna.html
+folder: solverDev
+---
 
 
 # matplotlib 사용시 아래와 같은 에러가 발생한다면

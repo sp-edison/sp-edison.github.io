@@ -1,4 +1,11 @@
-# 입력 파일이 여러개인 경우
+---
+title: 입력 파일이 여러개인 경우
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_R_Programing_multiinputfile.html
+folder: solverDev
+---
 
 입력 파일이 여러개인 경우는 [1개인 경우 예제](./01_Inputfile_Open.md)에서 option_list 리스트에 make_option함수를 통해 입력 받고자 하는 옵션을 추가 해주면 됩니다.
 

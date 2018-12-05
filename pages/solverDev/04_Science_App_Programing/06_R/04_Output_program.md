@@ -1,5 +1,11 @@
-
-# Output programing
+---
+title: Output progrming
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_R_Programing_output.html
+folder: solverDev
+---
 
 ## result 폴더 생성
 R의 경우 별도의 선언없이 ```dir.create()``` 함수를 이용하면 되며, ```result``` 폴더를 생성하는 예제는 아래와 같습니다.

@@ -1,3 +1,12 @@
+---
+title: Simpost Setting
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Output_Programing_simpost.html
+folder: solverDev
+---
+
 # simpost
 
 simpost는 해석기(Solver)의 해석이 종료된 이후 실행이 필요한 쉘스크립트를 저장하는 파일입니다. simpost에 작성된 쉘스크립트 명령어들은 해석기 실행이 끝난 이후 실행됩니다. 앱 등록시 실행 파일과 같이 업로드해야 합니다.

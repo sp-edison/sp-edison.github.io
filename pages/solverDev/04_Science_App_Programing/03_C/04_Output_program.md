@@ -1,5 +1,12 @@
+---
+title: Output progrming
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_C_Programing_output.html
+folder: solverDev
+---
 
-# Output progrming
 ## result 폴더 생성
 
 C 언어의 경우 ```#include <stdlib.h>``` 헤더를 선언하고 ```int system (const char * string);``` 함수를 이용하면 되며, ```result``` 폴더를 생성하는 예제는 아래와 같습니다.

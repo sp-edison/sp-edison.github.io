@@ -1,5 +1,11 @@
-
-# Analyzer (분석기)
+---
+title: Analyzer (분석기)
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer.html
+folder: solverDev
+---
 
 ![사이언스 앱 실행 시나리오](/images/solverdev/03/image02_execution_scenario.png)
 

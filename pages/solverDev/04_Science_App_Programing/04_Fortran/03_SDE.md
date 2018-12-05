@@ -1,5 +1,12 @@
+---
+title: SDE case study
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Fortran_Programing_sde.html
+folder: solverDev
+---
 
-# SDE case study
 
 [[링크] Github에서 보기](https://github.com/sp-edison/fortran_example_sde)
 

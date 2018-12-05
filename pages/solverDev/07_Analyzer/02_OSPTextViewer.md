@@ -1,4 +1,11 @@
-# OSPTextViewer
+---
+title: OSPTextViewer
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_OSPTextViewer.html
+folder: solverDev
+---
 
 text 파일 형식을 가시화 해주는 뷰어입니다.
 

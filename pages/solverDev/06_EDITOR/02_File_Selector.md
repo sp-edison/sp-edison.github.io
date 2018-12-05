@@ -1,3 +1,11 @@
+---
+title: File Selector
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_editor_fileselector.html
+folder: solverDev
+---
 #File Selector
 
 사이언스 앱의 입력 파일을 선택할 수 있는 편집기 입니다.
@@ -5,6 +13,7 @@
 ![텍스트 에디터](/images/solverdev/06/file2.png)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
+
 |기능|설명|
 |--|--|
 |Sample|개발자가 등록한 샘플 파일을 에디터로 불러옵니다.|

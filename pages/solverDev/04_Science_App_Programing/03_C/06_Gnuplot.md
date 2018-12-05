@@ -1,5 +1,12 @@
+---
+title: Gnuplot을 이용해 oneD plot 파일을 그림으로 저장하기
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_C_Programing_gnuplot.html
+folder: solverDev
+---
 
-# Gnuplot을 이용해 oneD plot 파일을 그림으로 저장하기
 
 [[링크] Github에서 보기](https://github.com/sp-edison/c_example_gnuplot)
 

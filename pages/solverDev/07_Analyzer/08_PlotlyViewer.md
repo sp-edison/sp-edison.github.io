@@ -1,4 +1,11 @@
-# Plotly viewer
+---
+title: Plotly Viewer
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_Plotly.html
+folder: solverDev
+---
 
 다양한 Plot을 제공하는 Plotly 라이브러리를 활용한 뷰어 입니다. 이 라이브러리는 Python, R, Javascript등 다양한 언어로 제공되고 있습니다. plotly 라이브러리를 활용하여 생성한 Plot 데이터를 json 포멧으로 저장해야 해야합니다.
 

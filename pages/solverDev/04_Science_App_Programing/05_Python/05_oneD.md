@@ -1,3 +1,12 @@
+---
+title: oneD
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Python_Programing_oned.html
+folder: solverDev
+---
+
 # sin() 함수 결과를 oned로 출력하기
 
 

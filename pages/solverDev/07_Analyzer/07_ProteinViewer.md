@@ -1,4 +1,11 @@
-# ProteinViewer
+---
+title: ProteinViewer
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_analyzer_ProteinViewer.html
+folder: solverDev
+---
 
 WebGL 기반 분자 가시화 라이브러리로 pdb, sdf의 3D 단백질 가시화를 제공합니다.
 

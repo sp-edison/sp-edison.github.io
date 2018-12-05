@@ -1,5 +1,12 @@
+---
+title: SDE case study
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_C_Programing_sde.html
+folder: solverDev
+---
 
-# SDE case study
 
 C언어로 SDE에서 생성된 입력 파일을 읽는 방법을 설명하고자 합니다.
 

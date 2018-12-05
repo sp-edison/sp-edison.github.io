@@ -8,8 +8,7 @@ summary: EDSION Documentation Site.
 ---
 
 
-# EDISON Documentation Site
+EDISON Documentation Site
 
 
 {% include links.html %}
- 

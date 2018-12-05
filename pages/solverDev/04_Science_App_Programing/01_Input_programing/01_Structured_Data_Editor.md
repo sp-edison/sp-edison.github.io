@@ -1,4 +1,13 @@
-# Structured Data Editor (SDE)
+---
+title: Structured Data Editor (SDE)
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Science_App_Input_Programing_sde.html
+folder: solverDev
+---
+
+
 
 EDISON 플랫폼에서는 SDE(Structured Data Editor) 이라는 기능을 제공하여, 시뮬레이션 수행에 필요한 변수 값, 문자열, 벡터등의 데이터를 웹에서 바로 입력할 수 있는 기능을 제공하고 있습니다.
 

@@ -1,6 +1,11 @@
-
-# SDE case study
-
+---
+title: SDE case study
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Octave_Programing_sde.html
+folder: solverDev
+---
 [[링크] Github에서 보기](https://github.com/sp-edison/octave_example_sde)
 
 [[링크] 소스코드 다운받기](https://github.com/sp-edison/octave_example_sde/archive/master.zip)

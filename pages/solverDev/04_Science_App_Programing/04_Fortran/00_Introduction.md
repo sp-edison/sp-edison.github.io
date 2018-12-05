@@ -1,4 +1,12 @@
-# Fortran 언어
+---
+title: Fortran 언어
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_Fortran_Programing_intro.html
+folder: solverDev
+---
+
 ## 리눅스에서 gcc로 fortran언어 컴파일하기
 
 fortran 언어의 경우에도 gcc 컴파일러를 사용해 소스코드를 빌드할 수 있습니다. ```gfortran``` 명령어를 사용하며, C언어 빌드와 방식이 유사합니다.
