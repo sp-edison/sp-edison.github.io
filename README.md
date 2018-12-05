@@ -1,3 +1,3 @@
-# [kwon6838.github.io](https://kwon6838.github.io)
+# [sp-edison.github.io](https://sp-edison.github.io)
 
-EDISON Platform 개발자 블로그
+EDISON Document pages
