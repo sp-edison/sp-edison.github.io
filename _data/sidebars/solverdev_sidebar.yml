@@ -11,5 +11,9 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /00_intro.html
+      url: /solverdev_Intro.html
+      output: web, pdf
+
+    - title: Linux Foundation
+      url: /solverdev_Linux_Foundation.html
       output: web, pdf

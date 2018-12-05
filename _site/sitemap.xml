@@ -23,12 +23,6 @@
 
   
   
-  <url>
-    <loc>http://localhost:4000/00_intro.html</loc>
-  </url>
-  
-  
-  
   
   
   
@@ -423,99 +417,21 @@
   
   
   
+  
+  
+  
+  
+  
+  
   <url>
-    <loc>http://localhost:4000/p2_landing_page.html</loc>
+    <loc>http://localhost:4000/solverdev_intro.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/p2_sample1.html</loc>
+    <loc>http://localhost:4000/solverdev_Linux_Foundation.html</loc>
   </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample10.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample11.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample12.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample13.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample14.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample3.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample4.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample5.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample6.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample7.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample8.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample9.html</loc>
-  </url>
-  
-  
-  
-  
-  
-  
   
   
   
@@ -551,12 +467,6 @@
   
   <url>
     <loc>http://localhost:4000/assets/css/style.css</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/pages/solverDev/01_Linux_Foundation.html</loc>
   </url>
   
   

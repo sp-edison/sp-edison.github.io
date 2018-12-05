@@ -1,17 +1,6 @@
 [
 
 
-{
-"title": "EDISON 플랫폼 소개",
-"tags": "EDISONPlatform",
-"keywords": "",
-"url": "00_intro.html",
-"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
-}
-,
-
-
-
 
 
 
@@ -19,9 +8,9 @@
 {
 "title": "Getting started with the Documentation for EDISON platform",
 "tags": "getting_started",
-"keywords": "sample homepage",
+"keywords": "EDSION Documentation",
 "url": "index.html",
-"summary": "These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll."
+"summary": "EDSION Documentation Site."
 }
 ,
 
@@ -731,174 +720,31 @@
 
 
 
+
+
+
+
+
+
 {
-"title": "Product 2",
-"tags": "",
-"keywords": "mydoc",
-"url": "p2_landing_page.html",
+"title": "EDISON 플랫폼 소개",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_intro.html",
+"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
+}
+,
+
+
+
+{
+"title": "리눅스 기초",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_Linux_Foundation.html",
 "summary": ""
 }
 ,
-
-
-
-{
-"title": "Sample 1 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample1.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 10 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample10.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 11 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample11.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 12 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample12.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 13 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample13.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 14 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample14.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 2 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample2.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 3 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample3.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 4 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample4.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 5 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample5.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 6 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample6.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 7 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample7.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 8 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample8.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-{
-"title": "Sample 9 Topic",
-"tags": "",
-"keywords": "sample",
-"url": "p2_sample9.html",
-"summary": "This is just a sample topic..."
-}
-,
-
-
-
-
-
-
 
 
 
@@ -937,17 +783,6 @@
 "tags": "",
 "keywords": "",
 "url": "assetscssstyle.css",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "리눅스 기초",
-"tags": "",
-"keywords": "",
-"url": "pagessolverDev01_Linux_Foundation.html",
 "summary": ""
 }
 ,
