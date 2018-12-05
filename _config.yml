@@ -1,28 +1,28 @@
-repository: tomjoht/documentation-theme-jekyll
+repository: sp-edison/sp-edison.github.io
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Jekyll Documentation Theme
+topnav_title: EDISON Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: Jekyll theme for documentation
+site_title: EDISON platform for documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: KISTI
 # this appears in the footer
 
-github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
+github_editme_path: sp-edison/sp-edison.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-disqus_shortname: idratherbewriting
+disqus_shortname: 
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
 google_analytics: UA-66296557-1
-# if you have google-analytics ID, put it in. if not, edit this value to blank.
+# if you have google-analytics ID, put it ain. if not, edit this value to blank.
 
 host: 127.0.0.1
 # the preview server used. Leave as is.
@@ -35,7 +35,7 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Jekyll documentation theme
+feedback_subject_line: EDISON documentation
 
 feedback_email: edison@kisti.re.kr
 # used as a contact email for the Feedback link in the top navigation bar
@@ -103,7 +103,8 @@ defaults:
 sidebars:
 - home_sidebar
 - mydoc_sidebar
-- solverDev
+- solverDev_sidebar
+- workbench_sidebar
 - product1_sidebar
 - product2_sidebar
 - other
