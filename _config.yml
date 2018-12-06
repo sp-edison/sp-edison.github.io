@@ -12,7 +12,7 @@ site_title: EDISON platform for documentation
 company_name: KISTI
 # this appears in the footer
 
-github_editme_path: sp-edison/sp-edison.github.io/blob/master/
+github_editme_path:  #sp-edison/sp-edison.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -43,7 +43,7 @@ feedback_email: edison@kisti.re.kr
 # feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
-# feedback_text: "Need help?"
+feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
 # feedback_link: "http://helpy.io/"

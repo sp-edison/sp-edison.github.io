@@ -13,6 +13,11 @@ folder: solverDev
 EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다.
 
 
+## PDF로 다운 받기
+
+<a target="\_blank" class="noCrossRef" href="{{ "pdf/solverdev.pdf"}}"><button type="button" class="btn btn-default" aria-label="Left Align"><span
+    class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> PDF Download</button></a>
+
 ## Science App 등록 절차
 
 개발자 권한 신청 및 발급
