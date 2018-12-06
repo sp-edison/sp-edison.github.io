@@ -1,6 +1,6 @@
 ---
 title: "프로젝트 생성"
-permalink: workbenchanalyzerguide2.html
+permalink: workbench_analyzerguide2.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]

@@ -1,6 +1,6 @@
 ---
 title: "공용 함수"
-permalink: workbenchanalyzerguide8.html
+permalink: workbench_analyzerguide8.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]

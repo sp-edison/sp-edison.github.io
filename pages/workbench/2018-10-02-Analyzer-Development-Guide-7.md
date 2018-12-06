@@ -1,6 +1,6 @@
 ---
 title: "이벤트 처리 함수"
-permalink: workbenchanalyzerguide7.html
+permalink: workbenchan_alyzerguide7.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]

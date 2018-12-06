@@ -1,6 +1,6 @@
 ---
 title: "스크립트 단위의 뷰 설정"
-permalink: workbenchanalyzerguide5.html
+permalink: workbenchan_alyzerguide5.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]
