@@ -92,7 +92,7 @@ entries:
       output: web, pdf
         
   - title: '- C Programing'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: C Programing 개요
@@ -124,7 +124,7 @@ entries:
       output: web, pdf
 
   - title: '- Fortran Programing'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: Fortran Programing 개요
@@ -153,7 +153,7 @@ entries:
 
 
   - title: '- Python Programing'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: Python Programing 개요
@@ -189,7 +189,7 @@ entries:
       output: web, pdf
 
   - title: '- R Programing'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: R Programing 개요
@@ -213,7 +213,7 @@ entries:
       output: web, pdf
       
   - title: '- Octave Programing'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: Octave Programing 개요
@@ -233,7 +233,7 @@ entries:
       output: web, pdf
 
   - title: 'Editor (편집기)'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: Editor 개요
@@ -257,7 +257,7 @@ entries:
       output: web, pdf
 
   - title: 'Analyzer (분석기)'
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: Analyzer 개요
@@ -298,7 +298,7 @@ entries:
 
 
   - title: Sicence App Management
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: 데이터 타입 생성
