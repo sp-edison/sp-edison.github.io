@@ -1,6 +1,6 @@
 ---
 title: "이벤트처리"
-permalink: workbenchanalyzerguide4.html
+permalink: workbenchan_alyzerguide4.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]

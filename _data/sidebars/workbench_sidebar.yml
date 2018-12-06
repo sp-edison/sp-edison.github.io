@@ -29,37 +29,68 @@ entries:
     output: web, pdf
     folderitems:
       - title: "프로젝트 생성"
-        url: /workbenchanalyzerguide1.html
+        url: /workbench_analyzerguide1.html
         output: web, pdf
 
       - title: "프로젝트 기본 설정"
-        url: /workbenchanalyzerguide2.html
+        url: /workbench_analyzerguide2.html
         output: web, pdf
 
       - title: "스크립트 단위의 뷰 설정"
-        url: /workbenchanalyzerguide3.html
+        url: /workbenchan_alyzerguide3.html
         output: web, pdf
 
       - title: "이벤트 처리"
-        url: /workbenchanalyzerguide4.html
+        url: /workbenchan_alyzerguide4.html
         output: web, pdf
 
       - title: "초기값 설정"
-        url: /workbenchanalyzerguide5.html
+        url: /workbenchan_alyzerguide5.html
         output: web, pdf
 
       - title: "파일 탐색기 설정"
-        url: /workbenchanalyzerguide6.html
+        url: /workbench_analyzerguide6.html
         output: web, pdf
 
       - title: "이벤트 처리 함수"
-        url: /workbenchanalyzerguide7.html
+        url: /workbenchan_alyzerguide7.html
         output: web, pdf
 
       - title: "공용 함수"
-        url: /workbenchanalyzerguide8.html
+        url: /workbench_analyzerguide8.html
         output: web, pdf
 
   - title: 워크벤치 이벤트 정의
     output: web, pdf
     folderitems:
+      - title: "HANDSHAKE"
+        url: /event_handshake.html
+        output: web, pdf
+
+      - title: "REGISTERED"
+        url: /event_registerd.html
+        output: web, pdf
+
+      - title: "REQUESTDATA"
+        url: /event_requestdata.html
+        output: web, pdf
+
+      - title: "RESPONSEDATA"
+        url: /even_responsedata.html
+        output: web, pdf
+
+      - title: "LOADDATA"
+        url: /event_loaddata.html
+        output: web, pdf
+
+      - title: "INITIALIZE"
+        url: /event_initialize.html
+        output: web, pdf
+
+      - title: "REFRESHOUTPUTVIEW"
+        url: /event_refreshoutputview.html
+        output: web, pdf
+
+      - title: "DATACHANGED"
+        url: /event_datachanged.html
+        output: web, pdf

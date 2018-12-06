@@ -1,6 +1,6 @@
 ---
 title: "파일 탐색기 설정"
-permalink: workbenchanalyzerguide6.html
+permalink: /workbench_analyzerguide6.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]

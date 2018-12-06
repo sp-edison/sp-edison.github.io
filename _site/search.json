@@ -599,7 +599,7 @@
 "title": "프로젝트 생성",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide1.html",
+"url": "workbench_analyzerguide1.html",
 "summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
 }
 ,
@@ -610,7 +610,7 @@
 "title": "프로젝트 생성",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide2.html",
+"url": "workbench_analyzerguide2.html",
 "summary": ""
 }
 ,
@@ -621,7 +621,7 @@
 "title": "스크립트 단위의 뷰 설정",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide3.html",
+"url": "workbenchan_alyzerguide3.html",
 "summary": ""
 }
 ,
@@ -632,7 +632,95 @@
 "title": "이벤트처리",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide4.html",
+"url": "workbenchan_alyzerguide4.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "HANDSHAKE",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_handshake.html",
+"summary": "초기 워크벤치를 실행하면서 필요한 편집기와 분석기 모듈들을 호출합니다. 해당 편집기와 분석기는 실행되기 전에 HANDSHAKE 이벤트를 워크벤치로부터 받아 현재 상태 및 아이디를 등록을 하게 됩니다."
+}
+,
+
+
+
+{
+"title": "REGISTERED EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_registerd.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_requestdata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "RESPONSE DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "even_responsedata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "LOAD DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_loaddata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "INITIAIZE EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_initialize.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST OUTPUT VIEW EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_refreshoutputview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST DATA CHANGED EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_datachanged.html",
 "summary": ""
 }
 ,
@@ -643,7 +731,7 @@
 "title": "스크립트 단위의 뷰 설정",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide5.html",
+"url": "workbenchan_alyzerguide5.html",
 "summary": ""
 }
 ,
@@ -654,7 +742,7 @@
 "title": "파일 탐색기 설정",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide6.html",
+"url": "workbench_analyzerguide6.html",
 "summary": ""
 }
 ,
@@ -665,7 +753,7 @@
 "title": "이벤트 처리 함수",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide7.html",
+"url": "workbenchan_alyzerguide7.html",
 "summary": ""
 }
 ,
@@ -676,7 +764,7 @@
 "title": "공용 함수",
 "tags": "workbenchanalyzer",
 "keywords": "",
-"url": "workbenchanalyzerguide8.html",
+"url": "workbench_analyzerguide8.html",
 "summary": ""
 }
 ,
@@ -767,6 +855,14 @@
 "summary": ""
 }
 ,
+
+
+
+
+
+
+
+
 
 
 
