@@ -1,9 +1,9 @@
 ---
-title: "Collaboration pages"
-tagName: collaboration
+title: "Workbench pages"
+tagName: workbench
 search: exclude
-permalink: tag_collaboration.html
-sidebar: mydoc_sidebar
+permalink: tag_workbench.html
+sidebar: workbench_sidebar
 folder: tags
 ---
 {% include taglogic.html %}
