@@ -295,3 +295,34 @@ entries:
     - title: NGL 
       url: /solverdev_analyzer_NGL.html
       output: web, pdf
+
+
+  - title: Sicence App Management
+    output: web
+    folderitems:
+
+    - title: 데이터 타입 생성
+      url: /solverdev_management_datatype.html
+      output: web, pdf
+
+    - title:  사이언스 앱 생성
+      url: /solverdev_management_appcreation.html
+      output: web, pdf
+    - title: 사이언스 앱 정보 입력
+      url: /solverdev_management_appinformation.html
+      output: web, pdf
+    - title: 사이언스 앱 실행환경 정보 입력
+      url: /solverdev_management_execution.html
+      output: web, pdf
+    - title: 입출력 포트 생성
+      url: /solverdev_management_port.html
+      output: web, pdf
+    - title:  레이아웃 설정
+      url: /solverdev_management_layout.html
+      output: web, pdf
+    - title: 공개 데이터 등록
+      url: /solverdev_management_opendata.html
+      output: web, pdf
+    - title:  사이언스 앱 관리하기
+      url: /solverdev_management_app_management.html
+      output: web, pdf
