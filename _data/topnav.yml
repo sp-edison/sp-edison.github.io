@@ -2,17 +2,13 @@
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 topnav:
 - title: Topnav
-  items: 
-    - title: Solver Dev
-      url: /solverdev_intro.html
 
-#Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: 개발자 매뉴얼
+    - title: Developer
       folderitems:
-        - title: 솔버 개발
+        - title: Solver
           url: /solverdev_intro.html
-        - title: 워크벤치 개발
+        - title: Workbench
           url: /workbenchanalyzerguide1.html
