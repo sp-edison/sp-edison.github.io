@@ -7,13 +7,14 @@ permalink: solverdev_analyzer_OSPPlotViewer.html
 folder: solverDev
 ---
 
-[oneD](../04_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화 해주는 뷰어입니다.
+[oneD](../03_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화 해주는 뷰어입니다.
 
 
 
 ![OSPPlotViewer](/images/solverdev/07/ospplot.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
+
 |기능|설명|
 |--|--|
 |Open local|사용자 PC로부터 oned 파일을 불러올 수 있습니다.|

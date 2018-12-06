@@ -11,12 +11,12 @@ folder: solverDev
 [[링크] 소스코드 다운받기](https://github.com/sp-edison/octave_example_sde/archive/master.zip)
 
 관련 문서 링크
-- [SDE 프로그래밍 방법 개요](../02_Input_programing/01_Structured_Data_Editor.md)
-- [SDE 데이터 타입 생성하기](../../06_EDITOR/01_SDE.md)
+- [SDE 프로그래밍 방법 개요](../01_Input_programing/01_Structured_Data_Editor.md)
+- [SDE 데이터 타입 생성하기](../../05_EDITOR/01_SDE.md)
 
 다음과 같이 숫자형 변수 2개(정수형 변수 1개, 실수형 변수 1개), 리스트형 변수 1개, 3차원 벡터 1개를 받는 SDE를 생성했습니다.
 
-![Case1](..//images/solverdev/04/02/case1.png)
+![Case1](/images/solverdev/04/02/case1.png)
 
 데이터 생성 방식은 다음과 같이 설정했습니다.
 

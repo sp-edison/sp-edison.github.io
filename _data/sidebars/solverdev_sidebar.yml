@@ -301,13 +301,17 @@ entries:
     output: web
     folderitems:
 
-    - title:  App 생성
+    - title: 데이터 타입 생성
+      url: /solverdev_management_datatype.html
+      output: web, pdf
+
+    - title:  사이언스 앱 생성
       url: /solverdev_management_appcreation.html
       output: web, pdf
-    - title: App 정보 입력
+    - title: 사이언스 앱 정보 입력
       url: /solverdev_management_appinformation.html
       output: web, pdf
-    - title: Science App 실행환경 정보 입력
+    - title: 사이언스 앱 실행환경 정보 입력
       url: /solverdev_management_execution.html
       output: web, pdf
     - title: 입출력 포트 생성

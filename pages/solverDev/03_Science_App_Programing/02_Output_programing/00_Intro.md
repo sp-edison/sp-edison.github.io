@@ -18,8 +18,8 @@ folder: solverDev
 
 # 언어별 예제 보기
 
- - [C](../03_C/03_Output_program.md)
- - [Fortran](../04_Fortran/03_Output_program.md)
- - [Python]()
- - [R]()
- - [Octave]()
+ - [C](../03_C/04_Output_program.md)
+ - [Fortran](../04_Fortran/04_Output_program.md)
+ - [Python](../05_Python/04_Output_program.md)
+ - [R](../06_R/04_Output_program.md)
+ - [Octave](../07_Octave/04_Output_program.md)

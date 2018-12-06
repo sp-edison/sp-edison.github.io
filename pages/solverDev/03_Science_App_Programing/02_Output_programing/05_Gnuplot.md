@@ -81,7 +81,7 @@ End of animation sequence
 ```
 
 
-![gnuplot result](..//images/solverdev/04/02/animate.gif)
+![gnuplot result](/images/solverdev/04/02/animate.gif)
 
 
 

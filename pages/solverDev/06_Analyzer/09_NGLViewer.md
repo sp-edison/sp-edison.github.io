@@ -12,6 +12,7 @@ WebGL 기반 분자 가시화 라이브러리로 pdb, sdf, mol2, pqr, gro, cif, 
 ![JSmol](/images/solverdev/07/ngl.jpg)
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
+
 |기능|설명|
 |--|--|
 |Open local|사용자 PC로부터 분자구조 파일을 불러올 수 있습니다.|

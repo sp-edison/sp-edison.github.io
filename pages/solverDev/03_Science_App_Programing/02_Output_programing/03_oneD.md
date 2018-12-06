@@ -10,7 +10,7 @@ folder: solverDev
 
 1차원 그래프를 EDISON 시스템에서 보여주기 원한다면, 아래와 같은 파일 형태로 데이터를 생성해야 합니다.
 
-![oneD file](..//images/solverdev/04/02/image1.png)
+![oneD file](/images/solverdev/04/02/image1.png)
 
 oneD 파일은 [OSPPlotViewer 분석기]()를 통해 가시화 할 수 있습니다.
 
@@ -25,7 +25,7 @@ oneD 파일은 [OSPPlotViewer 분석기]()를 통해 가시화 할 수 있습니
  - #Field2도 Field1과 마찬가지로 작성해 주면 되며, 필수 갯수에 맞게 필드를 작성하면 됩니다.
 
 ### 샘플 데이터와 가시화 결과 화면
-![oned result](..//images/solverdev/04/02/image2.png)
+![oned result](/images/solverdev/04/02/image2.png)
 
 
 언어별 예제 보기

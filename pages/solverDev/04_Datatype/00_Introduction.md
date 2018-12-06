@@ -1,4 +1,12 @@
-# Datatype
+---
+title: Datatype
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_datatype.html
+folder: solverDev
+--- 
+
 
 사이언스 앱에서 생성되는 다양한 데이터의 형태를 구분하는 요소입니다. 데이터 형태를 편집할 수 있는 편집기(Editor)와 분석할 수 있는 분석기(Analyzer)를 지정할 수 있으며, 앱을 등록하는 과정에서 입출력 포트를 생성하는 경우, 각 포트별로 데이터 타입을 지정해야 합니다.
 
