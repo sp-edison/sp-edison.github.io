@@ -5,6 +5,7 @@ sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]
 folder: workbench
+summary: 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼
 ---
 
 [EDISON](https://edison.re.kr) 워크벤치 기반 분석기(Post-Processor) 개발 매뉴얼 입니다.
@@ -73,12 +74,5 @@ Portal Dependency Jars 섹션에서 Add...버튼을 클릭한 후, jstl 을 검�
 워크벤치 연동을 위해 필요한 라이브러리들을 현재 생성한 프로젝트 내 WEB-INF/lib 내 추가합니다.
 ![imagetestYejin](/images/analyzerguide/14.png "플러그인 설정")<br>
 
-필요 라이브러리들을 추가합니다.<br>
-[commons-beanutils.jar](/OSPLibrary/commons-beanutils.jar)<br>
-[commons-collections.jar](/OSPLibrary/commons-collections.jar)<br>
-[commons-exec-1.1.jar](/OSPLibrary/commons-exec-1.1.jar)<br>
-[commons-fileupload.jar](/OSPLibrary/commons-fileupload.jar)<br>
-[commons-io.jar](/OSPLibrary/commons-io.jar)<br>
-[commons-lang.jar](/OSPLibrary/commons-lang.jar)<br>
-[SciencePlatform-hook-service.jar](/OSPLibrary/SciencePlatform-hook-service.jar)
-{: .notice--info}
+
+{% include note.html content="필요 라이브러리들을 추가합니다.<br><a href='/OSPLibrary/commons-beanutils.jar'>commons-beanutils.jar</a><br><a href='/OSPLibrary/commons-collections.jar'>commons-collections.jar</a><br><a href='/OSPLibrary/commons-exec-1.1.jar'>commons-exec-1.1.jar</a><br><a href='/OSPLibrary/commons-fileupload.jar'>commons-fileupload.jar</a><br><a href='/OSPLibrary/commons-io.jar'>commons-io.jar</a><br><a href='/OSPLibrary/commons-lang.jar'>commons-lang.jar</a><br><a href='/OSPLibrary/SciencePlatform-hook-service.jar'>SciencePlatform-hook-service.jar</a><br>"  %}
