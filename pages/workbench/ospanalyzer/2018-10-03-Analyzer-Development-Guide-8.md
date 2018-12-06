@@ -173,4 +173,6 @@ function <portlet:namespace/>downloadCurrentFile(){
 
 ### 최종 파일 구조
 지금까지 기본 설정을 마친 후 최종적인 파일 구조는 다음 그림과 같습니다.
-![imagetestYejin](/images/analyzerguide/17.png "프로젝트 최종구조")<br><br>
+
+{% include image.html file="analyzerguide/17.png" %}
+<br><br>

@@ -26,26 +26,27 @@ Liferay 6.2.5 포틀릿 기반으로 개발 하는 방법에 대해 순차적으
 ## 1. Liferay plugin Project  생성
 이클립스 환경에서 `Liferay Plugins Projects`를 생성합니다.
 <br>이클립스 환경에서 New -> Liferay Plugin Project를 선택합니다.<br>
-![imagetestYejin](/images/analyzerguide/1.png "프로젝트 생성")
+
+{% include image.html file="analyzerguide/1.png" %}
 <br><br>프로젝트 이름을 작성하고 include sample code 체크를 해지합니다.<br>
-![imagetestYejin](/images/analyzerguide/2.png "프로젝트 생성")
+{% include image.html file="analyzerguide/2.png" %}
 <br><br>프로젝트 이름을 작성하고 Liferay MVC를 선택하여 최종적으로 프로젝트 생성을 마무리 합니다.<br>
-![imagetestYejin](/images/analyzerguide/3.png "프로젝트 생성")
+{% include image.html file="analyzerguide/3.png" %}
 <br><br>생성이 완료된 플러그인 프로젝트의 구성은 다음과 같습니다.
-![imagetestYejin](/images/analyzerguide/4.png "프로젝트 생성")<br><br>
+{% include image.html file="analyzerguide/4.png" %}<br><br>
 
 ## 2. EDISON 워크벤치 연동을 위한 Analyzer 포틀릿 생성
 EDISON 플랫폼의 워크벤치 연동을 위한 포틀릿을 생성합니다.
 <br>생성된 Liferay Plugins Projects 내에 Liferay Portlet을 생성합니다.<br>
-![imagetestYejin](/images/analyzerguide/5.png "포틀릿 생성")
+{% include image.html file="analyzerguide/5.png" %}
 <br><br>포틀릿 클래스명, 패키지명은 자유롭게 원하는 형태로 생성합니다.<br>
-![imagetestYejin](/images/analyzerguide/6.png "포틀릿 생성")
+{% include image.html file="analyzerguide/6.png" %}
 <br><br>포틀릿 클래스 명에 따라 자동으로 설정되는 값입니다.<br> 나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br>
-![imagetestYejin](/images/analyzerguide/7.png "포틀릿 생성")
+{% include image.html file="analyzerguide/7.png" %}
 <br><br>마찬가지로 자동으로 설정되는 값입니다. <br>나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br>
-![imagetestYejin](/images/analyzerguide/8.png "포틀릿 생성")
+{% include image.html file="analyzerguide/8.png" %}
 <br><br>특별히 추가할 인터페이스가 없다면 Finish를 선택하고 포틀릿 생성을 완료합니다.
-![imagetestYejin](/images/analyzerguide/9.png "포틀릿 생성")<br><br>
+{% include image.html file="analyzerguide/9.png" %}<br><br>
 
 ## 3. 포틀릿 리소스 접근 설정
 EDISON 플랫폼에서 워크벤치와 연동을 위해서는 각 포틀릿간의 외부 접근이 가능하도록 권한 설정을 해 주어야 합니다. <br>
@@ -57,22 +58,22 @@ EDISON 플랫폼에서 워크벤치와 연동을 위해서는 각 포틀릿간�
 <add-default-resource>true</add-default-resource>
 ```
 아래의 그림과 같이 xml 파일 내부에 생성한 포틀릿 내 해당 코드를 추가합니다.
-![imagetestYejin](/images/analyzerguide/11.png "포틀릿 설정")<br>
+{% include image.html file="analyzerguide/11.png" %}<br>
 
 
 ## 4. 기본 플러그인 추가 설정
 현재 Liferay Plugin Project에서 기본적으로 필요한 플러그인들을 추가합니다.<br>
 3번과 마찬가지로 xml 파일을 변경하는 것으로, liferay-plugin-package.properties 파일을 수정합니다.<br>
 기본적으로 이클립스에서 제공해주는 UI 환경에서 플러그인을 추가합니다. 해당 화면은 아래와 같습니다.<br>
-![imagetestYejin](/images/analyzerguide/12.png "플러그인 설정")<br>
+{% include image.html file="analyzerguide/12.png" %}<br>
 
 Portal Dependency Jars 섹션에서 Add...버튼을 클릭한 후, jstl 을 검색해서 나오는 jstl-api.jar, jstl-impl.jar파일 두개를 추가합니다.<br>
-![imagetestYejin](/images/analyzerguide/13.png "플러그인 설정")<br>
+{% include image.html file="analyzerguide/13.png" %}<br>
 
 
 ## 5. 워크벤치 연동을 위한 플러그인 추가 설정
 워크벤치 연동을 위해 필요한 라이브러리들을 현재 생성한 프로젝트 내 WEB-INF/lib 내 추가합니다.
-![imagetestYejin](/images/analyzerguide/14.png "플러그인 설정")<br>
+{% include image.html file="analyzerguide/14.png" %}<br>
 
 
 {% include note.html content="필요 라이브러리들을 추가합니다.<br><a href='/OSPLibrary/commons-beanutils.jar'>commons-beanutils.jar</a><br><a href='/OSPLibrary/commons-collections.jar'>commons-collections.jar</a><br><a href='/OSPLibrary/commons-exec-1.1.jar'>commons-exec-1.1.jar</a><br><a href='/OSPLibrary/commons-fileupload.jar'>commons-fileupload.jar</a><br><a href='/OSPLibrary/commons-io.jar'>commons-io.jar</a><br><a href='/OSPLibrary/commons-lang.jar'>commons-lang.jar</a><br><a href='/OSPLibrary/SciencePlatform-hook-service.jar'>SciencePlatform-hook-service.jar</a><br>"  %}
