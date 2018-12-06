@@ -1,4 +1,11 @@
-# 실행환경 정보 입력
+---
+title: Science App 실행환경 정보 입력
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_execution.html
+folder: solverDev
+--- 
 
 ![실행환경정보 등록](/images/solverdev/08/image4.png)
 

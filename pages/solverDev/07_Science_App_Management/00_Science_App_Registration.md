@@ -1,5 +1,11 @@
-
-# Science App 생성
+---
+title: Science App 생성
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_appcreation.html
+folder: solverDev
+--- 
 
 My EDISON > 사이언스 앱 > APP 등록를 통해 신규 App을 생성할 수 있습니다.
 

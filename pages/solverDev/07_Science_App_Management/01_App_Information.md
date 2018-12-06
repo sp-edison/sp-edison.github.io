@@ -1,4 +1,12 @@
-## 앱 정보 입력
+---
+title: Science App 정보 입력
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_appinformation.html
+folder: solverDev
+--- 
+
 
 ![사이언스앱 등록](/images/solverdev/08/image2.png)
 

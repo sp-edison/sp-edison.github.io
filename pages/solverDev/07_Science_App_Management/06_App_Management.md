@@ -1,4 +1,11 @@
-# 사이언스 앱 관리하기
+---
+title: 사이언스 앱 관리하기
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_app_management.html
+folder: solverDev
+--- 
 
 자신이 등록한 사이언스 앱은 My EDISON > 사이언스 앱 에서 관리할 수 있습니다. 소유 앱과 관리 앱을 분류하여 조회할 수 있으며, 탭을 통해 목록을 조회할 수 있습니다. 앱의 상태는 작성중, 서비스요청, 공개, 비공개 4단계로 나누어지며,
 

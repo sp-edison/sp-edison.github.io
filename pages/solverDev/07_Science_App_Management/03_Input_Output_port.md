@@ -1,5 +1,12 @@
+---
+title: 입출력 포트 생성
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_port.html
+folder: solverDev
+--- 
 
-# 입출력 포트 생성
 등록하는 사이언스 앱의 입출력 포트를 정의합니다.
 
 ![입출력포트 정보](/images/solverdev/08/image5.png)

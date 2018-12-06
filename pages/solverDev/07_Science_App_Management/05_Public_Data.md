@@ -1,4 +1,12 @@
-# 공개 데이터 등록
+---
+title: 공개 데이터 등록
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_opendata.html
+folder: solverDev
+--- 
+
 
 구성된 레아이웃으로 앱 테스트를 완료하였다면, 공개 요청에 필요한 정보를 작성한 뒤 관리자에게 공개 요청해야합니다. 공개 요청을 하기 위해서 작성해야하는 내용은 설명, 매뉴얼, 아이콘, 개발자 입니다.
 

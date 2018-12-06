@@ -1,4 +1,11 @@
-# 레이아웃 설정
+---
+title: 레이아웃 설정
+tags: 
+keywords:
+sidebar: solverdev_sidebar
+permalink: solverdev_management_layout.html
+folder: solverDev
+--- 
 
 각 포트의 편집기와 분석기를 원하는 레아이웃에 배치할 수 있습니다. Flow 방식과 Non-flow 방식으로 나누어지며, 원하는 레이아웃을 선택해 입출력 포트 정보에서 생성한 포트들을 배치합니다. 입력 포트의 경우 편집기를 배치하며, 출력 포트의 경우 분석기를 배치합니다.
 
