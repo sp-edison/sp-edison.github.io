@@ -7,8 +7,7 @@ permalink: solverdev_management_execution.html
 folder: solverDev
 --- 
 
-![실행환경정보 등록](/images/solverdev/08/image4.png)
-
+{% include image.html file="solverdev/08/image4.png" caption="실행환경정보 등록" %}
 
 (1) 업로드 한 실행 파일 명을 입력 이 실행파일명을 바탕으로 앱 테스트 및 시뮬레이션 실행을 하므로 틀리지 않게 작성해야 한다.실행 파일명을 파일 명으로 작성합니다.
 

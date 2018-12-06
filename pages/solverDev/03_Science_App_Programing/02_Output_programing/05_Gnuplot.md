@@ -81,9 +81,7 @@ End of animation sequence
 ```
 
 
-![gnuplot result](/images/solverdev/04/02/animate.gif)
-
-
+{% include image.html file="solverdev/04/02/animate.gif" caption="gnuplot result" %}
 
 
 

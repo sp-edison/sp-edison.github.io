@@ -9,9 +9,7 @@ folder: solverDev
 
 [oneD](../03_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화 해주는 뷰어입니다.
 
-
-
-![OSPPlotViewer](/images/solverdev/07/ospplot.jpg)
+{% include image.html file="solverdev/07/ospplot.jpg" caption="OSPPlotViewer" %}
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 

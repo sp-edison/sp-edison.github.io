@@ -28,7 +28,7 @@ folder: solverDev
 - 호스트 : bulb.edison.re.kr, 포트 : 22002, 프로토콜 : SSH
 - 프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325
 
-![Putty로 Bulb 접속하기 (ssh)](/images/solverdev/02/noname01.png)
+{% include image.html file="solverdev/02/noname01.png" caption="Putty로 Bulb 접속하기 (ssh)" %}
 
 최초 접속 시 비밀번호를 꼭 변경해 주세요.
 
@@ -43,11 +43,8 @@ folder: solverDev
  - 프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325
 
 
-![호스트 : bulb.edison.re.kr, 포트 : 22002, 프로토콜 : SFTP
-](/images/solverdev/02/noname02.png)
-![프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325](/images/solverdev/02/noname03.png)
-
-
+{% include image.html file="solverdev/02/noname02.png" caption="호스트 : bulb.edison.re.kr, 포트 : 22002, 프로토콜 : SFTP" %}
+{% include image.html file="solverdev/02/noname03.png" caption="프록시 : SOCK 5, 프록시 호스트 : access.edison.re.kr, 프록시 포트 8325" %}
 
 #### Mac OS Terminal로 bulb 접속하기  (ssh)
 
@@ -61,6 +58,7 @@ ssh -o ProxyCommand='nc -x access.edison.re.kr:8325 %h %p' [User_id]@bulb.edison
 #### Linux Terminal로 bulb 접속하기  (ssh)
 
 ##### Cent OS 7
+
 ```connect-proxy``` 설치 후 아래 커멘드 입력
 ```
 ssh -o ProxyCommand="connect-proxy -S access.edison.re.kr:8325 %h %p" [User_id]@bulb.edison.re.kr -p 22002

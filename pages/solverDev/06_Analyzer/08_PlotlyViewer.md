@@ -14,7 +14,7 @@ folder: solverDev
 
  > EDISON에서는 plotly json 파일의 확장자를 ply로 지정하였습니다
 
-![plotly](/images/solverdev/07/plotly.jpg)
+{% include image.html file="solverdev/07/plotly.jpg" %}
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 
@@ -24,10 +24,6 @@ folder: solverDev
 |Open Server| 출력포트 설정시 Extention과 Folder로 설정한 경우 다른 결과 파일을 불러올 수 있습니다.|
 |Download |선택한 파일을 PC 저장할 수 있습니다.|
 
-
-
-
-
 Plotly 활용 데이터 가시화 예시
 
-![plotly](/images/solverdev/07/plotly.gif)
+{% include image.html file="solverdev/07/plotly.gif" %}

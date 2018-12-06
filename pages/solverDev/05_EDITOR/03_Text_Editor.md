@@ -9,7 +9,7 @@ folder: solverDev
 
 사이언스 앱의 입력 파일을 택스트로 작성할 수 있는 편집기 입니다.
 
-![텍스트 에디터](/images/solverdev/06/text2.png)
+{% include image.html file="solverdev/06/text2.png" caption="텍스트 에디터" %}
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 

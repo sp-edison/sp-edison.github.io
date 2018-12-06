@@ -9,7 +9,7 @@ folder: solverDev
 
 WebGL 기반 분자 가시화 라이브러리로 pdb, sdf, mol2, pqr, gro, cif, mmtf등의 3D 분자 가시화를 제공합니다. jsmol 보다 빠른
 
-![JSmol](/images/solverdev/07/ngl.jpg)
+{% include image.html file="solverdev/07/ngl.jpg" %}
 
 메뉴 버튼을 클릭하면, 다음과 같은 기능을 수행할 수 있습니다.
 

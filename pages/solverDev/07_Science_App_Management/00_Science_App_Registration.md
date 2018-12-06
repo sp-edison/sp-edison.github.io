@@ -9,7 +9,8 @@ folder: solverDev
 
 My EDISON > 사이언스 앱 > APP 등록를 통해 신규 App을 생성할 수 있습니다.
 
-![사이언스앱 등록](/images/solverdev/08/image1.png)
+{% include image.html file="solverdev/08/image1.png" %}
+
 
 앱 등록은 5단계로 나누어 등록합니다.
 

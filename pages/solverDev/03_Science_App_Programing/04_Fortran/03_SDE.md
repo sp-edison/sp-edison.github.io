@@ -18,7 +18,7 @@ folder: solverDev
 
 다음과 같이 숫자형 변수 2개(정수형 변수 1개, 실수형 변수 1개), 리스트형 변수 1개, 3차원 벡터 1개를 받는 SDE를 생성했습니다.
 
-![Case1](/images/solverdev/04/02/case1.png)
+{% include image.html file="solverdev/04/02/case1.png" caption="Case1" %}
 
 데이터 생성 방식은 다음과 같이 설정했습니다.
 

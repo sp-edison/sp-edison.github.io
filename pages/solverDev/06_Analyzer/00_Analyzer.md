@@ -7,7 +7,7 @@ permalink: solverdev_analyzer.html
 folder: solverDev
 ---
 
-![사이언스 앱 실행 시나리오](/images/solverdev/03/image02_execution_scenario.png)
+{% include image.html file="solverdev/03/image02_execution_scenario.png" caption="사이언스 앱 실행 시나리오" %}
 
 분석기는 EDISON에서 앱 실행 결과 데이터를 분석/조회 할 수 있는 구성 요소를 말합니다. 현재 등록되어 있는 분석기 목록은 다음과 같습니다.
 

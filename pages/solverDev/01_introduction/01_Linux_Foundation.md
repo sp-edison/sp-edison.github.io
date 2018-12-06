@@ -164,4 +164,4 @@ make clean 명령어를 설정하는 부분이며, 컴파일 과정에서 생성
 
 완성된 Makefile과 소스 파일을 가지고 실행 파일을 만들어 보면 아래와 같다.
 
-![](/images/solverdev/01/image1.png)
+{% include image.html file="solverdev/01/image1.png" %}

@@ -7,8 +7,7 @@ permalink: solverdev_editor.html
 folder: solverDev
 ---
 
-
-![사이언스 앱 실행 시나리오](/images/solverdev/03/image02_execution_scenario.png)
+{% include image.html file="solverdev/03/image02_execution_scenario.png" caption="사이언스 앱 실행 시나리오" %}
 
 편집기는 EDISON에서 앱 실행시 입력 데이터를 편집할 수 있는 구성 요소를 말합니다. 현재 등록되어 있는 에디터 목록은 다음과 같습니다.
 

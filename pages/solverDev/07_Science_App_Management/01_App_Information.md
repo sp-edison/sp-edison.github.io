@@ -7,8 +7,7 @@ permalink: solverdev_management_appinformation.html
 folder: solverDev
 --- 
 
-
-![사이언스앱 등록](/images/solverdev/08/image2.png)
+{% include image.html file="solverdev/08/image2.png" caption="사이언스앱 등록" %}
 
 앱 이름과 버전을 입력합니다.
  - 앱 이름 항목은 공백 없이 영문, 숫자, 특수기호( -, . , _ ) 문자만 허용됩니다.
@@ -22,4 +21,4 @@ folder: solverDev
 
 저장 버튼을 누르게 되면 앱 정보 하단에 앱 소유자를 변경하거나 앱 관리자를 등록할 수 있는 메뉴가 나타나게 됩니다. 검색창에 소유자로 변경하거나 관리자로 등록하고자 하는 아이디를 검색해 등록하시면 됩니다.
 
-![관리자 등록](/images/solverdev/08/admin.png)
+{% include image.html file="solverdev/08/admin.png" caption="관리자 등록" %}
