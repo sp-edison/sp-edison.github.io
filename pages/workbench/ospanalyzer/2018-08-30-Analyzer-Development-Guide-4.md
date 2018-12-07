@@ -14,7 +14,7 @@ DISON 플랫폼에서 워크벤치와 연동되는 분석기는 모듈 단위로
 EDSION 워크벤치 시뮬레이션 시스템과 연동되는 시스템 구조는 다음 그림과 같이 표현될 수 있습니다.
 
 
-![imagetestYejin](/assets/images/analyzerguide1/analyzer architecture.png "연동 구조")<br>
+![imagetestYejin](/images/analyzerguide1/analyzer architecture.png "연동 구조")<br>
 
 분석기는 전체 이벤트를 처리하는 이벤트 처리부분과 내부적으로 데이터를 가시화하고 분석 할 수 있는 Analyzer 구현 부분으로 나눠질 수 있습니다.
 

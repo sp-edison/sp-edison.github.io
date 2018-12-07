@@ -89,9 +89,9 @@ public void doView(RenderRequest renderRequest, RenderResponse renderResponse) t
 지금까지 기본적인 java 소스 코드를 추가하였습니다. 해당 소스코드는 워크벤치와 연동 될 때, 파일 관리와 기본 변수 값을 체크하기 위해 필요한 부분입니다. 기본적으로 필요한 자바 소스코드 외에는 추가할 필요가 없는 부분이니 그냥 소소코드를 생성된 자바 파일에 복사해서 붙여넣기만 하면 됩니다.
 
 
-**로그 변수 선언** <br>생성된 자바 파일 안에서 시스템에 필요한 로그를 선언하기 위해 변수를 선언할 필요가 있습니다.<br>`private static Log _log = LogFactoryUtil.getLog(TestAnalyzerPortlet.class);`
-<br>해당 변수는 위와 같이 선언하며, 생성된 자바 포틀릿 클래스 명에 따라 클래스 명(`TestAnalyzerPortlet.class`)이 달라집니다.
-{: .notice--info}
+{{site.data.alerts.callout_info}}<b>로그 변수 선언</b> <br>생성된 자바 파일 안에서 시스템에 필요한 로그를 선언하기 위해 변수를 선언할 필요가 있습니다.<br>`private static Log _log = LogFactoryUtil.getLog(TestAnalyzerPortlet.class);`
+<br>해당 변수는 위와 같이 선언하며, 생성된 자바 포틀릿 클래스 명에 따라 클래스 명(`TestAnalyzerPortlet.class`)이 달라집니다.{{site.data.alerts.end}}
+
 
 
 ## Java 코드 라이브러리 확인

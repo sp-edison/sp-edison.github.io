@@ -48,7 +48,7 @@ folder: workbench
 
 ```
 
-{{site.data.alerts.callout_info}}<b>스크립트 라이브러리:</b> <br>jqueryxxx.min.js 사용 (워크벤치 시스템과 충돌) 스크립트 라이브러리 충돌이 나서 워크벤치 시뮬레이션이 동작하지 않을 수 있습니다. 따라서 jqery 스크립트를 비롯한 대부분의 스크립트 파일은 `init.jsp` 파일에 추가하지 마시기 바랍니다. 하지만 JQuery 스크립트는 플랫폼에 설치되어 있으니 라이브러리를 사용할 수 있습니다.
+{{site.data.alerts.callout_info}}<b>스크립트 라이브러리:</b> <br>jqueryxxx.min.js 사용 (워크벤치 시스템과 충돌) 스크립트 라이브러리 충돌이 나서 워크벤치 시뮬레이션이 동작하지 않을 수 있습니다. 따라서 jqery 스크립트를 비롯한 대부분의 스크립트 파일은 `init.jsp` 파일에 추가하지 마시기 바랍니다. 하지만 JQuery 스크립트는 플랫폼에 설치되어 있으니 라이브러리를 사용할 수 있습니다.{{site.data.alerts.end}}
 
 
 
