@@ -1,166 +1,85 @@
 ---
-title: "이벤트처리"
+title: "분석기 구조 설명"
 permalink: workbenchan_alyzerguide4.html
 sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, analyzer]
 folder: workbench
 ---
+DISON 플랫폼에서 워크벤치와 연동되는 분석기는 모듈 단위로 개발 될 수 있으며, 각 모듈은 Liferay 포틀릿으로 구분됩다.
+각 포틀릿에서 생성된 가시화 및 서비스 등은 EDISON 플랫폼에서 제공되는 서비스와 연동되어 개발될 수 있습니다.
 
-이전에 설정되었던 부분은 서버 사이드에서 실행되는 컨트롤 코드 부분이었습니다.
-워크벤치 기반 분석기 개발을 위해서는 스크립트 단위의 이벤트 프로세싱을 통해 이루어 집니다.
 
-따라서 뷰 부분의 스크립트 단위로 코드를 개발하며, 해당 뷰 부분에서 필요로 하는 기본 코드들이 있습니다. 따라서 그에 따른 스크립트 기본 소스 코드들을 추가하는 방법을 서술하도록 하겠습니다.
+### 분석기와 EDISON 연동 시스템 구조
+EDSION 워크벤치 시뮬레이션 시스템과 연동되는 시스템 구조는 다음 그림과 같이 표현될 수 있습니다.
 
-### `init.jsp` 파일 생성 및 코드 입력
-생성된 프로젝트 내 `/html` 폴더 내 `init.jsp` 파일을 생성합니다.
 
-생성된 `init.jsp` 파일 내 뷰 개발을 위한 필요 라이브러리 코드를 추가하고 라이프레이 기본 라이브러리들을 추가합니다.
-추가해야 하는 코드는 아래와 같습니다.
+![imagetestYejin](/assets/images/analyzerguide1/analyzer architecture.png "연동 구조")<br>
 
+분석기는 전체 이벤트를 처리하는 이벤트 처리부분과 내부적으로 데이터를 가시화하고 분석 할 수 있는 Analyzer 구현 부분으로 나눠질 수 있습니다.
+
+EDISON 플랫폼에서 파생되는 이벤트를 받아들이고 적절한 시기에 사용자에게 데이터 분석을 위한 툴을 제공하는 부분을 포함하고 있습니다.
+
+따라서 EDISON 워크벤치와 연동되는 분석기 모듈을 개발하기 위해서는 이벤트를 처리하는 부분과 실제 데이터 가시활르 위한 부분을 나눠서 개발을 해야 합니다.
+
+
+### 분석기 이벤트 처리 부분
+워크벤치의 분석기를 개발 하는데 있어 이벤트를 처리하는 부분은 자바 스크립트로 이루어져 있으며, Liferay 포틀릿 기반으로 이벤트를 받아들입니다.
+
+다음 예제 코드는 워크벤치가 실행되면서 분석기를 호출하고 이에 대한 응답을 하는 코드입니다.
+Liferay 에서 제공하는 `Liferay.fire()`함수와 `Liferay.on()`기반으로 이벤트 프로세싱을 제공합니다.
+
+- 샘플 예제
 ```javascript
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
-<%@ taglib uri="http://alloy.liferay.com/tld/aui" prefix="aui" %>
-<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
-<%@ taglib uri="http://liferay.com/tld/theme" prefix="theme" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://liferay.com/tld/security" prefix="liferay-security" %>
-<%@ taglib uri="http://liferay.com/tld/portlet" prefix="liferay-portlet" %>
+Liferay.on(
+  	OSP.Event.OSP_HANDSHAKE,
+  	function(e){
+  		var myId = '<%=portletDisplay.getId()%>';
+  		if( e.targetPortlet !== myId ){
+  			return
+  		}
+  		console.log('[NGLViewer]OSP_HANDSHAKE: ['+e.portletId+', '+new Date()+']');
+  		<portlet:namespace/>connector = e.portletId;
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-<!-- JQuery -->
-<script src="<%=request.getContextPath()%>/js/jquery/jquery-ui.min.js" ></script>
-<script src="<%=request.getContextPath()%>/js/jquery/jquery.blockUI.js" ></script>
-<link type="text/css" href="<%=request.getContextPath()%>/js/jquery/jquery-ui.css" rel="stylesheet" />
-
-<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/main.css">
-<link href="<%=request.getContextPath()%>/js/jquery/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="<%=request.getContextPath()%>/js/jquery/bootstrap-toggle.min.js"></script>
-
-<!-- bootstrap -->
-<link href="<%=request.getContextPath()%>/js/jquery/bootstrap.min.css" rel="stylesheet">
-<script src="<%=request.getContextPath()%>/js/jquery/bootstrap.min.js"></script>
-
-
-<portlet:defineObjects />
-<theme:defineObjects />
-
+  		if( e.mode )
+  			<portlet:namespace/>action = e.mode;
+  		else
+  			<portlet:namespace/>action = 'VIEW';
+  		var events = [
+  			OSP.Event.OSP_EVENTS_REGISTERED,
+  			OSP.Event.OSP_LOAD_DATA
+  		];
+  		var eventData = {
+  			portletId: myId,
+  			targetPortlet: <portlet:namespace/>connector,
+  			data: events
+		};
+		Liferay.fire( OSP.Event.OSP_REGISTER_EVENTS, eventData );
+	}
+);
 ```
 
-**스크립트 라이브러리:** <br>jqueryxxx.min.js 사용 (워크벤치 시스템과 충돌) 스크립트 라이브러리 충돌이 나서 워크벤치 시뮬레이션이 동작하지 않을 수 있습니다. 따라서 jqery 스크립트를 비롯한 대부분의 스크립트 파일은 `init.jsp` 파일에 추가하지 마시기 바랍니다. 하지만 JQuery 스크립트는 플랫폼에 설치되어 있으니 라이브러리를 사용할 수 있습니다.
-{: .notice--danger}
+- `Liferay.fire()` : 이벤트를 발생시키는 Liferay 자바스크립트 라이브러리 함수입니다.
+- `Liferay.on()` : 이벤트를 리스닝 하는 Liferay 자바스크립트 라이브러리 함수입니다.
+
+### 데이터 처리 부분
+
+실제 서버에서 계산과학공학 시뮬레이션이 실행되고 결과 값을 분석하기 위해서는 시뮬레이션 결과를 호출하고 적절한 데이터를 받아 가시화 하는 데이터 처리 구현 부분입니다.
+계산 결과 데이터를 수신하고 가시화 하기 위해서는 데이터 호출 및 응답에 대한 코드 구현이 필수적입니다.
+
+이미 이전 단계에서 추가한 OSP 라이브러리를 기반으로 데이터를 호출하고 적절한 데이터를 받는 코드 부분이 구현 되어야 합니다.
+
+이러한 데이터를 구현하기 위해서는 다양한 스크립트 함수들이 필요하며, 해당 함수들을 순차대로 정리하면 다음과 같습니다.
 
 
-### 워크벤치 연동을 위한 CSS 설정
-
-`main.css` 파일에서 [osp-analyzer.css](/assets/OSPLibrary/osp-analyzer.css "분석기 스타일")파일을 호출합니다.
-```css
-@import url("./osp-analyzer.css");
-```
-
-`osp-analyzer.css`파일을 `main.css`파일과 같은 폴더(`/css`)안에 추가합니다.
-`osp-analyzer.css` 스타일 코드는 아래와 같습니다.
-```css
-.osp-analyzer {
-	border:none;
-	height: 100%;
-   	min-height:800px;
-   	margin: 0;
-}
-.osp-analyzer .header{
-	height: 40px;
-	margin:10px 5px 10px 5px;
-}
-.osp-analyzer .header [class*="col-"]{
-	padding-left: 0;
-	padding-right: 0;
-}
-.osp-analyzer .no-header-frame{
-	vertical-align:middle;
-	border:none;
-	height: 100%;
-}
-.osp-analyzer .frame{
-	vertical-align:middle;
-	border:none;
-	height: 90%;
-}
-.osp-analyzer .canvas {
-   	border:none;
-   	height:100%;
-   	margin:0;
-   	padding:0;
-
-   	overflow:auto;
-}
-.osp-analyzer .iframe-canvas {
-   	border:none;
-   	height:100%;
-   	margin:0;
-   	padding:0;
-
-   	overflow:hidden;
-}
-
-.osp-analyzer .icon-menu {
-  font-size: 15px;
-  color: #5cb2d7;
-  border: 2px solid;
-  border-radius: 3px;
-  padding-left: 2px;
-  padding-right: 3px;
-  vertical-align: middle;
-}
-
-.osp-analyzer .hidden {
-	display: none;
-}
-```
-
-### jsp 파일 뷰와 분석기 호출부 처리
-기본 워크벤치 연동을 위한 이벤트 처리를 하는 jsp 파일(testview.jsp)과 실제 분석하는 부분을 사용자에게 서비스하고 데이터를 가시화하여 제공하는 부분의 jsp 파일(loadAnalyzer.jsp)를 프로젝트 내 생성하여 데이터를 처리한다. 파일명은 임의로 설정할 수 있지만 `portlet.xml` 파일에서 설정을 잘 잡아주어야 합니다. 이벤트 처리를 하는 jsp 파일을 포틀릿과 연결된 초기 jsp 파라미터로 설정해 주어야 합니다.
-
-이벤트 처리를 하는 jsp 파일의 파일명을 testview.jsp로 했다면, `portlet.xml` 파일의 설정은 다음과 같습니다.
-
-```xml
-<init-param>
-	<name>view-template</name>
-	<value>/html/testanalyzer/testview.jsp</value>
-</init-param>
-```
+### 데이터 처리를 위해 정의가 필요한 함수
 
 
-지금까지 설정에 따른 전체 프로젝트의 구조는 다음과 같습니다.
-```terminal
-├AnalyzerExample-portlet/
-├─docroot/
-├──css/
-├───main.css
-├───osp-analyzer.css
-├──html/
-├───testanalyzer/
-├────testview.jsp
-├────loadAnalyzer.jsp
-├──js/
-├───main.js
-├──META-INF/
-├───MANIFEST.MF
-├──WEB-INF/
-├───lib/
-├────commons-beanutils.jar
-├────commons-collections.jar
-├────commons-exec-1.1.jar
-├────commons-fileupload.jar
-├────commons-io.jar
-├────commons-lang.jar
-├────SciencePlatform-hook-service.jar
-├───tlb/
-├───liferay-display.xml
-├───liferay-plugin-packkage.properties
-├───liferay-portlet.xml
-├───portlet.xml
-├───web.xml
-```
+| 함수명                            | 정의                                                                                                                                                           |
+|:----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|loadXXXXFile(OSPInputData)         |  실제 서버 사이드의 파일을 읽어오는 방법에 대한 정의<br>Output 포트의  path  타입에 따라 케이스를 나눠 처리 방법에 대한 정의가 되어 있음<br> 폴더/확장자/파일  |
+|getFirstFileName(OSPInputData)     |  결과 포트의 path  타일이 폴더 또는 확장자인 경우, 해당 폴더 내 첫번째 파일을 읽어오는 역할이 정의                                                             |
 
-이외에 추가로 파일이 더 있을 수도 있지만 필수적으로 필요한 파일들은 위의 구조와 같으니 비교하여 체크해 보시기 바랍니다.
+{: rules="groups"}
+
+{{site.data.alerts.callout_info}}<b>데이터 처리 방법</b> <br> 서버에서 시뮬레이션 결과로 생성된 결과 데이터는 OSP 라이브러리를 이용하여 전송받을 수 있으며, 해당 데이터를 받은 다음 iframe 으로 연결된 실제 데이터 가시봐 부분에 데이터를 전공하는 방법으로 분석기가 동작하게 됩니다.

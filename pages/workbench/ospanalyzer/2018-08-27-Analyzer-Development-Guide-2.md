@@ -1,5 +1,5 @@
 ---
-title: "프로젝트 생성"
+title: "프로젝트 기본 설정"
 permalink: workbench_analyzerguide2.html
 sidebar: workbench_sidebar
 categories: workbench

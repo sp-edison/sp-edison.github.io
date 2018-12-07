@@ -1,5 +1,5 @@
 ---
-title: "스크립트 단위의 뷰 설정"
+title: "초기값 설정"
 permalink: workbenchan_alyzerguide5.html
 sidebar: workbench_sidebar
 categories: workbench
