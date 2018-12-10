@@ -1,5 +1,5 @@
 ---
-title: EDISON 사용자 매뉴얼
+title: EDISON 관리자 매뉴얼
 tags: []
 keywords:
 summary: ""
