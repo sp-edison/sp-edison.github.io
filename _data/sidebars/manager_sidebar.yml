@@ -1,0 +1,41 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+entries:
+- title: Manager
+  product: Management
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 사이트 관리
+    output: web, pdf
+    folderitems:
+      - title: "EDISON 관리자 매뉴얼"
+        url: /sitemanager1.html
+        output: web, pdf
+
+      - title: "관리자 로그인"
+        url: /sitemanager2.html
+        output: web, pdf
+
+      - title: "페이지 관리"
+        url: /sitemanager3.html
+        output: web, pdf
+
+  - title: 워크벤치 이벤트 정의
+    output: web, pdf
+    folderitems:
+      - title: "HANDSHAKE"
+        url: /event_handshake.html
+        output: web, pdf
