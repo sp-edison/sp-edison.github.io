@@ -1,4 +1,3 @@
 # [sp-edison.github.io](https://sp-edison.github.io)
-
-EDISON Document pages
  
+EDISON Document pages
