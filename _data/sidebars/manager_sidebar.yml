@@ -33,9 +33,22 @@ entries:
         url: /sitemanager3.html
         output: web, pdf
 
-  - title: 워크벤치 이벤트 정의
+  - title: 페이지 관리
     output: web, pdf
     folderitems:
-      - title: "HANDSHAKE"
-        url: /event_handshake.html
+      - title: "페이지 관리"
+        url: /pagemenu1.html
+        output: web, pdf
+      - title: "피이지 추가"
+        url: /pagemenu2.html
+        output: web, pdf
+
+  - title: 콘텐츠 관리
+    output: web, pdf
+    folderitems:
+      - title: "콘텐츠 관리 화면"
+        url: /contentmenu1.html
+        output: web, pdf
+      - title: "웹 콘텐츠 관리"
+        url: /contentmenu2.html
         output: web, pdf

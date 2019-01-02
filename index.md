@@ -57,7 +57,7 @@ permalink: index.html
             <div class="panel-body">
                 <h4>Manager Manual</h4>
                 <p>EDISON 사이트 관리를 위한 매뉴얼 입니다.</p>
-                <a href="/manager_intro.html" class="btn btn-primary">Learn More</a>
+                <a href="/sitemanager1.html" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>

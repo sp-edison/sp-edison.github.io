@@ -2,19 +2,23 @@
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 topnav:
 - title: Topnav
-  items: 
+  items:
     - title: User
       url: /user_intro.html
-        
-    - title: Manager
-      url: /manager_intro.html
-      
+
     - title: System Admin
       url: /admin_intro.html
-      
+
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: Manager
+      folderitems:
+        - title: Site
+          url: /sitemanager1.html
+        - title: Member
+          url: /sitemanager1.html
+
     - title: Developer
       folderitems:
         - title: Solver
