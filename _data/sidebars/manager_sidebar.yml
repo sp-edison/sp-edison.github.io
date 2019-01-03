@@ -52,3 +52,54 @@ entries:
       - title: "웹 콘텐츠 관리"
         url: /contentmenu2.html
         output: web, pdf
+      - title: "문서와 멀티미디어 관리"
+        url: /contentmenu3.html
+        output: web, pdf
+      - title: "블로그 관리"
+        url: /contentmenu4.html
+        output: web, pdf
+      - title: "메시지 보드 관리"
+        url: /contentmenu5.html
+        output: web, pdf
+      - title: "위키 관리"
+        url: /contentmenu6.html
+        output: web, pdf
+      - title: "동적 데이터 목록 관리"
+        url: /contentmenu7.html
+        output: web, pdf
+      - title: "책갈피 관리"
+        url: /contentmenu8.html
+        output: web, pdf
+      - title: "뉴스레터 관리"
+        url: /contentmenu9.html
+        output: web, pdf
+      - title: "여론조사 관리"
+        url: /contentmenu10.html
+        output: web, pdf
+      - title: "기술 자료 관리"
+        url: /contentmenu11.html
+        output: web, pdf
+      - title: "태그 관리"
+        url: /contentmenu12.html
+        output: web, pdf
+      - title: "카테고리 관리"
+        url: /contentmenu13.html
+        output: web, pdf
+      - title: "워크플로우 관리"
+        url: /contentmenu14.html
+        output: web, pdf
+      - title: "휴지통 관리"
+        url: /contentmenu15.html
+        output: web, pdf
+      - title: "Open Social 부속품 편집자 관리"
+        url: /contentmenu16.html
+        output: web, pdf
+      - title: "Challenge Admin 관리"
+        url: /contentmenu17.html
+        output: web, pdf
+      - title: "데이터 타입 워크플로우 관리"
+        url: /contentmenu18.html
+        output: web, pdf
+      - title: "SDR 게시판 관리"
+        url: /contentmenu19.html
+        output: web, pdf
