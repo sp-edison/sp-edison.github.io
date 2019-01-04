@@ -1,5 +1,10 @@
+
 body {
     font-size:15px;
+    font-family: 'Nanum Gothic', serif;
+}
+p {
+    line-height: 1.8em;
 }
 
 .bs-callout {
