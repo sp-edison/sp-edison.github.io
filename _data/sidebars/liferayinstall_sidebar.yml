@@ -20,15 +20,12 @@ entries:
       output: pdf
       type: frontmatter
 
-
-
   - title: Portal Dev Install
     output: web, pdf
     folderitems:
       - title: "Liferay 설치 파일 다운로드"
         url: /liferayinstall1.html
         output: web, pdf
-
 
   - title: 워크벤치 이벤트 정의
     output: web, pdf

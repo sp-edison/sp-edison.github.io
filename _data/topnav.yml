@@ -6,18 +6,18 @@ topnav:
     - title: User
       url: /user_intro.html
 
-    - title: System Admin
-      url: /admin_intro.html
+    - title: Manager
+      url: /sitemanager1.html
 
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Manager
+
+    - title: System Admin
       folderitems:
-        - title: Site
-          url: /sitemanager1.html
-        - title: Member
-          url: /sitemanager1.html
+        - title: Liferay
+          url: /liferayinstall1.html
+
 
     - title: Developer
       folderitems:
