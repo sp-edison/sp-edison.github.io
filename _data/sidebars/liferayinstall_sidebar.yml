@@ -1,0 +1,38 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Liferay Install
+  product: Liferay Install Dev
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+
+
+  - title: Portal Dev Install
+    output: web, pdf
+    folderitems:
+      - title: "Liferay 설치 파일 다운로드"
+        url: /liferayinstall1.html
+        output: web, pdf
+
+
+  - title: 워크벤치 이벤트 정의
+    output: web, pdf
+    folderitems:
+      - title: "HANDSHAKE"
+        url: /event_handshake.html
+        output: web, pdf
