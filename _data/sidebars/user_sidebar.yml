@@ -25,7 +25,7 @@ entries:
     folderitems:
 
     - title: 회원가입
-      url: /.html
+      url: /user_signup.html
       output: web, pdf
 
     - title: 로그인
