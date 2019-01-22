@@ -20,16 +20,20 @@ entries:
       output: pdf
       type: frontmatter
       
-  - title: 회원가입 & 로그인
+  - title: EDISON 소개
     output: web, pdf
     folderitems:
+
+    - title: EDISON 소개
+      url: /user_intro.html
+      output: web, pdf
 
     - title: 회원가입
       url: /user_signup.html
       output: web, pdf
 
     - title: 로그인
-      url: /.html
+      url: /user_login.html
       output: web, pdf
 
       
@@ -42,7 +46,7 @@ entries:
       output: web, pdf
 
     - title: 사이언스 앱스토어 상세보기
-      url: /user_scienceApp_scienceAppDetailList.html
+      url: /user_scienceApp_scienceAppDetailView.html
       output: web, pdf
       
   - title: 시뮬레이션
@@ -64,7 +68,7 @@ entries:
     folderitems:
 
     - title: 콘텐츠
-      url: /.html
+      url: /user_contents.html
       output: web, pdf
     - title: 이러닝
       url: /.html

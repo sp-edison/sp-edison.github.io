@@ -14,7 +14,7 @@ folder: user
 {% include image.html file="user/signup/edison_main.jpg" %}
 
 
-## 아래 내용은 추후 삭제
+아래 내용은 추후 삭제
 
 - 회원가입
 - 사이언스 앱스토어

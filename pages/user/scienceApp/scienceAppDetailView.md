@@ -5,7 +5,7 @@ keywords:
 summary: "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱 목록 화면의 구성과 기능에 대한 설명이다."
 sidebar: user_sidebar
 permalink: user_scienceApp_scienceAppDetailView.html
-folder: user/scienceApp
+folder: user
 ---
 
 ## 사이언스 앱스토어 상세보기

@@ -5,7 +5,7 @@ keywords:
 summary: "사이언스 앱 목록 화면은 EDISON 전문분야 별 서비스 중인 사이언스 앱의 목록을 제공하고, 사용자가 선택한 검색 조건을 통해 사이언스 앱을 검색할 수 있다. <br/>다음은 사이언스 앱 목록 화면의 구성과 기능에 대한 설명이다."
 sidebar: user_sidebar
 permalink: user_scienceApp_scienceAppList.html
-folder: user/scienceApp
+folder: user
 ---
 
 ## 사이언스 앱스토어 목록
