@@ -19,7 +19,7 @@ entries:
       url: /tocpage.html
       output: pdf
       type: frontmatter
-      
+
   - title: 회원가입 & 로그인
     output: web, pdf
     folderitems:
@@ -32,7 +32,7 @@ entries:
       url: /.html
       output: web, pdf
 
-      
+
   - title: 사이언스 앱스토어
     output: web, pdf
     folderitems:
@@ -44,7 +44,7 @@ entries:
     - title: 로그인
       url: /.html
       output: web, pdf
-      
+
   - title: 시뮬레이션
     output: web, pdf
     folderitems:
@@ -56,6 +56,18 @@ entries:
       url: /.html
       output: web, pdf
 
+  - title: 워크플로우
+    output: web, pdf
+    folderitems:
+
+    - title: 워크플로우 편집
+      url: /workflow_workflow-designer.html
+      output: web, pdf
+    - title: 워크플로우 실행
+      url: /workflow_workflow-executor.html
+      output: web, pdf
+
+
   - title: 콘텐츠
     output: web, pdf
     folderitems:
@@ -66,7 +78,7 @@ entries:
     - title: 이러닝
       url: /.html
       output: web, pdf
-      
+
   - title: 데이터
     output: web, pdf
     folderitems:
@@ -122,7 +134,7 @@ entries:
     - title: 수강 현황 조회
       url: /.html
       output: web, pdf
-      
+
     - title: 강좌 관리
       url: /.html
       output: web, pdf
