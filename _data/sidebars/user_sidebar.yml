@@ -1,0 +1,137 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Edison Dev Manual
+  product: Edison Dev Manual
+  version: 0.1
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+      
+  - title: 회원가입 & 로그인
+    output: web, pdf
+    folderitems:
+
+    - title: 회원가입
+      url: /.html
+      output: web, pdf
+
+    - title: 로그인
+      url: /.html
+      output: web, pdf
+
+      
+  - title: 사이언스 앱스토어
+    output: web, pdf
+    folderitems:
+
+    - title: 사이언스 앱스토어
+      url: /.html
+      output: web, pdf
+
+    - title: 로그인
+      url: /.html
+      output: web, pdf
+      
+  - title: 시뮬레이션
+    output: web, pdf
+    folderitems:
+
+    - title: 시뮬레이션 실행
+      url: /.html
+      output: web, pdf
+    - title: 모니터링
+      url: /.html
+      output: web, pdf
+
+  - title: 콘텐츠
+    output: web, pdf
+    folderitems:
+
+    - title: 콘텐츠
+      url: /.html
+      output: web, pdf
+    - title: 이러닝
+      url: /.html
+      output: web, pdf
+      
+  - title: 데이터
+    output: web, pdf
+    folderitems:
+
+    - title: 데이터 탐색기
+      url: /.html
+      output: web, pdf
+    - title: 데이터 관리
+      url: /.html
+      output: web, pdf
+
+  - title: 교육
+    output: web, pdf
+    folderitems:
+
+    - title: 강좌
+      url: /.html
+      output: web, pdf
+    - title: 강의
+      url: /.html
+      output: web, pdf
+
+
+  - title: About & 소식
+    output: web, pdf
+    folderitems:
+
+    - title: FAQ
+      url: /.html
+      output: web, pdf
+    - title: 뉴스
+      url: /.html
+      output: web, pdf
+    - title: 공지사항
+      url: /.html
+      output: web, pdf
+
+
+  - title: My EDISON
+    output: web, pdf
+    folderitems:
+
+    - title: My EDISON Overview
+      url: /.html
+      output: web, pdf
+
+    - title: 파일 관리
+      url: /.html
+      output: web, pdf
+    - title: 분야 사이트 관리
+      url: /.html
+      output: web, pdf
+    - title: 수강 현황 조회
+      url: /.html
+      output: web, pdf
+      
+    - title: 강좌 관리
+      url: /.html
+      output: web, pdf
+    - title: 교수이력 관리
+      url: /.html
+      output: web, pdf
+
+    - title: 개발자 계정 관리
+      url: /.html
+      output: web, pdf
+
+

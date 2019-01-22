@@ -59,7 +59,7 @@ solverDev 문서를 구성하고 있는 파일들은 다음 디렉토리에 위�
 | 사이드바 위치 | ```_data/sidebars/solverdev_sidebar.yml``` | solverDev의 사이드바가 저장된 위치입니다. |
 | 이미지 위치 | ```images/solverdev/```| solverDev 문서에서 사용되는 이미지가 저장된 위치입니다. |
 
-
+  
 ## 문서 구조
 
 {% include image.html file="docdev/docDev_image1.jpg" %}
