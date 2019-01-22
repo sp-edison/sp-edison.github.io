@@ -55,6 +55,9 @@ entries:
     - title: 모니터링
       url: /.html
       output: web, pdf
+    - title: WorkBench
+      url: /user_workbench_intro.html
+      output: web, pdf
 
   - title: 콘텐츠
     output: web, pdf
