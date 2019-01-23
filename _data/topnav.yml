@@ -3,15 +3,20 @@
 topnav:
 - title: Topnav
   items:
-    - title: User
-      url: /user_intro.html
-
     - title: Manager
       url: /sitemanager1.html
 
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: User
+      folderitems:
+        - title: EDISON 포털
+          url: /user_intro.html
+        - title: 소재 특화 사이트
+          url: /mat_intro.html
+        - title: 인공지능 특화 사이트
+          url: /user_intro.html
 
     - title: System Admin
       folderitems:
@@ -25,3 +30,5 @@ topnav_dropdowns:
           url: /solverdev_intro.html
         - title: Workbench
           url: /workbench_analyzerguide1.html
+        - title: Simulation Data
+          url: /datadev_view_manage.html

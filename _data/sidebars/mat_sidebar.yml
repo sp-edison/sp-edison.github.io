@@ -1,0 +1,71 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: 소재 특화 사이트
+  product: USER-MAT
+  version: 1.0
+
+
+  folders:
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 소개
+    output: web, pdf
+    folderitems:
+      - title: "소개"
+        url: /mat_intro.html
+        output: web, pdf
+
+  - title: 소재 검색
+    output: web, pdf
+    folderitems:
+      - title: "Material Explorer"
+        url: /mat_search_explorer.html
+        output: web, pdf
+
+      - title: "Data View"
+        url: /mat_search_view.html
+        output: web, pdf
+ 
+  - title: 소재 분석
+    output: web, pdf
+    folderitems:
+      - title: "Phase Diagram"
+        url: /mat_analysis_pd.html
+        output: web, pdf
+
+      - title: "Reaction Calculator"
+        url: /mat_analysis_rc.html
+        output: web, pdf
+
+      - title: "Visualization Chart "
+        url: /mat_analysis_vc.html
+        output: web, pdf
+
+      - title: "ML Predictor"
+        url: /mat_analysis_predictor.html
+        output: web, pdf
+
+        
+  - title: 소재 시뮬레이션
+    output: web, pdf
+    folderitems:
+      - title: "Crystal Toolkit"
+        url: /mat_simulation_ct.html
+        output: web, pdf
+
+      - title: "Simulation Monitoring"
+        url: /mat_simulation_monitor.html
+        output: web, pdf

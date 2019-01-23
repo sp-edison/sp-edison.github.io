@@ -102,16 +102,30 @@ entries:
       url: /.html
       output: web, pdf
 
-  - title: 데이터
+      
+  - title: 시뮬레이션 데이터
     output: web, pdf
     folderitems:
+      - title: "데이터 검색" 
+        output: web, pdf
+        url: /user_data_search.html 
+        
+      - title: "내 시뮬레이션 결과 공유"
+        url: /user_data_share.html
+        output: web, pdf
 
-    - title: 데이터 탐색기
-      url: /.html
-      output: web, pdf
-    - title: 데이터 관리
-      url: /.html
-      output: web, pdf
+      - title: "데이터 컬렉션 관리"
+        url: /user_data_collection.html
+        output: web, pdf
+
+      - title: "데이터 관리"
+        url: /user_data_dataset.html
+        output: web, pdf
+
+      - title: "시뮬레이션 재실행"
+        url: /user_data_rerun.html
+        output: web, pdf
+
 
   - title: 교육
     output: web, pdf
