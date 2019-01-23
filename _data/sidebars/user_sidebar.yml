@@ -37,12 +37,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 사이언스 앱스토어 목록
+    - title: 사이언스 앱 목록
       url: /user_scienceApp_scienceAppList.html
       output: web, pdf
 
-    - title: 사이언스 앱스토어 상세보기
-      url: /user_scienceApp_scienceAppDetailList.html
+    - title: 사이언스 앱 상세보기
+      url: /user_scienceApp_scienceAppDetailView.html
       output: web, pdf
       
   - title: 시뮬레이션
