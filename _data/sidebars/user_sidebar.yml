@@ -95,8 +95,16 @@ entries:
     - title: 콘텐츠
       url: /user_contents.html
       output: web, pdf
+
+  - title: 이러닝
+    output: web
+    folderitems:
+
     - title: 이러닝
       url: /user_elearning.html
+      output: web
+    - title: 이러닝 관리
+      url: /user_elearningManagement.html
       output: web
 
       
