@@ -8,7 +8,7 @@ permalink: user_scienceApp_scienceAppList.html
 folder: user
 ---
 
-## 사이언스 앱스토어 목록
+## 사이언스 앱 목록
 
 
 {% include image.html file="user/scienceApp/scienceAppList.png" caption="사이언스 앱스토어 목록" %}
