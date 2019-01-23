@@ -45,8 +45,24 @@ entries:
       url: /user_scienceApp_scienceAppList.html
       output: web, pdf
 
-    - title: 사이언스 앱 상세보기
+    - title: 사이언스 앱 상세보기 화면 구성
       url: /user_scienceApp_scienceAppDetailView.html
+      output: web, pdf
+
+    - title: 사이언스 앱 상세정보
+      url: /user_scienceApp_scienceAppDetailInfo.html
+      output: web, pdf
+
+    - title: 사이언스 앱 리뷰
+      url: /user_scienceApp_scienceAppDetailReview.html
+      output: web, pdf
+
+    - title: 사이언스 앱 관련자료
+      url: /user_scienceApp_scienceAppDetailRelation.html
+      output: web, pdf
+
+    - title: 사이언스 앱 통계
+      url: /user_scienceApp_scienceAppDetailStatistics.html
       output: web, pdf
 
   - title: 시뮬레이션
