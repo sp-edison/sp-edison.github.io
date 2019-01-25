@@ -14,12 +14,12 @@ folder: user_data
 
 1. `Workflow`의 `My Data` 탭에서 등록한 시뮬레이션 데이터들을 Collection 별로 상태를 확인할 수 있습니다.
 
-{% include image.html file="data/user_data_dataset_01.png" %}
+    {% include image.html file="data/user_data_dataset_01.png" %}
 
 
 1. `Manage` 버튼을 클릭하여 개별 상태를 확인 가능합니다.
 
-{% include image.html file="data/user_data_dataset_02.png" %}
+    {% include image.html file="data/user_data_dataset_02.png" %}
 
 
 ## 시뮬레이션 데이터 수정 및 삭제
