@@ -8,8 +8,6 @@ permalink: datadev_datatype_manage.html
 folder: datadev
 ---
 
-# 시뮬레이션 데이터 타입 관리
-
 ## 데이터 타입 검색
 
 
@@ -93,7 +91,7 @@ folder: datadev
 
 ## 데이터 큐레이션 모듈 등록
 
-1. DataType의 `Edit` 페이지에서 처리 모듈을 등록할 수 있습니다. 처리 모듈을 등록하기 위해서는 먼저 DataType을 등록한 후에 `Edit` 페이지에서 처리 모듈을 등록해야 합니다. 이제 처리 모듈을 등록할 DataType을 목록에서 선택하여 상세 보기 페이지로 이동합니다.
+1. DataType의 Edit 페이지에서 처리 모듈을 등록할 수 있습니다. 처리 모듈을 등록하기 위해서는 먼저 DataType을 등록한 후에 Edit 페이지에서 처리 모듈을 등록해야 합니다. 이제 처리 모듈을 등록할 `DataType`을 목록에서 선택하여 상세 보기 페이지로 이동합니다.
 
     {% include image.html file="data/datadev_datatype_manage_18.png" %}
 

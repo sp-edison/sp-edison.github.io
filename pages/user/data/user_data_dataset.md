@@ -8,8 +8,6 @@ permalink: user_data_dataset.html
 folder: user_data
 ---
 
-# 데이터 관리
-
 ## 시뮬레이션 데이터 상세보기
 
 1. `Workflow`의 `My Data` 탭에서 등록한 시뮬레이션 데이터들을 Collection 별로 상태를 확인할 수 있습니다.
@@ -42,7 +40,7 @@ folder: user_data
 
     {% include image.html file="data/user_data_dataset_06.png" %}
 
-1. Metadata 탭을 클릭하고, 아래 ‘Edit’ 버튼을 클릭하여 수정 페이지로 이동할 수 있습니다.
+1. Metadata 탭을 클릭하고, 아래 `Edit` 버튼을 클릭하여 수정 페이지로 이동할 수 있습니다.
 
     {% include image.html file="data/user_data_dataset_07.png" %}
 
@@ -51,7 +49,7 @@ folder: user_data
     {% include image.html file="data/user_data_dataset_08.png" %}
 
 - 저장하지 않고 목차로 돌아가기
-    1. 내용을 변경하지 않고 돌아가려면 양식 하단의 ‘Cancel’ 버튼을 클릭합니다.
+    1. 내용을 변경하지 않고 돌아가려면 양식 하단의 `Cancel` 버튼을 클릭합니다.
 
         {% include image.html file="data/user_data_dataset_09.png" %}
 
@@ -67,7 +65,7 @@ folder: user_data
 
     {% include image.html file="data/user_data_dataset_11.png" %}
 
-1. `Curation` 항목의 `Select` 버튼을 클릭하면 `Curation Popup` 페이지가 나타나며, 기본 모듈을 선택하거나, 기타 등록된 데이터 처리 모듈을 선택할 수 있습니다.
+1. Curation 항목의 `Select` 버튼을 클릭하면 `Curation Popup` 페이지가 나타나며, 기본 모듈을 선택하거나, 기타 등록된 데이터 처리 모듈을 선택할 수 있습니다.
 
     {% include image.html file="data/user_data_dataset_12.png" %}
 
