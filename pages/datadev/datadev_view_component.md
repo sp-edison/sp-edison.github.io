@@ -138,11 +138,11 @@ Layout/gridrow-84
 
         레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
 
-## Layout/Panel
+## Layout/panel
 
 **컴포넌트 이름**
 
-Layout/Panel
+Layout/panel
 
 **컴포넌트 설명**
 
@@ -646,7 +646,7 @@ Components/button
 
     {% include image.html file="data/datadev_view_component/datadev_view_component_100.bmp" %}
 
-##Components/buttongroup
+## Components/buttongroup
 
 **컴포넌트 이름**
 
