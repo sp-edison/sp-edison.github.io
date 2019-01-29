@@ -60,4 +60,4 @@ folder: mat
 1. `FULLSCREEN` 버튼을 클릭하여 전체화면으로 좀 더 넓고 편하게 볼 수 있으며, `HELP` 버튼을 클릭하여 기타 정보를 확인할 수 있습니다.
     {% include image.html file="data/image00317_0.png" caption="Full screen" %}
 1. `Print mode`, `Nodes glow`, `Tight layout` 이팩트 적용
-    {% include image.html file="data/image00317_0.png" caption="Print mode" %}
+    {% include image.html file="data/image00317_1.png" caption="Print mode" %}
