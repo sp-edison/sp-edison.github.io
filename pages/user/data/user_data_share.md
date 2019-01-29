@@ -12,10 +12,13 @@ folder: user_data
 
 - EDISON 로그인 후, 메뉴의 `My EDISON` 탭으로 이동합니다.
 - 좌측의 `시뮬레이션 파일` 탭에서 저장을 원하는 시뮬레이션(Simulation) 혹은 잡(Job)을 선택합니다.
+
 ```
 ※ 시뮬레이션 실행 시 설정했던 [시뮬레이션 명- 잡 명]이 Dataset 이름으로 자동 저장되기 때문에, 시뮬레이션과 잡 이름을 다른 것들과 구분할 수 있는 의미 있는 값 (예, 시뮬레이션 주제, 파라미터 값)으로 변경해주시길 바랍니다. 시뮬레이션과 잡 이름은 워크벤치 (Workbench)에서 변경이 가능합니다.
+
 ```
 - 저장할 시뮬레이션 혹은 잡을 선택 후, `Register & Share Data` 버튼을 누르면 저장할 Collection을 선택하라는 팝업이 뜹니다.
+
 ```
 ※ Simulation 목록에서 ‘Register & Share Data’ 버튼을 누르면 Simulation 하위의 성공적으로 종료된 모든 Job 들이 저장의 대상이 됩니다. 그리고 Job 목록에서 ‘Register & Share Data’ 버튼을 누르면 개별 Job이 저장의 대상이 됩니다.
 ```
@@ -23,6 +26,7 @@ folder: user_data
 {% include image.html file="data/user_data_share_01.png" caption="Save process" %}
 
 - 최초 업로드 시, Collection을 생성하여야 하고 방법은 다음 그림과 같습니다.
+
 ```
 ※ Collection 명은 `논문 이름` 혹은 `주제 이름`으로 해주시면 되고, Community 명은 각 전문센터 커뮤니티로 선택해주시면 됩니다.
 - 전산열유체 → CFD
@@ -33,6 +37,7 @@ folder: user_data
 - 전산설계 → DESIGN
 - 도시환경 → UE
 ```
+
 {% include image.html file="data/user_data_share_02.png" caption="Collection popup" %}
 {% include image.html file="data/user_data_share_03.png" caption="Collection detail info" %}
 
