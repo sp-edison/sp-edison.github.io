@@ -103,3 +103,27 @@ entries:
       - title: "SDR 게시판 관리"
         url: /contentmenu19.html
         output: web, pdf
+  - title: 사용자 관리
+    output: web, pdf
+    folderitems:
+      - title: "사용자 관리"
+        url: /usermanager1.html
+        output: web, pdf
+      - title: "사용자 관리 화면"
+        url: /usermanager2.html
+        output: web, pdf
+      - title: "사용자 관리"
+        url: /usermanager3.html
+        output: web, pdf
+      - title: "사용자 회원권 제거"
+        url: /usermanager4.html
+        output: web, pdf
+      - title: "사이트 조직 관리"
+        url: /usermanager5.html
+        output: web, pdf
+      - title: "사용자 그룹 관리"
+        url: /usermanager6.html
+        output: web, pdf
+      - title: "사이트 팀 관리"
+        url: /usermanager7.html
+        output: web, pdf
