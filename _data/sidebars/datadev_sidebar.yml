@@ -1,0 +1,59 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: 시뮬레이션 데이터 관리 개발자 매뉴얼
+  product: EDISON-DEV-DATA
+  version: 1.0
+
+
+  folders:
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 시뮬리에션 데이터 뷰
+    output: web, pdf
+    folderitems:
+      - title: "데이터 뷰 관리"
+        url: /datadev_view_manage.html
+        output: web, pdf
+
+      - title: "데이터 뷰 편집기"
+        url: /datadev_view_design.html
+        output: web, pdf
+      
+      - title: "데이터 뷰 컴포넌트"
+        url: /datadev_view_component.html
+        output: web, pdf
+
+
+  - title: 시뮬레이션 데이터 큐레이션
+    output: web, pdf
+    folderitems:
+      - title: "큐레이션 모듈 관리" 
+        output: web, pdf
+        url: /datadev_curate_manage.html 
+        
+      - title: "큐레이션 모듈 생성"
+        url: /datadev_curate_create.html 
+        output: web, pdf
+
+
+  - title: 시뮬레이션 데이터 타입
+    output: web, pdf
+    folderitems:
+      - title: "타입 관리" 
+        output: web, pdf
+        url: /datadev_datatype_manage.html 
+     
+ 

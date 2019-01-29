@@ -12,7 +12,7 @@ folder: solverDev
 
 
 
-# 개발자 계정 발급
+## 개발자 계정 발급
 
 {% include image.html file="solverdev/02/workspace.png" caption="EDISON 워크스페이스 메뉴" %}
 

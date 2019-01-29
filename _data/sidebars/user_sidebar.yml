@@ -2,8 +2,8 @@
 
 
 entries:
-- title: Edison Dev Manual
-  product: Edison Dev Manual
+- title: Edison User Manual
+  product: Edison User Manual
   version: 0.1
   folders:
 
@@ -20,118 +20,172 @@ entries:
       output: pdf
       type: frontmatter
       
-  - title: 회원가입 & 로그인
+  - title: EDISON 소개
     output: web, pdf
     folderitems:
 
+    - title: EDISON 소개
+      url: /user_intro.html
+      output: web, pdf
+
     - title: 회원가입
-      url: /.html
+      url: /user_signup.html
       output: web, pdf
 
     - title: 로그인
-      url: /.html
+      url: /user_login.html
       output: web, pdf
 
-      
+
   - title: 사이언스 앱스토어
     output: web, pdf
     folderitems:
 
-    - title: 사이언스 앱스토어
-      url: /.html
+    - title: 사이언스 앱 목록
+      url: /user_scienceApp_scienceAppList.html
       output: web, pdf
 
-    - title: 로그인
-      url: /.html
+    - title: 사이언스 앱 상세보기 화면 구성
+      url: /user_scienceApp_scienceAppDetailView.html
       output: web, pdf
-      
+
+    - title: 사이언스 앱 상세정보
+      url: /user_scienceApp_scienceAppDetailInfo.html
+      output: web, pdf
+
+    - title: 사이언스 앱 리뷰
+      url: /user_scienceApp_scienceAppDetailReview.html
+      output: web, pdf
+
+    - title: 사이언스 앱 관련자료
+      url: /user_scienceApp_scienceAppDetailRelation.html
+      output: web, pdf
+
+    - title: 사이언스 앱 통계
+      url: /user_scienceApp_scienceAppDetailStatistics.html
+      output: web, pdf
+
   - title: 시뮬레이션
     output: web, pdf
     folderitems:
 
     - title: 시뮬레이션 실행
-      url: /.html
+      url: /user_workbench_intro.html
       output: web, pdf
     - title: 모니터링
-      url: /.html
+      url: /user_monitoring.html
       output: web, pdf
+
+  - title: 워크플로우
+    output: web, pdf
+    folderitems:
+
+    - title: 워크플로우 편집
+      url: /workflow_workflow-designer.html
+      output: web, pdf
+    - title: 워크플로우 실행
+      url: /workflow_workflow-executor.html
+      output: web, pdf
+
 
   - title: 콘텐츠
     output: web, pdf
     folderitems:
 
     - title: 콘텐츠
-      url: /.html
+      url: /user_contents.html
       output: web, pdf
-    - title: 이러닝
-      url: /.html
-      output: web, pdf
-      
-  - title: 데이터
-    output: web, pdf
+
+  - title: 이러닝
+    output: web
     folderitems:
 
-    - title: 데이터 탐색기
-      url: /.html
-      output: web, pdf
-    - title: 데이터 관리
-      url: /.html
-      output: web, pdf
+    - title: 이러닝
+      url: /user_elearning.html
+      output: web
+    - title: 이러닝 관리
+      url: /user_elearningManagement.html
+      output: web
+
+      
+  - title: 시뮬레이션 데이터
+    output: web
+    folderitems:
+      - title: "데이터 검색" 
+        output: web
+        url: /user_data_search.html 
+        
+      - title: "내 시뮬레이션 결과 공유"
+        url: /user_data_share.html
+        output: web
+
+      - title: "데이터 컬렉션 관리"
+        url: /user_data_collection.html
+        output: web
+
+      - title: "데이터 관리"
+        url: /user_data_dataset.html
+        output: web
+
+      - title: "시뮬레이션 재실행"
+        url: /user_data_rerun.html
+        output: web
+
 
   - title: 교육
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: 강좌
       url: /.html
-      output: web, pdf
+      output: web
     - title: 강의
       url: /.html
-      output: web, pdf
+      output: web
 
 
   - title: About & 소식
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: FAQ
       url: /.html
-      output: web, pdf
+      output: web
     - title: 뉴스
       url: /.html
-      output: web, pdf
+      output: web
     - title: 공지사항
       url: /.html
-      output: web, pdf
+      output: web
 
 
   - title: My EDISON
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: My EDISON Overview
       url: /.html
-      output: web, pdf
+      output: web
 
     - title: 파일 관리
       url: /.html
-      output: web, pdf
+      output: web
     - title: 분야 사이트 관리
       url: /.html
-      output: web, pdf
+      output: web
     - title: 수강 현황 조회
       url: /.html
-      output: web, pdf
-      
+      output: web
+
     - title: 강좌 관리
       url: /.html
-      output: web, pdf
+      output: web
     - title: 교수이력 관리
       url: /.html
-      output: web, pdf
+      output: web
 
     - title: 개발자 계정 관리
       url: /.html
-      output: web, pdf
+      output: web
 
 

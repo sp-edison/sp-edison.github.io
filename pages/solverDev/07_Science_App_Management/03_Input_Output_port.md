@@ -9,7 +9,7 @@ folder: solverDev
 
 등록하는 사이언스 앱의 입출력 포트를 정의합니다.
 
-{% include image.html file="solverdev/08/image5.png" caption="입출력포트 정보" %}
+{% include image.html file="solverdev/08/app_port_1.png" caption="입출력포트 정보" %}
 
 (1) 입력 포트 값에 따른 간략한 Command Line을 조회 할 수 있습니다.
 
@@ -17,13 +17,13 @@ folder: solverDev
 
 (2) 입력포트를 생성하거나, 생성된 입력 포트 정보 리스트를 확인 할 수 있습니다. ```입력 포트 추가``` 버튼을 통해 추가할 수 있습니다. **실행 커멘드의 인풋 옵션** 을 포트 명으로 지정해 주어야 합니다.
 
-{% include image.html file="solverdev/08/image7.png"  %}
+{% include image.html file="solverdev/08/app_port_input.png"  %}
 
 {% include image.html file="solverdev/08/image8.png"  %}
 
 포트 명을 지정하면, 데이터 타입을 선택할 수 있습니다. 검색을 통해 원하는 데이터 타입을 선택할 수 있으며, 추가 버튼을 통해 [데이터 타입을 생성](../05_Datatype/00_Introduction.md) 할 수 있습니다. 데이터 타입을 선택하면 관련 정보를 미리보기를 통해 확인 할 수 있으며, 선택 버튼을 통해 입력 포트를 생성 할 수 있습니다.
 
-{% include image.html file="solverdev/08/inputport.png"  %}
+{% include image.html file="solverdev/08/app_port_input_1.png"  %}
 
 
 |옵션|설명|
@@ -40,7 +40,7 @@ folder: solverDev
 
 (4) 출력 포트를 생성하거나 생성된 출력 포트 정보 리스트를 확인 할 수 있습니다.
 
-{% include image.html file="solverdev/08/image6.png" caption="레이아웃 설정" %}
+{% include image.html file="solverdev/08/app_port_log.png" caption="레이아웃 설정" %}
 
 |옵션|설명|
 |--|--|

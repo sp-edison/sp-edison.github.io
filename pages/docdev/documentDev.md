@@ -105,3 +105,30 @@ Bulb 서버 접속 - Code upload & Compile - 실행 파일 압축
 서비스 요청 -> 관리자 승인 -> 서비스!
 
 ```
+
+
+## 윈도우 설치 Tip
+1. ruby 설치 : 2.5 버전 설치. 2.6버전은 jekyll 설치 과정에 오류있음
+```
+https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.5.3-1/rubyinstaller-devkit-2.5.3-1-x64.exe
+```
+
+1. Jekyll, Bundle 설치 SSL 오류 발생의 경우
+``` 
+gem install rubygems-update --source http://rubygems.org/ 
+update_rubygems --no-ri --no-rdoc
+gem uninstall rubygems-update -x
+gem install jekyll bundler 
+```
+
+1. bundle exec jekyll serve 실행에서 scss 파일 오류 발생의 경우
+```
+윈도우 제어판 > 시스템 로캘 변경 > Beta : UTF-8 사용 선택
+```
+
+
+## data 관련 매뉴얼 작성 Tip
+- pages/datadev : 개발자 매뉴얼
+- pages/user/data : 사용자 매뉴얼 데이터 부분
+- pages/user/mat : 소재 포털 사용자 매뉴얼 
+- images/data : 그림 파일 위치 
