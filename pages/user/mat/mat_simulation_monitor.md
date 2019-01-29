@@ -15,7 +15,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `Monitoring`을 클릭하여 이동 합니다.
 
-{% include image.html file="data/image00319.png" caption="소재 특화 사이트 Simulation Monitoring 매뉴" %}
+{% include image.html file="data/image00319.png" caption="소재 특화 사이트 Simulation Monitoring 메뉴" %}
 
 ## 화면 소개
 

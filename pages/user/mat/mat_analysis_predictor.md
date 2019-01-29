@@ -18,7 +18,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `ML Predictor` 혹은 도구 아이콘 `ML Predictor`을 클릭하여 이동합니다.
 
-{% include image.html file="data/image00290.png" caption="소재 특화 사이트 ML Predictor 매뉴" %}
+{% include image.html file="data/image00290.png" caption="소재 특화 사이트 ML Predictor 메뉴" %}
 
 ## 화면 소개
 

@@ -17,7 +17,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `Crystal Toolkit` 혹은 도구 아이콘 `Crystal Toolkit`을 클릭하여 이동 합니다.
 
-{% include image.html file="data/image00266.png" caption="소재 특화 사이트 Crystal Toolkit 매뉴" %}
+{% include image.html file="data/image00266.png" caption="소재 특화 사이트 Crystal Toolkit 메뉴" %}
 
 ## 화면 소개
 

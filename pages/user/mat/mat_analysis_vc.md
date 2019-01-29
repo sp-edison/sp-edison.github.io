@@ -17,7 +17,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `Visualization Chart` 혹은 도구 아이콘 `Visualization Chart`을 클릭하여 이동 합니다.
 
-{% include image.html file="data/image00284.png" caption="소재 특화 사이트 Visualization Chart 매뉴" %}
+{% include image.html file="data/image00284.png" caption="소재 특화 사이트 Visualization Chart 메뉴" %}
 
 ## 화면 소개
 

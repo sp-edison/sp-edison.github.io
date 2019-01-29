@@ -15,7 +15,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `Reaction Calculator` 혹은 도구 아이콘 `Reaction Calculator`을 클릭하여 이동 합니다.
 
-{% include image.html file="data/image00282.png" caption="소재 특화 사이트 Reaction Calculator 매뉴" %}
+{% include image.html file="data/image00282.png" caption="소재 특화 사이트 Reaction Calculator 메뉴" %}
 
 ## 반응물 및 생성물 지정
 

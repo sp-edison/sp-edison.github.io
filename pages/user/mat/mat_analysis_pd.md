@@ -17,7 +17,7 @@ folder: mat
 
 1. 메뉴의 `Analysis` - `Phase Diagram` 혹은 도구 아이콘 `Phase Diagram`을 클릭하여 이동 합니다.
 
-{% include image.html file="data/image00275.png" caption="소재 특화 사이트 Phase Diagram 매뉴" %}
+{% include image.html file="data/image00275.png" caption="소재 특화 사이트 Phase Diagram 메뉴" %}
 
 ## 원소기호 조합
 
