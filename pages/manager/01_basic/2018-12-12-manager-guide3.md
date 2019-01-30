@@ -18,21 +18,19 @@ tags: [manager]
 
 ### 관리자 페이지 이동
 관리자로 로그인한 상태에서 상단의 관리자 메뉴를 선택하고 하위 메뉴 중 페이지 메뉴를 선택합니다.
-![capture](/images/manager/11.png "로그인 화면")<br>
+{% include image.html file="manager/11.png" %}<br>
+
 
 페이지 메뉴를 선택 한 후 관리자는 다음 그림과 같이 전체 포털 웹 서비스에서 제공하고 있는 페이지 구조를 확인 할 수 있습니다.
-![capture](/images/manager/12.png "로그인 화면")<br>
+{% include image.html file="manager/12.png" %}<br>
 
 
 ### 페이지 편집
 관리자는 페이지에 대한 편집 및 수정, 생성을 할 수 있는 권한을 가지고 있습니다.
-
-1. 관리자는 페이지를
-
 사이트를 생성하고 관리하는 메뉴는 관리자로 로그인한 상태에서 최상단에서 확인할 수 있습니다.<br>
 <br>
 왼쪽 상단에 표시된 메뉴는 현재 페이지에 대한 관리 메뉴, 오른쪽 상단에 표시된 메뉴는 사이트 관리를 위한 메뉴 기능을 포함하고 있습니다.<br>
-![capture](/images/manager/2.png "로그인 화면")<br>
+{% include image.html file="manager/2.png" %}<br>
 사이트 관리자의 경우, 로그인 후 페이지 상단에 관리자 기능이 표시됩니다.<br>
 <br>표시되는 기능으로는 포털에서 설치된 응용프로그램(웹 기반 애플리케이션)을 추가하거나 삭제할 수 있는 추가 기능, 사용자의 다양한 환경에서 실제 표시되는 화면을 테스트 할 수 있는 미리보기 기능, 현재 페이지의 전반적인 정보를 확인하고 편집 할 수 있는 편집 기능, 페이지 내의 응용 프로그램들을 편집 할 수 있는 컨트롤 편집 기능이 사용자 기준 왼쪽 상단에 표시됩니다.
 
@@ -48,26 +46,26 @@ tags: [manager]
 
 ### 추가 메뉴 선택
 관리자가 추가 메뉴를 선택한 화면입니다.
-![capture](/images/manager/3.png "로그인 화면")<br>
+{% include image.html file="manager/3.png" %}<br>
 
 ### 미리보기 메뉴 선택
 관리자가 미리보기 메뉴를 선택한 화면입니다.
-![capture](/images/manager/4.png "로그인 화면")<br>
+{% include image.html file="manager/4.png" %}<br>
 
 ### 편집 메뉴 선택
 관리자가 편집 메뉴를 선택한 화면입니다.
-![capture](/images/manager/5.png "로그인 화면")<br>
+{% include image.html file="manager/5.png" %}<br>
 
 ### 컨트롤 편집 메뉴 선택
 관리자가 컨트롤 편집 메뉴를 선택한 화면입니다.
-![capture](/images/manager/6.png "로그인 화면")<br>
+{% include image.html file="manager/6.png" %}<br>
 
 
 ## 관리자 메뉴
 포털 전체에 관한 관리 기능이 포함된 메뉴는 관리자 아이디로 로그인한 상태에서 최상단 우측에서 확인 할 수 있습니다.<br><br>
 
 오른쪽 위쪽의 메뉴는 포털의 전체적인 관리 메뉴를 포함하고 있으며, 관리자 메뉴, 가입된 사이트 메뉴, 현재 로그인한 유저(관리자)의 정보를 확인 할 수 있습니다.
-![capture](/images/manager/7.png "로그인 화면")<br>
+{% include image.html file="manager/7.png" %}<br>
 
 <br><br>
 세가지 관리자 메뉴에 관한 컨트롤 기능을 설명하면 다음 표와 같습니다.
@@ -80,12 +78,12 @@ tags: [manager]
 
 ### 관리자 메뉴 선택
 관리자 메뉴를 선택하면 관리자 기능이 포함된 메뉴가 상단에 드롭다운 형태로 표시됩니다.
-![capture](/images/manager/8.png "로그인 화면")
+{% include image.html file="manager/8.png" %}<br>
 
 ### 나의 사이트 메뉴 선택
 나의 사이트 메뉴를 선택하면 현재 접속한 유저(관리자)가 가입한 사이트의 전체 리스트를 드롭 다운 메뉴 형태로 표시해 줍니다.
-![capture](/images/manager/9.png "로그인 화면")
+{% include image.html file="manager/9.png" %}<br>
 
 ### 접속 유저 정보 메뉴 선택
 현재 접속한 유저의 정보 메뉴를 선태하면 사용자(관리자)의 유저 정보 및 로그아웃을 할 수 있는 드롭 다운 메뉴를 제공해 줍니다.
-![capture](/images/manager/10.png "로그인 화면")
+{% include image.html file="manager/10.png" %}<br>

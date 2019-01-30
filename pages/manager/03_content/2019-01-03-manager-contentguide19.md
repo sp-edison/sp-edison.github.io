@@ -10,5 +10,5 @@ tags: [manager]
 
 ## SDR 게시판 관리
 콘텐츠 관리자 메뉴에서 SDR 게시판 메뉴를 선택하면 아래 그림과 같은 화면을 볼 수 있습니다.<br>
-![capture](/images/manager/managercontent/40.png "SDR 게시판 선택")<br>
+{% include image.html file="manager/managercontent/40.png" %}<br>
 <br>

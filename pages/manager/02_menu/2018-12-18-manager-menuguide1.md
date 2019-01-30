@@ -11,15 +11,15 @@ tags: [manager]
 ## 관리자 메뉴 선택
 전체 포털의 관리자 아이디로 로그인을 하게 되면 관리자 메뉴로 이동이 가능합니다.
 첫 번째로 관리자가 관리자의 아이디로 로그인을 하고, 상단 오른쪽의 메뉴 중 페이지를 선택합니다.<br>
-![capture](/images/manager/11.png "로그인 화면")<br>
+{% include image.html file="manager/11.png" %}<br>
 
 페이지 메뉴를 선택하게 되면 관리자만 확인 가능한 관리자 메뉴 화면으로 이동하게 됩니다.
 <br><br>
 
 ## 관리자 메뉴의 페이지 화면
 관리자 메뉴를 선택하여 페이지 관리로 화면을 이동하게 되면 다음 그림과 같은 화면을 확인할 수 있습니다.
-![capture](/images/manager/managercontent/1.png "로그인 화면")<br>
-![capture](/images/manager/managercontent/2.png "로그인 화면")<br>
+{% include image.html file="manager/managercontent/1.png" %}<br>
+{% include image.html file="manager/managercontent/2.png" %}<br>
 <br>
 관리자 페이지 메뉴 화면에은 위의 그림과 같습니다. 구성은 페이지 트리,, 페이지 관리 메뉴, 페이지 테마정보, 페이지 색상 선택, 페이지 고급 관리, css 설정 등이 있습니다.
 <br>
@@ -37,7 +37,7 @@ tags: [manager]
 
 ## 관리자 메뉴 설명
 관리자 메뉴 화면으로 이동한 상태에서 왼쪽 부분을 살펴 보면 다음 그림과 같은 화면을 확인할 수 있습니다.<br>
-![capture](/images/manager/managercontent/3.png "로그인 화면")<br><br>
+{% include image.html file="manager/managercontent/3.png" %}<br><br>
 
 위의 그림은 관리자가 이동할 수 있는 관리 메뉴를 보여줍니다. 관리자가 현재 관리중인 사이트 관리 메뉴로 직접 이동할 수 있으며, 현재 페이지에 대한 관리 메뉴를 확인 할 수 있습니다.
 또한 검색 할 수 있는 텍스트 박스 안에 검색하고 싶은 관리 메뉴가 있으면 검색 할 수 있는 기능을 제공합니다.

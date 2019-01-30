@@ -12,7 +12,7 @@ tags: [manager]
 콘텐츠 관리자 메뉴에서 블로그 메뉴를 선택하면 아래 그림과 같은 화면을 볼 수 있습니다.<br>
 블로그는 짧은 저널, 기사, 또는 일기 형식등의 표준적인 블로그 기능을 제공합니다.관리자들은 블로그 항목들을 추가, 검색, 업데이트 혹은 삭제시킬수 있습니다.<br>
 
-![capture](/images/manager/managercontent/13.png "블로그 선택")<br>
+{% include image.html file="manager/managercontent/13.png" %}<br>
 
 관리자가 콘텐츠 관리 메뉴에서 블로그를 선택하면 현재 서비스 중인 블로그의 리스트를 확인할 수 있으며, 새로운블로그를 추가할 수 있습니다.
 
@@ -21,8 +21,8 @@ tags: [manager]
 
 ## 블로그 추가
 블로그 콘텐츠 메뉴에서 블로그를 추가하면 아래의 그림과 같은 화면을 볼 수 있습니다.
-![capture](/images/manager/managercontent/14.png "블로그 추가1")<br>
-![capture](/images/manager/managercontent/15.png "블로그 추가2")<br>
+{% include image.html file="manager/managercontent/14.png" %}<br>
+{% include image.html file="manager/managercontent/15.png" %}<br>
 
 관리자는 블로그의 제목, 디스플레이 날짜, 블로그 내용, pingbacks 허용 여부, 트랙백 허용 여부 등을 설정 할 수 있습니다.<br>
 

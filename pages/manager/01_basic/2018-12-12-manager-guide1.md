@@ -22,4 +22,4 @@ tags: [manager]
 본 내용은 사이트를 어떻게 관리하는지, 또한 사이트에 새로운 콘텐츠를 추가하거나 수정할 수 있는 권한이 있는 사용자가(전체 포털 관리자, 사이트 관리자, 슈퍼유저 등) 로그인을 했을 때 제공되는 기능에 대한 설명이 포함되어 있습니다.
 
 ## 관리자 로그인 화면
-![imagetestYejin](/images/manager/1.png "로그인 화면")<br>
+{% include image.html file="manager/1.png" %}<br>

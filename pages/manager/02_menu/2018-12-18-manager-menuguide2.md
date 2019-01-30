@@ -11,7 +11,8 @@ tags: [manager]
 ## 페이지 추가 선택
 관리자의 관리자 화면에서 페이지 선택을 한 상태에서 페이지 추가 버튼을 생성하면 팝업 화면이 나타나게 됩니다.
 관리자는 현재 페이지 또는 전체 페이지에 하위 페이지나 같은 레벨의 페이지를 새롭게 생성 할 수 있습니다.
-![capture](/images/manager/managercontent/4.png "로그인 화면")<br>
+<br>
+{% include image.html file="manager/managercontent/4.png" %}<br>
 
 ## 페이지 기본 정보
 페이지를 생성하고 나서 설정해야 하는 기본 정보는 다음과 같습니다.
@@ -23,8 +24,8 @@ tags: [manager]
 ## 페이지 추가 화면
 페이지 추가를 선택하면 다음과 같은 화면이 팝업으로 관리자에게 나타나게 됩니다.
 
-![capture](/images/manager/managercontent/5.png "로그인 화면")<br>
-![capture](/images/manager/managercontent/6.png "로그인 화면")<br>
+{% include image.html file="manager/managercontent/5.png" %}<br>
+{% include image.html file="manager/managercontent/6.png" %}<br>
 
 그림에서 볼 수 있듯이 관리자는 다양한 페이지 형태로 페이지를 추가할 수 있으며, 사용자에게 보여지는 형태의 페이지를 설정 할 수 있습니다.
 
