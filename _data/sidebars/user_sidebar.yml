@@ -111,20 +111,28 @@ entries:
   - title: 시뮬레이션 데이터
     output: web
     folderitems:
-      - title: "데이터 검색" 
+      - title: "시뮬레이션 결과 데이터 관리 소개" 
+        output: web
+        url: /user_data_intro.html
+
+      - title: "시뮬레이션 결과 데이터 검색" 
         output: web
         url: /user_data_search.html 
-        
-      - title: "내 시뮬레이션 결과 공유"
-        url: /user_data_share.html
+    
+      - title: "시뮬레이션 결과 데이터 보기"
+        url: /user_data_dataset.html
         output: web
 
       - title: "데이터 컬렉션 관리"
         url: /user_data_collection.html
         output: web
 
-      - title: "데이터 관리"
-        url: /user_data_dataset.html
+      - title: "시뮬레이션 결과 데이터 공유"
+        url: /user_data_share.html
+        output: web
+
+      - title: "내 시뮬레이션 결과 데이터 관리"
+        url: /user_data_my.html
         output: web
 
       - title: "시뮬레이션 재실행"
