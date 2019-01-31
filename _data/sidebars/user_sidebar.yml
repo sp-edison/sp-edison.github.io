@@ -145,10 +145,10 @@ entries:
     folderitems:
 
     - title: 강좌
-      url: /user_page.html
+      url: /user_education_course.html
       output: web
     - title: 강의
-      url: /user_page.html
+      url: /user_education_class.html
       output: web
 
   - title: My EDISON
@@ -156,28 +156,28 @@ entries:
     folderitems:
 
     - title: My EDISON Overview
-      url: /user_page.html
+      url: /user_myedison_overview.html
       output: web
 
     - title: 파일 관리
-      url: /user_page.html
+      url: /user_myedison_file.html
       output: web
     - title: 분야 사이트 관리
-      url: /user_page.html
+      url: /user_myedison_sitejoin.html
       output: web
     - title: 수강 현황 조회
-      url: /user_page.html
+      url: /user_myedison_course.html
       output: web
 
     - title: 강좌 관리
-      url: /user_page.html
+      url: /user_myedison_class.html
       output: web
     - title: 교수이력 관리
-      url: /user_page.html
+      url: /user_myedison_professor.html
       output: web
 
     - title: 개발자 계정 관리
-      url: /user_page.html
+      url: /user_myedison_workspace.html
       output: web
 
 
