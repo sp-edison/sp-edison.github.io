@@ -145,55 +145,39 @@ entries:
     folderitems:
 
     - title: 강좌
-      url: /.html
+      url: /user_page.html
       output: web
     - title: 강의
-      url: /.html
+      url: /user_page.html
       output: web
-
-
-  - title: About & 소식
-    output: web
-    folderitems:
-
-    - title: FAQ
-      url: /.html
-      output: web
-    - title: 뉴스
-      url: /.html
-      output: web
-    - title: 공지사항
-      url: /.html
-      output: web
-
 
   - title: My EDISON
     output: web
     folderitems:
 
     - title: My EDISON Overview
-      url: /.html
+      url: /user_page.html
       output: web
 
     - title: 파일 관리
-      url: /.html
+      url: /user_page.html
       output: web
     - title: 분야 사이트 관리
-      url: /.html
+      url: /user_page.html
       output: web
     - title: 수강 현황 조회
-      url: /.html
+      url: /user_page.html
       output: web
 
     - title: 강좌 관리
-      url: /.html
+      url: /user_page.html
       output: web
     - title: 교수이력 관리
-      url: /.html
+      url: /user_page.html
       output: web
 
     - title: 개발자 계정 관리
-      url: /.html
+      url: /user_page.html
       output: web
 
 
