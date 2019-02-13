@@ -3,8 +3,6 @@
 topnav:
 - title: Topnav
   items:
-    - title: Manager
-      url: /sitemanager1.html
 
 topnav_dropdowns:
 - title: Topnav dropdowns
@@ -17,6 +15,14 @@ topnav_dropdowns:
           url: /mat_intro.html
         - title: 인공지능 특화 사이트
           url: /user_intro.html
+
+    - title: Manager
+      folderitems:
+        - title: 사이트 관리자
+          url: /sitemanager1.html
+        - title: 포털 관리자
+          url: /portalmanager1.html
+
 
     - title: System Admin
       folderitems:

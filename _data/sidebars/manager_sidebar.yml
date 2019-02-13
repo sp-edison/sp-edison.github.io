@@ -127,3 +127,24 @@ entries:
       - title: "사이트 팀 관리"
         url: /usermanager7.html
         output: web, pdf
+  - title: 사이트 설정 관리
+    output: web, pdf
+    folderitems:
+      - title: "사이트 설정 관리"
+        url: /configurationmanager1.html
+        output: web, pdf
+      - title: "사이트 설정 메뉴"
+        url: /configurationmanager2.html
+        output: web, pdf
+      - title: "응용 디스플레이 템플릿 설정"
+        url: /configurationmanager3.html
+        output: web, pdf
+      - title: "사교 활동 설정"
+        url: /configurationmanager4.html
+        output: web, pdf
+      - title: "워크플로우 설정"
+        url: /configurationmanager5.html
+        output: web, pdf
+      - title: "모바일 장치 류 설정"
+        url: /configurationmanager6.html
+        output: web, pdf
