@@ -27,7 +27,7 @@ topnav_dropdowns:
     - title: System Admin
       folderitems:
         - title: Liferay
-          url: /liferayinstall1.html
+          url:
 
 
     - title: Developer
@@ -35,6 +35,6 @@ topnav_dropdowns:
         - title: Solver
           url: /solverdev_intro.html
         - title: Workbench
-          url: /workbench_analyzerguide1.html
+          url: /workbenchsetting1.html
         - title: Simulation Data
           url: /datadev_view_manage.html

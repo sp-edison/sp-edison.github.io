@@ -20,6 +20,21 @@ entries:
       output: pdf
       type: frontmatter
 
+  - title: 개발 환경 구성
+    output: web, pdf
+    folderitems:
+      - title: "Lifeary 6.2 설치 파일 다운로드"
+        url: /workbenchsetting1.html
+        output: web, pdf
+
+      - title: "Lifeary IDE 설치"
+        url: /workbenchsetting2.html
+        output: web, pdf
+
+      - title: "Developer Studion 실행"
+        url: /workbenchsetting3.html
+        output: web, pdf
+
   - title: 워크벤치 편집기 개발
     output: web, pdf
     folderitems:
