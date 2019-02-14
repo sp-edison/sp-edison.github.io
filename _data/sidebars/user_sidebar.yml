@@ -97,47 +97,56 @@ entries:
       output: web, pdf
 
   - title: 이러닝
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: 이러닝
       url: /user_elearning.html
-      output: web
-    - title: 이러닝 관리
+      output: web, pdf
+    - title: 이러닝 코스빌더 소개
+      url: /user_elearningCourseBuilder.html
+      output: web, pdf
+    - title: 이러닝 강좌 만들기
+      url: /user_elearningCreate.html
+      output: web, pdf
+    - title: 이러닝 강좌 관리
       url: /user_elearningManagement.html
-      output: web
+      output: web, pdf
+    - title: 로컬 컴퓨터 웹 서버 환경 구축하기
+      url: /user_elearningWebserver.html
+      output: web, pdf
 
       
   - title: 시뮬레이션 데이터
-    output: web
+    output: web, pdf
     folderitems:
       - title: "시뮬레이션 결과 데이터 관리 소개" 
-        output: web
+        output: web, pdf
         url: /user_data_intro.html
 
       - title: "시뮬레이션 결과 데이터 검색" 
-        output: web
+        output: web, pdf
         url: /user_data_search.html 
     
       - title: "시뮬레이션 결과 데이터 보기"
         url: /user_data_dataset.html
-        output: web
+        output: web, pdf
 
       - title: "데이터 컬렉션 관리"
         url: /user_data_collection.html
-        output: web
+        output: web, pdf
 
       - title: "시뮬레이션 결과 데이터 공유"
         url: /user_data_share.html
-        output: web
+        output: web, pdf
 
       - title: "내 시뮬레이션 결과 데이터 관리"
         url: /user_data_my.html
-        output: web
+        output: web, pdf
 
       - title: "시뮬레이션 재실행"
         url: /user_data_rerun.html
-        output: web
+        output: web, pdf
 
 
   - title: 교육
