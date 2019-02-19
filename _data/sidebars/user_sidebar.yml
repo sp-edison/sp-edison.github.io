@@ -96,6 +96,10 @@ entries:
       url: /user_contents.html
       output: web, pdf
 
+    - title: 콘텐츠 등록
+      url: /user_contentsManagement.html
+      output: web, pdf
+
   - title: 이러닝
     output: web, pdf
     folderitems:
@@ -150,43 +154,52 @@ entries:
 
 
   - title: 교육
-    output: web
+    output: web, pdf
     folderitems:
 
-    - title: 강좌
+    - title: EDISON 교육 소개
       url: /user_education_course.html
-      output: web
-    - title: 강의
-      url: /user_education_class.html
-      output: web
+      output: web, pdf
+    - title: 강좌 관리
+      url: /user_education_management.html
+      output: web, pdf
+    - title: 강의 관리
+      url: /user_educationClassManagement.html
+      output: web, pdf
 
   - title: My EDISON
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: My EDISON Overview
       url: /user_myedison_overview.html
-      output: web
-
-    - title: 파일 관리
-      url: /user_myedison_file.html
-      output: web
-    - title: 분야 사이트 관리
-      url: /user_myedison_sitejoin.html
-      output: web
-    - title: 수강 현황 조회
-      url: /user_myedison_course.html
-      output: web
-
-    - title: 강좌 관리
-      url: /user_myedison_class.html
-      output: web
+      output: web, pdf
     - title: 교수이력 관리
       url: /user_myedison_professor.html
-      output: web
-
+      output: web, pdf
+    - title: 강좌 관리
+      url: /user_education_management.html
+      output: web, pdf
+    - title: 수강 현황 조회
+      url: /user_myedison_course.html
+      output: web, pdf
+    - title: 시뮬레이션 파일
+      url: /user_myedison_simulationfile.html
+      output: web, pdf
+    - title: 파일 관리
+      url: /user_myedison_file.html
+      output: web, pdf
     - title: 개발자 계정 관리
-      url: /user_myedison_workspace.html
-      output: web
+      url: /myedison_workspace.html
+      output: web, pdf
+    - title: 콘텐츠 관리
+      url: /user_contentsManagement.html
+      output: web, pdf
+    - title: 분야 사이트 관리
+      url: /user_myedison_sitejoin.html
+      output: web, pdf
 
 
+
+
+      
