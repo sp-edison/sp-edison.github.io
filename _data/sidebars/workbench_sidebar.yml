@@ -26,13 +26,23 @@ entries:
       - title: "Lifeary 6.2 설치 파일 다운로드"
         url: /workbenchsetting1.html
         output: web, pdf
-
       - title: "Lifeary IDE 설치"
         url: /workbenchsetting2.html
         output: web, pdf
-
       - title: "Developer Studion 실행"
         url: /workbenchsetting3.html
+        output: web, pdf
+      - title: "JDK 1.7 설정"
+        url: /workbenchsetting4.html
+        output: web, pdf
+      - title: "tomcat 서버 설정"
+        url: /workbenchsetting5.html
+        output: web, pdf
+      - title: "ANT 1.9 설정"
+        url: /workbenchsetting6.html
+        output: web, pdf
+      - title: "SDK 설정"
+        url: /workbenchsetting7.html
         output: web, pdf
 
   - title: 워크벤치 편집기 개발
