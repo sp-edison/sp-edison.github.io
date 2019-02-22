@@ -24,7 +24,7 @@ folder: mat
 - (3) 최근 업로드된 소재 데이터 컬렉션
 - (4) 구축된 소재 데이터 통계
 
-{% include image.html file="data/mat/mat_front.png" %}
+{% include image.html file="data/mat/mat_front.PNG" %}
 
 
 개발되어 서비스 중인 툴들은 다음과 같습니다.
