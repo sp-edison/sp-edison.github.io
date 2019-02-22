@@ -32,7 +32,7 @@ folder: user_data
 - `Comment 탭` : 별점과 게시된 사용자 의견을 보여줍니다.  
 
 
-{% include image.html file="data/data_search/collection_detail.png" %}
+{% include image.html file="data/data_search/collection_detail.PNG" %}
 
 <br>
 
@@ -42,7 +42,7 @@ folder: user_data
 
 컬렉션에 대한 접근제어 권한은 컬렉션에 포함된 데이터셋들에게도 적용됩니다. 
 
-{% include image.html file="data/data_search/collection_ac.png" %}
+{% include image.html file="data/data_search/collection_ac.PNG" %}
 
 <br>
 
@@ -80,7 +80,7 @@ folder: user_data
 
 상기 항목들을 입력한 이후에 하단의 `Save` 버튼을 선택합니다. 
 
-{% include image.html file="data/data_search/collection_create.png" %}
+{% include image.html file="data/data_search/collection_create.PNG" %}
 
 
 
@@ -100,7 +100,7 @@ Thumbnail 생성/수정은 컬렉션을 생성한 본인만 가능하며, 과정
    이미지의 크기는 50k 미만, 크기는 200X150을 권장합니다. 
 1. 그리고 맨 밑의 `Save`를 선택하여 수정을 완료합니다. 
 
-{% include image.html file="data/data_search/collection_edit_thumbnail.png" %}
+{% include image.html file="data/data_search/collection_edit_thumbnail.PNG" %}
 
 <br>
 
@@ -132,7 +132,7 @@ Collection의 Paper는 Collection에 포함된 데이터들을 활용하여 도�
 
 <br>
 
-{% include image.html file="data/data_search/collection_edit_info.png" %}
+{% include image.html file="data/data_search/collection_edit_info.PNG" %}
 
 <br>
 

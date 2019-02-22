@@ -31,7 +31,7 @@ Collection Browser를 활용하면 원하는 컬렉션(데이터셋의 집합, �
 
 1. Collection Browser 검색창에 검색할 내용을 입력한 후 `검색(Search)` 버튼을 클릭합니다. 
 
-{% include image.html file="data/data_search/collection_browser.png" caption="Data Browser" %}
+{% include image.html file="data/data_search/collection_browser.PNG" caption="Data Browser" %}
 
 <br>
 

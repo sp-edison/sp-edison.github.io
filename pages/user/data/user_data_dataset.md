@@ -25,15 +25,15 @@ folder: user_data
 - `Information 탭` : 시뮬레이션 결과 데이터에 대한 요약정보와 가시화된 내용을 보여줍니다. 
    이 페이지는 기본적으로 `View Designer` 툴을 통해 솔버가 개발자가 생성하고 제공합니다. 솔버 개발자가 제공하지 않는 경우 이 탭은 존재하지 않습니다. 
 
-    {% include image.html file="data/dataset/dataset_info.png" %}
+    {% include image.html file="data/dataset/dataset_info.PNG" %}
 
 - `File 탭` : 시뮬레이션 결과 데이터 파일들을 리스팅하고 다운로드 할 수 있습니다. 
 
-    {% include image.html file="data/dataset/dataset_file.png" %}
+    {% include image.html file="data/dataset/dataset_file.PNG" %}
 
 - `Metadata 탭` : 서술형 메타데이터와, 생성이력 메타데이터를 볼수 있습니다. 
 
-    {% include image.html file="data/dataset/dataset_metadata.png" %}
+    {% include image.html file="data/dataset/dataset_metadata.PNG" %}
 
 - `Comment 탭` : 별점과 게시된 사용자 의견을 보여줍니다.  
 

@@ -18,7 +18,7 @@ folder: user_data
 
 1. 메뉴의 `콘텐츠/데이터` - `데이터 관리`로 이동합니다. 
 
-{% include image.html file="data/data_search/collection_my_collection.png" %}
+{% include image.html file="data/data_search/collection_my_collection.PNG" %}
 
 - 제목(title) : 링크를 누르면 컬렉션 상세보기 페이지로 이동합니다. 
 - 상태(Status) : 컬렉션에 포함된 상태별 데이터셋의 수를 나타냅니다. 
