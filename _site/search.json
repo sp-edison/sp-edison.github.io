@@ -1,0 +1,2154 @@
+[
+
+
+{
+"title": "Analyzer (분석기)",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "개발자 계정 발급",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_Developer_Account_Workspace.html",
+"summary": "EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개발자 권한을 얻어야 합니다. 개발자 권한을 받은 아이디는 Science App을 등록 할 수 있으며, 앱 개발자를 위한 개발 서버인 Bulb 서버에 접근할 수 있는 계정을 제공해 드립니다. Science App 등록시 메타 정보를 입력해야 하며, 이는 웹 포털에서 할 수 있습니다."
+}
+,
+
+
+
+{
+"title": "Editor (편집기)",
+"tags": "",
+"keywords": "",
+"url": "solverdev_editor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 프로그래밍 개요",
+"tags": "EDISONPlatformScience AppPrograming",
+"keywords": "",
+"url": "solverdev_Science_App_Programing.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "출력 프로그래밍 개요",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 프로그래밍",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Input_Programing.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 플랫폼 소개",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_intro.html",
+"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
+}
+,
+
+
+
+{
+"title": "C 언어",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Python 언어",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "R 언어",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Fortran 언어",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Octave 언어",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Octave_Programing_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Datatype",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_datatype.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 생성",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_appcreation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 정보 입력",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_appinformation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "개발자 서버 접속",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_Developer_Account_Bulb_Server.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Octave_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "리눅스 기초",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_Linux_Foundation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPPlotViewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_OSPPlotViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Structured Data Editor (SDE)",
+"tags": "",
+"keywords": "",
+"url": "solverdev_editor_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Structured Data Editor (SDE)",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Input_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Simpost Setting",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing_simpost.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App 실행환경 정보 입력",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_execution.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "File Selector",
+"tags": "",
+"keywords": "",
+"url": "solverdev_editor_fileselector.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_multiinputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_multiinputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_multiinputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_multiinputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPTextViewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_OSPTextViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Science App",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "solverdev_Science_app.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "simrc",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Input_Programing_simrc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입출력 포트 생성",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_port.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPImageViewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_OSPImageViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Octave_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Text Editor",
+"tags": "",
+"keywords": "",
+"url": "solverdev_editor_texteditor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD file format",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing_oneD.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "CSV Editor",
+"tags": "",
+"keywords": "",
+"url": "solverdev_editor_csveditor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "레이아웃 설정",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_layout.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "OSPHtmlViewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_OSPHtmlViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Octave_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Plotly file format",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing_Plotly.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Gnuplot",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing_Gnuplot.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "JSmol",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_JSmol.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "공개 데이터 등록",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_opendata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_oned.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_oned.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Fortran_Programing_oned.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "사이언스 앱 관리하기",
+"tags": "",
+"keywords": "",
+"url": "solverdev_management_app_management.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "GIF Animation 파일 만들기",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Science_App_Output_Programing_gif.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Gnuplot을 이용해 oneD plot 파일을 그림으로 저장하기",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_gnuplot.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Paraview",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_Paraview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Plotly",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_plotly.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "ProteinViewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_ProteinViewer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Plotly Viewer",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_Plotly.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "NGL",
+"tags": "",
+"keywords": "",
+"url": "solverdev_analyzer_NGL.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "프로젝트 생성",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide1.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "프로젝트 기본 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide2.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "스크립트 단위의 뷰 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbenchan_alyzerguide3.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "분석기 구조 설명",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbenchan_alyzerguide4.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "HANDSHAKE",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_handshake.html",
+"summary": "초기 워크벤치를 실행하면서 필요한 편집기와 분석기 모듈들을 호출합니다. 해당 편집기와 분석기는 실행되기 전에 HANDSHAKE 이벤트를 워크벤치로부터 받아 현재 상태 및 아이디를 등록을 하게 됩니다."
+}
+,
+
+
+
+{
+"title": "REGISTERED EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_registerd.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_requestdata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "RESPONSE DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "even_responsedata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "LOAD DATA EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_loaddata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "INITIAIZE EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_initialize.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST OUTPUT VIEW EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_refreshoutputview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "REQUEST DATA CHANGED EVENT",
+"tags": "workbenchevent",
+"keywords": "",
+"url": "event_datachanged.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "초기값 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbenchan_alyzerguide5.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "파일 탐색기 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide6.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "이벤트 처리 함수",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbenchan_alyzerguide7.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "공용 함수",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide8.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 관리자 매뉴얼",
+"tags": "manager",
+"keywords": "",
+"url": "sitemanager1.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "관리자 로그인",
+"tags": "manager",
+"keywords": "",
+"url": "sitemanager2.html",
+"summary": "사이트를 생성하고 관리하는 메뉴는 관리자로 로그인한 상태에서 최상단에서 확인할 수 있습니다."
+}
+,
+
+
+
+{
+"title": "페이지 관리",
+"tags": "manager",
+"keywords": "",
+"url": "sitemanager3.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "콘텐츠 관리 화면",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu1.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "페이지 메뉴",
+"tags": "manager",
+"keywords": "",
+"url": "pagemenu1.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "페이지 추가",
+"tags": "manager",
+"keywords": "",
+"url": "pagemenu2.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "웹 콘텐츠 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu2.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "문서와 멀티미디어 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu3.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "블로그 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu4.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "메시지 보드 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu5.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "위키 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu6.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "동적 데이터 목록 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu7.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "책갈피 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu8.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "뉴스레터 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu9.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "여론조사 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu10.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "기술 자료 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu11.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "태그 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu12.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "카테고리 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu13.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "워크플로우 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu14.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "휴지통 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu15.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "Open Social 부속품 편집자 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu16.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "Challenge Admin 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu17.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "데이터 타입 워크플로우 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu18.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "SDR 게시판 관리",
+"tags": "manager",
+"keywords": "",
+"url": "contentmenu19.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사용자 관리",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager1.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사용자 관리 화면",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager2.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사용자 관리",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager3.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사용자 회원권 제거",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager4.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사이트 조직 관리",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager5.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사용자 그룹 관리",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager6.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사이트 팀 관리",
+"tags": "manager",
+"keywords": "",
+"url": "usermanager7.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사이트 설정 관리",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager1.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사이트 설정 메뉴",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager2.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "응용 디스플레이 템플릿 설정",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager3.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "사교 활동 설정",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager4.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "워크플로우 설정",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager5.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "모바일 장치 류 설정",
+"tags": "manager",
+"keywords": "",
+"url": "configurationmanager6.html",
+"summary": "본 문서는 EDISON 사이트 관리를 위한 매뉴얼 입니다."
+}
+,
+
+
+
+{
+"title": "Liferay 설치 파일 다운로드",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting1.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+{
+"title": "Liferay IDE 설치",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting2.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Developer Studio 실행",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting3.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+{
+"title": "JDK 1.7 설정",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting4.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+{
+"title": "tomcat 서버 설정",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting5.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+{
+"title": "ANT 1.9 설정",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting6.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+{
+"title": "SDK 설정",
+"tags": "workbench",
+"keywords": "",
+"url": "workbenchsetting7.html",
+"summary": "본 문서는 워크벤치 기반 전후처리기 개발을 위한 매뉴얼입니다."
+}
+,
+
+
+
+
+
+{
+"title": "QnA",
+"tags": "",
+"keywords": "",
+"url": "solverdev_Python_Programing_qna.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "수강 현황 조회",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_course.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 소개",
+"tags": "",
+"keywords": "",
+"url": "user_contents.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 소개",
+"tags": "",
+"keywords": "",
+"url": "user_contentsManagement.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 데이터 큐레이션 모듈 생성",
+"tags": "",
+"keywords": "",
+"url": "datadev_curate_create.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "데이터 큐레이션 모듈 관리",
+"tags": "",
+"keywords": "",
+"url": "datadev_curate_manage.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 데이터 타입 관리",
+"tags": "",
+"keywords": "",
+"url": "datadev_datatype_manage.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 데이터 뷰 컴포넌트",
+"tags": "",
+"keywords": "",
+"url": "datadev_view_component.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 데이터 View Designer",
+"tags": "",
+"keywords": "",
+"url": "datadev_view_design.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 데이터 뷰 관리",
+"tags": "",
+"keywords": "",
+"url": "datadev_view_manage.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 문서 작성 가이드",
+"tags": "",
+"keywords": "EDISON 문서",
+"url": "docdev_intro.html",
+"summary": "EDISON 문서 작성 방법을 정리한 가이드 입니다. EDISON 문서는 Jekyll 기반으로 작성되었으며 documentation-theme-jekyll 테마를 기반으로 문서가 구성되어 있습니다. 본 문서에서는 EDISON 문서를 작성하기 위한 개발환경 구축 방법 및 문서 작성 그리고 페이지 추가 방법에 대해서 정리하였습니다."
+}
+,
+
+
+
+{
+"title": "EDISON 교육",
+"tags": "",
+"keywords": "",
+"url": "user_education_course.html",
+"summary": "EDISON 교육은 EDISON 플랫폼을 학교 강의 활용을 위해 제공하는 서비스 입니다."
+}
+,
+
+
+
+{
+"title": "EDISON 강좌 관리",
+"tags": "",
+"keywords": "",
+"url": "user_education_management.html",
+"summary": "EDISON에서 강좌를 생성하고 관리하는 방법에 대해 설명하였습니다."
+}
+,
+
+
+
+{
+"title": "EDISON 강의 관리",
+"tags": "",
+"keywords": "",
+"url": "user_educationClassManagement.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 이러닝 소개",
+"tags": "",
+"keywords": "",
+"url": "user_elearning.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "이러닝 코스빌더 소개",
+"tags": "",
+"keywords": "",
+"url": "user_elearningCourseBuilder.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "코스빌더 이러닝 강좌 만들기",
+"tags": "",
+"keywords": "",
+"url": "user_elearningCreate.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "코스빌더 이러닝 강좌 편집하기",
+"tags": "",
+"keywords": "",
+"url": "user_elearningManagement.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "로컬 컴퓨터 웹 서버 환경 구축하기",
+"tags": "",
+"keywords": "",
+"url": "user_elearningWebserver.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "시뮬레이션 파일",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_file.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "이력 관리",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_professor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON Documentation",
+"tags": "",
+"keywords": "EDSION Documentation",
+"url": "index.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "WorkBench 소개",
+"tags": "EDISONWorkBench",
+"keywords": "",
+"url": "user_workbench_intro.html",
+"summary": "사이언스 앱의 수행 환경인 WorkBench는 웹 브라우저의 접속 만으로 시뮬레이션 수행에 필요한 도구 및 분석기를 제공 합니다. 본 문서는 시뮬레이션 수행을 위한 유저 매뉴얼로 EDISON 플랫폼내에서 WorkBench를 활용 하는 방법에 대해서 소개하고자 합니다."
+}
+,
+
+
+
+{
+"title": "EDISON 로그인",
+"tags": "",
+"keywords": "",
+"url": "user_login.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 시스템 관리자 매뉴얼",
+"tags": "",
+"keywords": "",
+"url": "admin_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Phase Diagram",
+"tags": "",
+"keywords": "",
+"url": "mat_analysis_pd.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "ML Predictor",
+"tags": "",
+"keywords": "",
+"url": "mat_analysis_predictor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Reaction Calculator",
+"tags": "",
+"keywords": "",
+"url": "mat_analysis_rc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Visualization Chart",
+"tags": "",
+"keywords": "",
+"url": "mat_analysis_vc.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "소재 특화 사이트 사용자 매뉴얼",
+"tags": "",
+"keywords": "",
+"url": "mat_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Nanoporous Analyzer",
+"tags": "",
+"keywords": "",
+"url": "mat_nanoporous_analyzer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Nanoporous Explorer",
+"tags": "",
+"keywords": "",
+"url": "mat_nanoporous_explorer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Material Explorer",
+"tags": "",
+"keywords": "",
+"url": "mat_search_explorer.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "소재 데이터 뷰",
+"tags": "",
+"keywords": "",
+"url": "mat_search_view.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Crystal Toolkit",
+"tags": "",
+"keywords": "",
+"url": "mat_simulation_ct.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Simulation Monitoring",
+"tags": "",
+"keywords": "",
+"url": "mat_simulation_monitor.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 소개",
+"tags": "",
+"keywords": "",
+"url": "user_monitoring.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "페이지 준비중",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_overview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 파일",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_simulationfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "페이지 준비중",
+"tags": "",
+"keywords": "",
+"url": "user_page.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppDetailInfo.html",
+"summary": "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱의 상세정보에 대한 설명이다."
+}
+,
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppDetailRelation.html",
+"summary": "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱의 관련정보에 대한 설명이다."
+}
+,
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppDetailReview.html",
+"summary": "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱의 리뷰에 대한 설명이다."
+}
+,
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppDetailStatistics.html",
+"summary": "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱의 통계 대한 설명이다."
+}
+,
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppDetailView.html",
+"summary": "사이언스 앱 상세보기 페이지는 사용자가 사이언스 앱 목록을 통해 선택한 사이언스 앱의 상세 정보를 열람할 수 있는 화면이다. <br/>다음은 사이언스 앱 목록 화면의 구성과 기본 정보에 대한 설명이다."
+}
+,
+
+
+
+{
+"title": "Science App 사용자 매뉴얼",
+"tags": "EDISONScienceAppSolver",
+"keywords": "",
+"url": "user_scienceApp_scienceAppList.html",
+"summary": "사이언스 앱 목록 화면은 EDISON 전문분야 별 서비스 중인 사이언스 앱의 목록을 제공하고, 사용자가 선택한 검색 조건을 통해 사이언스 앱을 검색할 수 있다. <br/>다음은 사이언스 앱 목록 화면의 구성과 기능에 대한 설명이다."
+}
+,
+
+
+
+
+
+{
+"title": "EDISON 회원가입",
+"tags": "",
+"keywords": "",
+"url": "user_signup.html",
+"summary": "EDISON 회원 가입에 대한 방법을 알아봅니다. 이메일을 통해 직접 계정을 생성하거나, KAFE를 이용해 다른 서비스에서 활용하는 계정 정보로 EDISON을 사용할 수 있습니다."
+}
+,
+
+
+
+{
+"title": "사이트 가입/탈퇴",
+"tags": "",
+"keywords": "",
+"url": "user_myedison_sitejoin.html",
+"summary": ""
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "EDISON 소개",
+"tags": "",
+"keywords": "",
+"url": "user_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "데이터 컬렉션 관리",
+"tags": "",
+"keywords": "",
+"url": "user_data_collection.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 결과 데이터 조회",
+"tags": "",
+"keywords": "",
+"url": "user_data_dataset.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 결과 데이터 관리 소개",
+"tags": "",
+"keywords": "",
+"url": "user_data_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "내 시뮬레이션 결과 데이터 관리",
+"tags": "",
+"keywords": "",
+"url": "user_data_my.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 재실행",
+"tags": "EDISONrerunworkbench",
+"keywords": "",
+"url": "user_data_rerun.html",
+"summary": "저장된 시뮬레이션 중 실행했던 것과 동일한 파라미터와 파일들을 기반으로 다시 시뮬레이션을 실행해보고 싶다면, 과거 실행에서 사용했던 파라미터와 파일들을 그대로 가져와서 워크벤치 기반 시뮬레이션을 실행합니다."
+}
+,
+
+
+
+{
+"title": "시뮬레이션 결과 데이터 검색",
+"tags": "",
+"keywords": "",
+"url": "user_data_search.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "내 시뮬레이션 결과 데이터 공유",
+"tags": "EDISON-DataPlatformUpload",
+"keywords": "",
+"url": "user_data_share.html",
+"summary": "실행한 시뮬레이션 결과물들을 EDISON-Data 플랫폼에 영구 저장합니다."
+}
+,
+
+
+
+{
+"title": "워크플로우 편집기 매뉴얼",
+"tags": "workflow",
+"keywords": "workflow",
+"url": "workflow_workflow-designer.html",
+"summary": "워크플로우 편집기 사용자 매뉴얼"
+}
+,
+
+
+
+{
+"title": "워크플로우 실행 매뉴얼",
+"tags": "workflow",
+"keywords": "workflow",
+"url": "workflow_workflow-executor.html",
+"summary": "워크플로우 실행 사용자 매뉴얼"
+}
+,
+
+
+
+{
+"title": "개발자 계정 발급",
+"tags": "EDISONPlatform",
+"keywords": "",
+"url": "myedison_workspace.html",
+"summary": "EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개발자 권한을 얻어야 합니다. 개발자 권한을 받은 아이디는 Science App을 등록 할 수 있으며, 앱 개발자를 위한 개발 서버인 Bulb 서버에 접근할 수 있는 계정을 제공해 드립니다. Science App 등록시 메타 정보를 입력해야 하며, 이는 웹 포털에서 할 수 있습니다."
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "assetscssstyle.css",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "EDISON 프로그래밍 개요",
+"tags": "",
+"keywords": "",
+"url": "pagessolverDevnote.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "Sample post",
+"tags": "newsgetting_started",
+"keywords": "",
+"url": "samplepost.html",
+"summary": "This is some summary frontmatter for my sample post."
+}
+,
+
+
+{
+"title": "Welcome to Jekyll!",
+"tags": "news",
+"keywords": "",
+"url": "myupdate.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "Test post from last year",
+"tags": "news",
+"keywords": "",
+"url": "test-post-from-last-year.html",
+"summary": ""
+}
+
+
+
+]

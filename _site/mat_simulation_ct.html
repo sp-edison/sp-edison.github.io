@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  ">
+<title>Crystal Toolkit | EDISON platform for documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="sp-edison.github.io" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                //$("#tg-sb-sidebar").toggle();
+                //$("#tg-sb-content").toggleClass('col-md-9');
+                //$("#tg-sb-content").toggleClass('col-md-12');
+
+
+                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
+                  //EN
+                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                }else{
+                  //KO
+                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
+                }
+
+
+
+                <!--Language Translate using PAPAGO naver API-->
+
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> EDISON Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">User<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="user_intro.html">EDISON 포털</a></li>
+                        
+                        
+                        
+                        <li><a href="mat_intro.html">소재 특화 사이트</a></li>
+                        
+                        
+                        
+                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manager<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="solverdev_intro.html">Solver</a></li>
+                        
+                        
+                        
+                        <li><a href="workbenchsetting1.html">Workbench</a></li>
+                        
+                        
+                        
+                        <li><a href="datadev_view_manage.html">Simulation Data</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="admin_intro.html">Admin</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the Crystal Toolkit page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Crystal Toolkit">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">USER-MAT 1.0</li>
+  
+  
+  
+    
+  
+  <li>
+      <a href="#">소개</a>
+      <ul>
+          
+          
+          
+          <li><a href="mat_intro.html">소개</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">소재 검색</a>
+      <ul>
+          
+          
+          
+          <li><a href="mat_search_explorer.html">Material Explorer</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_search_view.html">Data View</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">소재 분석</a>
+      <ul>
+          
+          
+          
+          <li><a href="mat_analysis_pd.html">Phase Diagram</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_analysis_rc.html">Reaction Calculator</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_analysis_vc.html">Visualization Chart </a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_analysis_predictor.html">ML Predictor</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">소재 시뮬레이션</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a href="mat_simulation_ct.html">Crystal Toolkit</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_simulation_monitor.html">Simulation Monitoring</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">나노포러스 분석</a>
+      <ul>
+          
+          
+          
+          <li><a href="mat_nanoporous_explorer.html">Nanoporous Explorer</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mat_nanoporous_analyzer.html">Nanoporous Analyzer</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+    
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Crystal Toolkit</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary"></div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+   <h2 id="개요">개요</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">Crystal Toolkit</code> 툴을 사용하면 소재 시뮬레이션 데이터셋 ID 또는 CIF 또는 POSCAR 파일 업로드를 통해 구조를 로드하고 원소를 대체하거나 제거하여 새로운 소재 구조를 생성 할 수 있습니다.</li>
+  <li>또한, 로드된 구조체의 수퍼셀 크기를 변경하기 위한 스케일링 행렬을 지정할 수도 있습니다.</li>
+</ul>
+
+<h2 id="crystal-toolkit">Crystal Toolkit</h2>
+
+<ol>
+  <li>메뉴의 <code class="highlighter-rouge">Analysis</code> - <code class="highlighter-rouge">Crystal Toolkit</code> 혹은 도구 아이콘 <code class="highlighter-rouge">Crystal Toolkit</code>을 클릭하여 이동 합니다.</li>
+</ol>
+
+<figure><img class="docimage" src="images/data/image00266.png" alt="" /><figcaption>소재 특화 사이트 Crystal Toolkit 메뉴</figcaption></figure>
+
+<h2 id="화면-소개">화면 소개</h2>
+
+<ol>
+  <li><code class="highlighter-rouge">Dataset</code>의 <code class="highlighter-rouge">Id</code> 값으로 검색하여 해당 시뮬레이션 데이터에 포함된 <code class="highlighter-rouge">Structure</code> 파일을 구조를 불러올 수 있습니다.</li>
+  <li><code class="highlighter-rouge">Structure</code> 파일을 직접 업로드하여 해당 파일의 구조를 불러올 수도 있습니다.</li>
+  <li>검색 유형과 값을 입력 후 <code class="highlighter-rouge">Search</code> 버튼을 클릭합니다.</li>
+</ol>
+
+<figure><img class="docimage" src="images/data/image00267.png" alt="" /><figcaption>Dataset Id 검색</figcaption></figure>
+
+<blockquote>
+  <h3 id="structure-검색">Structure 검색</h3>
+  <p>검색창 좌측의 선택 창에서 <code class="highlighter-rouge">By Structure</code>를 선택합니다.</p>
+  <figure><img class="docimage" src="images/data/image00268.png" alt="" /><figcaption>Structure 검색 : 검색 유형 선택</figcaption></figure>
+</blockquote>
+
+<blockquote>
+  <p>‘파일 선택’ 버튼을 클릭 후 <code class="highlighter-rouge">Structure</code> 파일을 등록 후 <code class="highlighter-rouge">Submit</code> 버튼을 클릭합니다.</p>
+  <figure><img class="docimage" src="images/data/image00269.png" alt="" /><figcaption>Structure 검색 : 파일 선택</figcaption></figure>
+</blockquote>
+
+<h2 id="검색-결과-조회">검색 결과 조회</h2>
+
+<ol>
+  <li><code class="highlighter-rouge">Material ID</code>나 <code class="highlighter-rouge">POSCAR</code> Structure 구조파일을 업로드하여 프로그램이 실행되면, 기본 <code class="highlighter-rouge">Supercell</code> 매트릭스 행렬과, <code class="highlighter-rouge">Substitute</code>의 기본 원소 정보, Crystal Data에 구조 정보, Lattice Parameters에 각각의 격자 상수와 각도, Final Structure에 각 원소의 점들에 대한 좌표값이 표시됩니다.</li>
+</ol>
+
+<figure><img class="docimage" src="images/data/image00270_0.png" alt="" /><figcaption>Supercell Submit</figcaption></figure>
+
+<blockquote>
+  <h3 id="검색-결과-활용-하기">검색 결과 활용 하기</h3>
+  <p>① 출력 결과 왼쪽 위의 수치를 변경한 후 <code class="highlighter-rouge">Supercell Submit</code> 버튼을 클릭하여 출력 결과를 변경할 수 있습니다.</p>
+  <figure><img class="docimage" src="images/data/image00270.png" alt="" /><figcaption>Supercell Submit</figcaption></figure>
+</blockquote>
+
+<blockquote>
+  <p>② 출력 결과 왼쪽의 <code class="highlighter-rouge">Substitute</code> 항목의 선택 창을 사용하여 원소를 변경하거나 삭제 할 수 있습니다.</p>
+  <figure><img class="docimage" src="images/data/image00271.png" alt="" /><figcaption>Substitute Submit</figcaption></figure>
+</blockquote>
+
+<blockquote>
+  <p>③ 출력 결과 오른쪽측의 <code class="highlighter-rouge">Structure Download</code>선택 창의 확장자를 선택하여 파일을 다운로드 할 수 있습니다.</p>
+  <figure><img class="docimage" src="images/data/image00272.png" alt="" /><figcaption>Structure Download</figcaption></figure>
+</blockquote>
+
+<blockquote>
+  <p>④ 출력 결과 오른쪽의 Simulation <code class="highlighter-rouge">Run</code> 버튼을 클릭하여 EDISON 시스템과 연계하여 시뮬레이션을 재 실행할 수 있습니다.</p>
+  <figure><img class="docimage" src="images/data/image00273.png" alt="" /><figcaption>Simulation Run</figcaption></figure>
+</blockquote>
+
+<blockquote>
+  <figure><img class="docimage" src="images/data/image00274.png" alt="" /><figcaption>시뮬레이션 재실행 파라미터 설정</figcaption></figure>
+</blockquote>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+    </div>
+
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'https-sp-edison-github-io'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2019 KISTI. All rights reserved.
+ Site last generated: Apr 15, 2019 <br />
+<p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
+  <img src="images/edison_logo.png" alt="Company logo" /></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

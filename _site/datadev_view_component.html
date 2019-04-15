@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  ">
+<title>시뮬레이션 데이터 뷰 컴포넌트 | EDISON platform for documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="sp-edison.github.io" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                //$("#tg-sb-sidebar").toggle();
+                //$("#tg-sb-content").toggleClass('col-md-9');
+                //$("#tg-sb-content").toggleClass('col-md-12');
+
+
+                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
+                  //EN
+                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                }else{
+                  //KO
+                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
+                }
+
+
+
+                <!--Language Translate using PAPAGO naver API-->
+
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> EDISON Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">User<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="user_intro.html">EDISON 포털</a></li>
+                        
+                        
+                        
+                        <li><a href="mat_intro.html">소재 특화 사이트</a></li>
+                        
+                        
+                        
+                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manager<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="solverdev_intro.html">Solver</a></li>
+                        
+                        
+                        
+                        <li><a href="workbenchsetting1.html">Workbench</a></li>
+                        
+                        
+                        
+                        <li><a href="datadev_view_manage.html">Simulation Data</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="admin_intro.html">Admin</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the 시뮬레이션 데이터 뷰 컴포넌트 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="시뮬레이션 데이터 뷰 컴포넌트">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">EDISON-DEV-DATA 1.0</li>
+  
+  
+  
+    
+  
+  <li>
+      <a href="#">시뮬리에션 데이터 뷰</a>
+      <ul>
+          
+          
+          
+          <li><a href="datadev_view_manage.html">데이터 뷰 관리</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="datadev_view_design.html">데이터 뷰 편집기</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="datadev_view_component.html">데이터 뷰 컴포넌트</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">시뮬레이션 데이터 큐레이션</a>
+      <ul>
+          
+          
+          
+          <li><a href="datadev_curate_manage.html">큐레이션 모듈 관리</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="datadev_curate_create.html">큐레이션 모듈 생성</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+  
+  <li>
+      <a href="#">시뮬레이션 데이터 타입</a>
+      <ul>
+          
+          
+          
+          <li><a href="datadev_datatype_manage.html">타입 관리</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+    
+    
+    
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">시뮬레이션 데이터 뷰 컴포넌트</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary"></div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+   <h2 id="layoutgridrow-12">Layout/gridrow-12</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/gridrow-12</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰의 전체적인 레이아웃을 설정하기 위한 컴포넌트</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Grid Row(12) 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_047.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_048.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Grid Row(12, 6:6, 4:4:4, 4:8, 8:4) 컴포넌트는 뷰의 전체적인 레이아웃을 설정하는 컴포넌트로 영역을 잡은 후 다른 컴포넌트를 배치하는데 사용.
+
+ 레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="layoutgridrow-66">Layout/gridrow-66</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/gridrow-66</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰의 전체적인 레이아웃을 설정하기 위한 컴포넌트</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Grid Row(6:6) 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_049.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_050.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Grid Row(12, 6:6, 4:4:4, 4:8, 8:4) 컴포넌트는 뷰의 전체적인 레이아웃을 설정하는 컴포넌트로 영역을 잡은 후 다른 컴포넌트를 배치하는데 사용.
+
+ 레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="layoutgridrow-444">Layout/gridrow-444</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/gridrow-444</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰의 전체적인 레이아웃을 설정하기 위한 컴포넌트</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Grid Row(4:4:4) 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_051.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_052.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Grid Row(12, 6:6, 4:4:4, 4:8, 8:4) 컴포넌트는 뷰의 전체적인 레이아웃을 설정하는 컴포넌트로 영역을 잡은 후 다른 컴포넌트를 배치하는데 사용.
+
+ 레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="layoutgridrow-48">Layout/gridrow-48</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/gridrow-48</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰의 전체적인 레이아웃을 설정하기 위한 컴포넌트</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Grid Row(4:8) 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_053.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_054.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Grid Row(12, 6:6, 4:4:4, 4:8, 8:4) 컴포넌트는 뷰의 전체적인 레이아웃을 설정하는 컴포넌트로 영역을 잡은 후 다른 컴포넌트를 배치하는데 사용.
+
+ 레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="layoutgridrow-84">Layout/gridrow-84</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/gridrow-84</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰의 전체적인 레이아웃을 설정하기 위한 컴포넌트</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Grid Row(8:4) 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_055.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_056.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Grid Row(12, 6:6, 4:4:4, 4:8, 8:4) 컴포넌트는 뷰의 전체적인 레이아웃을 설정하는 컴포넌트로 영역을 잡은 후 다른 컴포넌트를 배치하는데 사용.
+
+ 레이아웃은 가로 사이즈 기준 총 12컬럼으로 구분되며 [Add column] 버튼으로 레이아웃을 추가 하거나 [Remove] 버튼으로 레이아웃을 삭제하고 [Flexbox] 항목을 조절할 수 있음.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="layoutpanel">Layout/panel</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Layout/panel</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 제목, 내용 형식을 표현하기 위한 컴포넌트로 주로 Grid Row 컴포넌트와 함께 사용</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Panel 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_057.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트의 상단 제목 부분을 더블클릭하여 텍스트를 입력 할 수 있고 하단의 내용 부분도 더블클릭하여 텍스트를 입력하거나 다른 컴포넌트를 드래그 &amp; 드롭 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_058.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_059.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsheading">Components/heading</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/heading</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 헤더가 되는 제목을 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Heading 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_060.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트를 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_061.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Size : 컴포넌트의 사이즈를 6단계(숫자가 클수록 글자가 커짐)로 설정할 수 있음.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_062.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentslabel">Components/label</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/label</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 라벨이 되는 글자를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Label 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_063.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트를 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_064.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_065.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentslink">Components/link</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/link</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 별도의 페이지 링크를 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Link 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_066.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_067.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Link : 별도의 페이지 링크를 위한 주소 입력.
+
+ Target : 
+
+     _blank 연결 문서를 새 창에서 연다.
+
+     _self 연결 문서를 클릭한 창에서 연다
+
+     _parent 부모창에서 연다. (부모가 없으면 _self처럼 작동)
+
+     _top 가장 상위 창에서 연다. (즉 프레임을 무시하며, 전체 브라우저 창에서 작동)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_068.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentstable-normal">Components/table-normal</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/table-normal</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 표 형식의 데이터를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Normal Table 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_069.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_070.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Row Count: 행의 개수를 조절할 수 있음
+
+ Col Count : 열의 개수를 조절할 수 있음
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_071.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentstable-non-border">Components/table-non-border</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/table-non-border</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 테두리가 없고 구분자만 있는 표 형식의 데이터를 표현하기 위한 컴포넌트로 주로 Panel 컴포넌트와 함께 사용.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Non-border Table 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_072.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_073.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Row Count : 행의 개수를 조절할 수 있음
+
+ Col Count : 열의 개수를 조절할 수 있음
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_074.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentstable-coordinate">Components/table-coordinate</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/table-coordinate</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 label과 value로 이루어진 배열 데이터를 표 형식으로 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Coordinate Table 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_075.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_076.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Metadata : 메타데이터 설정
+
+ Title : 데이터 그룹별 제목 지정(미 지정시 label 값으로 표시)
+
+ Column : 데이터 그룹별 열의 제목 지정(미 지정시 a, b, c 값으로 표시)
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>메타데이터 샘플</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;figure&gt;&lt;img class="docimage" src="images/data/datadev_view_component/datadev_view_component_077.bmp" alt=""  /&gt;&lt;/figure&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_078.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentstable-array">Components/table-array</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/table-array</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 배열의 값으로 구성되어있는 데이터를 표 형식으로 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Coordinate Table 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_079.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_080.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Metadata : 메타데이터 설정
+
+ Title : 데이터 그룹 제목 지정
+
+ Column : 데이터 그룹 열의 제목 지정
+</code></pre></div>    </div>
+
+    <p><strong>메타데이터 샘플</strong></p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_081.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_082.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentslistgroup">Components/listgroup</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/listgroup</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 리스트 형태의 데이터를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>List Group 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_083.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트를 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_084.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_085.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsimage">Components/image</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/image</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 이미지 데이터를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>jgp, jpeg, png, bmp, gif, svg</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Image 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_086.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_087.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_088.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="componentsvideo">Components/video</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/video</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 동영상 데이터를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>youtube, vimedo, html5(mp4, ogv, ogg, webm)</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Video 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_089.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_090.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Provider : 동영상 형식 설정(Youtube, Vimeo, HTML5, Final Path, Meta Path)
+
+ Url : Youtube, Vimeo 일 경우 동영상 id를, 나머지일 경우 파일경로를 입력
+
+ Autoplay : 자동으로 재생이 시작됨
+
+ Controls : 소리조절, 동영상 탐색, 일시정지/재시작을 할 수 있는 컨트롤러 제공
+
+ Loop : 동영상 재생이 마친 후 자동으로 처음으로 돌아감
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_091.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="componentsalert">Components/alert</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/alert</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 알림 형태의 문구를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Alert 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_092.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_093.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Type : 알림 형태별로 색상을 지정할 수 있음 
+
+ (Default: 파랑, Secondary: 회색, Success: 초록, Danger: 빨강, Warning: 노랑, Info: 하늘, Light: 연회색, Dark: 진회색)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_094.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsbadge">Components/badge</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/badge</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 배지 형태의 문구를 표현하기 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Badge 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_095.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_096.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Color : 배지 형태별로 색상을 지정할 수 있음 
+
+ (Default: 파랑, Secondary: 회색, Success: 초록, Danger: 빨강, Warning: 노랑, Info: 하늘, Light: 연회색, Dark: 진회색)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_097.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsbutton">Components/button</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/button</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 버튼 형태의 페이지 링크를 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Button 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_098.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_099.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Link To : 별도의 페이지 링크를 위한 주소 입력.
+
+ Type : 형태별로 색상을 지정할 수 있음 
+
+ (Default: 파랑, Secondary: 회색, Success: 초록, Danger: 빨강, Warning: 노랑, Info: 하늘, Light: 연회색, Dark: 진회색, *outline: 색상이 반전되고 테두리만 남은 형태)
+
+ Size : 버튼의 크기 지정(Default, Large, Small)
+
+ Target : _blank 연결 문서를 새 창에서 연다.
+
+     _self 연결 문서를 클릭한 창에서 연다
+
+     _parent 부모창에서 연다. (부모가 없으면 _self처럼 작동)
+
+     _top 가장 상위 창에서 연다. (즉 프레임을 무시하며, 전체 브라우저 창에서 작동)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_100.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsbuttongroup">Components/buttongroup</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/buttongroup</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 버튼 그룹 형태의 페이지 링크를 위한 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Button Group 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_101.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음. 각 버튼별 설정은 Button 컴포넌트와 동일 함.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_102.bmp" alt="" /></figure>
+
+    <p><strong>컴포넌트 설정 방법</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Size : 버튼의 크기 지정(Default, Large, Small)
+
+ Alignment : Default, Horizontal(가로정렬), Vertical(세로정렬)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_103.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentshr">Components/hr</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/hr</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 상단과 하단을 구분 할 수 있는 컴포넌트.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Horizontal Rule 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_104.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>해당 컴포넌트는 별도의 컴포넌트 설정이 없음</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_105.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_106.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentsjumbotron">Components/jumbotron</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/jumbotron</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 미리 배치되어있는 컴포넌트의 집합.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Jumbotron 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_107.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_108.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_109.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="componentscard">Components/card</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Components/card</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>뷰를 꾸미기 위한 기본 컴포넌트로 미리 배치되어있는 컴포넌트의 집합.</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>Card 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_110.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 컴포넌트별 설정을 조절 할 수 있고 더블클릭하여 텍스트를 입력 할 수 있음.</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_111.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>내용을 입력 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_112.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="libraryjsmol">Library/jsmol</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/jsmol</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>원소, 결정체, 재료 및 생체 분자의 기능들과 화학적 구조를 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p>(링크: <a href="http://jmol.sourceforge.net/">http://jmol.sourceforge.net/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>POSCAR, cif, cube, xyz</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>jsmol 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_001.png" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_002.png" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_003.png" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일이 아닌 여러 파일을 가시화할 수 있으며, 파일 경로에 정규표현식 중 ‘*’ 기능을 활용하여 여러 파일을 불러올 수 있음</p>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>확장자가 cif인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/*.cif
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>파일 이름이 ‘result’로 시작하고 확장자가 vtp인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/result*.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="libraryparaview">Library/paraview</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/paraview</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>체적 이미지 (volumetric images), 분자 구조 (molecular structures), 기하학적 개체 (geometric objects) 및 점군 (point clouds)을 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p>(링크 : <a href="https://kitware.github.io/paraview-glance/app/">https://kitware.github.io/paraview-glance/app/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>vtp, vti, stl, obj, pdb, glyph, skybox</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>paraview 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_004.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_005.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_006.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일이 아닌 여러 파일을 가시화할 수 있으며, 파일 경로에 정규표현식 중 ‘*’ 기능을 활용하여 여러 파일을 불러올 수 있음</p>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>확장자가 cif인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/*.cif
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>파일 이름이 ‘result’로 시작하고 확장자가 vtp인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/result*.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="librarypdf">Library/pdf</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/pdf</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>웹 브라우저에서 pdf 문서를 가시화하기 위한 컴포넌트</p>
+
+<p>(링크 : <a href="https://mozilla.github.io/pdf.js/getting_started/">https://mozilla.github.io/pdf.js/getting_started/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>pdf</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>pdf 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_007.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_008.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_009.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryepub">Library/epub</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/epub</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>웹 브라우저에서 ePub 문서를 가시화하기 위한 컴포넌트</p>
+
+<p>(링크 : <a href="http://futurepress.org/">http://futurepress.org/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>epub</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>epub 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_010.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_011.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_012.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryxrd">Library/xrd</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/xrd</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>X선을 결정에 부딪히게 하여 회절을 일으켜서 얻은 결정성 물질의 구조에 관한 정보를 차트 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>xrd_CuKa.json, xrd_AgKa.json, xrd_MoKa.json, xrd_FeKa.json</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>xrd 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_013.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>이 컴포넌트는 전처리를 통해 도출된 특정 파일을 가시화하기 위한 컴포넌트로 별도의 파일 경로를 지정하지 않음</p>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_014.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="librarydos">Library/dos</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/dos</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>단위 부피 및 단위 에너지 당 양자역학적 상태의 수를 차트 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>dos.json</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>dos 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_015.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>이 컴포넌트는 전처리를 통해 도출된 특정 파일을 가시화하기 위한 컴포넌트로 별도의 파일 경로를 지정하지 않음</p>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_016.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<h2 id="libraryrlt2chart">Library/rlt2chart</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/rlt2chart</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>2차원 형태로 결과가 도출된 rlt 파일들을 x, y의 2차원 차트 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>rlt</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>rlt2chart 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_017.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_018.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_019.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일이 아닌 여러 파일을 가시화할 수 있으며, 파일 경로에 정규표현식 중 ‘*’ 기능을 활용하여 여러 파일을 불러올 수 있음</p>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>확장자가 cif인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/*.cif
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>파일 이름이 ‘result’로 시작하고 확장자가 vtp인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/result*.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="libraryhtml">Library/html</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/html</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>CSS, 이미지, 링크 등이 포함된 html 파일을 가시화하기 위한 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>html, htm</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>html 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_020.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_021.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_022.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryx3d">Library/x3d</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/x3d</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>x3d 포맷의 파일을 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p>(링크 : <a href="https://www.x3dom.org/">https://www.x3dom.org/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>x3d</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>x3d 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_023.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_024.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_025.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryp3d">Library/p3d</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/p3d</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>p3d 형태의 파일을 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>p3d</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>p3d 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_026.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_027.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_028.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryngl">Library/ngl</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/ngl</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>단백질과 DNA, RNA와 같은 분자를 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p>(링크 : <a href="http://nglviewer.org/">http://nglviewer.org/</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>pdb</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>ngl 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_029.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_030.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_031.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일이 아닌 여러 파일을 가시화할 수 있으며, 파일 경로에 정규표현식 중 ‘*’ 기능을 활용하여 여러 파일을 불러올 수 있음</p>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>확장자가 cif인 모든 파일</li>
+</ol>
+
+<p>File Path 옵션 : /{원하는 파일 경로}/*.cif</p>
+
+<ol>
+  <li>파일 이름이 ‘result’로 시작하고 확장자가 vtp인 모든 파일</li>
+</ol>
+
+<p>File Path 옵션 : /{원하는 파일 경로}/result*.vtp</p>
+
+<h2 id="librarycsv">Library/csv</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/csv</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>csv 파일을 가시화하기 위한 컴포넌트</p>
+
+<p>(링크 : <a href="https://github.com/handsontable/handsontable">https://github.com/handsontable/handsontable</a>)</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>csv</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>csv 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_032.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_033.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_034.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="librarytext">Library/text</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/text</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>text 파일을 가시화하기 위한 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>txt, csv, json, log, md 및 기타 raw file</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>text 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_035.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_036.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_037.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="libraryonedviewer">Library/onedviewer</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/onedviewer</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>EDISON 시뮬레이션의 결과로 도출된 oneD 포맷의 데이터를 x, y의 2차원 형태의 차트 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>oneD</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>onedviewer 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_038.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_039.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_040.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+<h2 id="librarysc3dviewer">Library/sc3dviewer</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/sc3dviewer</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>EDISON 나노물리 시뮬레이션 (DFT_sc3d)의 결과로 도출된 js 파일을 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>js</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>sc3dviewer 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_041.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_042.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_043.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일이 아닌 여러 파일을 가시화할 수 있으며, 파일 경로에 정규표현식 중 ‘*’ 기능을 활용하여 여러 파일을 불러올 수 있음</p>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>확장자가 cif인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/*.cif
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>파일 이름이 ‘result’로 시작하고 확장자가 vtp인 모든 파일</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Path 옵션 : /{원하는 파일 경로}/result*.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="libraryatomtransistor">Library/atomtransistor</h2>
+
+<p><strong>컴포넌트 이름</strong></p>
+
+<p>Library/atomtransistor</p>
+
+<p><strong>컴포넌트 설명</strong></p>
+
+<p>EDISON 나노물리 시뮬레이션 (WEB_IO_SIESTA)의 결과로 도출된 js 파일을 3D 형태로 보여주는 가시화 컴포넌트</p>
+
+<p><strong>허용하는 포맷</strong></p>
+
+<p>js</p>
+
+<p><strong>사용 방법</strong></p>
+
+<ol>
+  <li>
+    <p>atomtransistor 컴포넌트를 뷰 디자인 화면에 드래그 &amp; 드롭</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_044.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>컴포넌트 클릭 후, 우측 속성 설정 탭에서 원하는 파일 경로를 설정</p>
+
+    <p>(파일 경로에 대한 설명은 아래 참고)</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_045.bmp" alt="" /></figure>
+  </li>
+  <li>
+    <p>파일 경로 설정 후, Preview 버튼을 눌러 제대로 설정되었는지 확인</p>
+
+    <figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_046.bmp" alt="" /></figure>
+  </li>
+</ol>
+
+<p><strong>파일 경로에 대한 설명</strong></p>
+
+<p>EDISON 시뮬레이션 결과를 저장하면 아래 그림과 같이, 시뮬레이션에 실행된 INPUT, OUTPUT 파일은 final이라는 디렉토리 하위에 저장되고, 전처리를 통해 도출된 파일들은 meta라는 디렉토리 하위에 저장됨.</p>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_final.png" alt="" /></figure>
+
+<figure><img class="docimage" src="images/data/datadev_view_component/datadev_view_component_file_meta.png" alt="" /></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final Path : 해당 Dataset의 final 디렉토리 경로까지 설정해주는 옵션
+
+Meta Path : 해당 Dataset의 meta 디렉토리 경로까지 설정해주는 옵션
+
+Another : 그 외 경로를 직접 설정하고 싶을 때 사용하는 옵션
+</code></pre></div></div>
+
+<p>사용법 예제)</p>
+
+<ol>
+  <li>
+    <p>final/input/2018-09-12-13-45/cylinder.bc 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Final Path로 설정
+
+ File Path 옵션 : /input/2018-09-12-13-45/cylinder.bc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>meta/derived/result_iter000002.vtp 파일의 경로를 설정하고 싶을 때</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> File Type 옵션 : Meta Path로 설정
+
+ File Path 옵션 : /derived/result_iter000002.vtp
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>여러 파일 허용 여부 및 사용 방법</strong></p>
+
+<p>이 컴포넌트는 하나의 파일만 가시화할 수 있음</p>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+    </div>
+
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'https-sp-edison-github-io'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2019 KISTI. All rights reserved.
+ Site last generated: Apr 15, 2019 <br />
+<p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
+  <img src="images/edison_logo.png" alt="Company logo" /></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
