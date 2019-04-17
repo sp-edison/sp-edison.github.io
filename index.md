@@ -28,18 +28,6 @@ permalink: index.html
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default text-center">
             <div class="panel-heading">
-                <img style="margin:0px;height: 150px;width: 130px;" src="/images/sgv/workbench.svg" />
-            </div>
-            <div class="panel-body">
-                <h4>Workbench Manual</h4>
-                <p>워크벤치 개발자를 위한 매뉴얼 입니다.</p>
-                <a href="/workbench_analyzerguide1.html" class="btn btn-primary">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default text-center">
-            <div class="panel-heading">
                 <img style="margin:0px;height: 150px;width: 130px;" src="/images/sgv/user.svg" />
             </div>
             <div class="panel-body">
@@ -49,7 +37,7 @@ permalink: index.html
             </div>
         </div>
     </div>
-    <div class="col-md-4 col-sm-6">
+    <div class="col-md-offset-2 col-md-4 col-sm-6">
         <div class="panel panel-default text-center">
             <div class="panel-heading">
                 <img style="margin:0px;height: 150px;width: 130px;" src="/images/sgv/manager.svg" />
@@ -77,7 +65,7 @@ permalink: index.html
 
 
 
-{% include links.html %}
+
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
