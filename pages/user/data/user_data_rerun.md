@@ -26,7 +26,7 @@ folder: user_data
 
 1. `Rerun simulation` 버튼을 누르면 워크벤치 페이지로 이동하고 동일한 시뮬레이션 환경을 생생합니다. 
 
-    {% include image.html file="data/user_data_rerun_03.png" caption="Workbench" %}
+    {% include image.html file="data/user_data_rerun_06.png" caption="Workbench" %}
 
 1. 입력 파라미터나 파일을 수정하거나 그대로 사용하여 나만의 시뮬레이션을 수행합니다. 
 
