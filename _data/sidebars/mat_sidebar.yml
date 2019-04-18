@@ -70,13 +70,13 @@ entries:
         url: /mat_simulation_monitor.html
         output: web, pdf
 
-  - title: 나노포러스 분석
-    output: web, pdf
-    folderitems:
-      - title: "Nanoporous Explorer"
-        url: /mat_nanoporous_explorer.html
-        output: web, pdf
-
-      - title: "Nanoporous Analyzer"
-        url: /mat_nanoporous_analyzer.html
-        output: web, pdf
+#   - title: 나노포러스 분석
+#     output: web, pdf
+#     folderitems:
+#       - title: "Nanoporous Explorer"
+#         url: /mat_nanoporous_explorer.html
+#         output: web, pdf
+# 
+#       - title: "Nanoporous Analyzer"
+#         url: /mat_nanoporous_analyzer.html
+#         output: web, pdf
