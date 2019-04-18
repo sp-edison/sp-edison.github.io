@@ -18,11 +18,11 @@ folder: user_data
 1. 컬렉션 상세보기 창에서 `Dataset 탭`을 선택합니다.
 1. 재실행을 원하는 데이터셋을 선택합니다. 
 
-    {% include image.html file="data/user_data_rerun_01.png" caption="Surf dataset" %}
+    {% include image.html file="data/user_data_rerun_04.png" caption="Surf dataset" %}
 
 1. 데이터셋 상세보기 창에서 윗 부분 탭 중의 하나인 `Rerun simulation`을 누릅니다.
 
-    {% include image.html file="data/user_data_rerun_02.png" caption="Rerun simulation" %}
+    {% include image.html file="data/user_data_rerun_05.png" caption="Rerun simulation" %}
 
 1. `Rerun simulation` 버튼을 누르면 워크벤치 페이지로 이동하고 동일한 시뮬레이션 환경을 생생합니다. 
 
