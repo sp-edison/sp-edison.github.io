@@ -1,0 +1,55 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: 인공지능 특화 사이트
+  product: USER-AI
+  version: 1.0
+
+
+  folders:
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+      - title: "Introduction"
+        url: /ai_intro.html
+        output: web, pdf
+
+  - title: AI Search
+    output: web, pdf
+    folderitems:
+      - title: "AI Search Data"
+        url: /ai_search_data.html
+        output: web, pdf
+
+      - title: "AI Search Code"
+        url: /ai_search_code.html
+        output: web, pdf
+ 
+  - title: AI Analysis
+    output: web, pdf
+    folderitems:
+      - title: "Analysis with Shared Data"
+        url: /ai_analysis_easy.html
+        output: web, pdf
+
+      - title: "Analysis with New Data"
+        url: /ai_analysis_newdata.html
+        output: web, pdf
+
+      - title: "New Jupyter Notebook"
+        url: /ai_analysis_jupyter.html
+        output: web, pdf

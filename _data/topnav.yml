@@ -14,7 +14,7 @@ topnav_dropdowns:
         - title: 소재 특화 사이트
           url: /mat_intro.html
         - title: 인공지능 특화 사이트
-          url: /user_intro.html
+          url: /ai_intro.html
 
     - title: Manager
       folderitems:
