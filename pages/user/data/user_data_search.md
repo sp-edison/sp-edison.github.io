@@ -34,8 +34,8 @@ Collection Browser를 활용하면 원하는 컬렉션(데이터셋의 집합, �
 {% include image.html file="data/data_search/collection_browser.PNG" caption="Data Browser" %}
 
 
-상기위 메뉴 위치와 구성은 커뮤니티에 따라 다소 상이합니다. 
 
 <br>
+상기 메뉴 위치와 구성은 커뮤니티에 따라 다소 상이합니다. 
 
 
