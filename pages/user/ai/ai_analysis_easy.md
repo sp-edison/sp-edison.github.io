@@ -19,6 +19,7 @@ folder: ai
    {% include image.html file="data/ai_analysis_easy_02.png" caption="Dataset Popup" %}
  
  - 프로그래밍 코드 생성 순서는 다음과 같습니다. (1) 레이블 선택, (2) 알고리즘 선택, (3) 코드 미리보기
+ 
 
 ### (1) 레이블 선택
 
