@@ -29,18 +29,13 @@ folder: user_data
 
 내가 실행한 시뮬레이션 결과 데이터를 다른 사용자들과 공유하기 위한 과정은 다음과 같습니다. 
 
-1. 로그인 후 `My EDISON` 메뉴로 이동합니다.
-1. 좌측의 `시뮬레이션 파일` 탭에서 다른 사용자와 공유를  원하는 시뮬레이션(Simulation) 혹은 작업(Job)을 선택합니다.
+1. EDISON Workbench에서 저장을 원하는 시뮬레이션을 선택 후 `Open Data` 버튼을 클릭합니다.
 
    ※ 시뮬레이션 실행 시 설정했던 [시뮬레이션 명- 잡 명]이 제목으로 자동 설정됩니다. 그러므로 시뮬레이션의 이름과 작업의 이름을 다른 것들과 충분히 구분할 수 있는 의미 있는 값 (예, 시뮬레이션 주제, 파라미터 값)으로 변경해주시길 바랍니다. 시뮬레이션과 작업 이름은 워크벤치 (Workbench)에서 변경이 가능합니다.
 
-1. 공유할 시뮬레이션 혹은 작업을 선택한 후, `Register & Share Data` 버튼을 누릅니다. 
-   그러며 시뮬레이션 결과 데이터가 포함된 컬렉션(Collection)을 선택하라는 팝업이 뜹니다.
+1. `Open Data` 버튼을 누르면 시뮬레이션 결과 데이터가 저장될 컬렉션(Collection)을 선택하라는 팝업이 뜹니다.
 
-    ※ Simulation 목록에서 ‘Register & Share Data’ 버튼을 누르면 Simulation 하위의 성공적으로 종료된 모든 Job 들이 저장의 대상이 됩니다. 그리고 Job 목록에서 ‘Register & Share Data’ 버튼을 누르면 개별 Job이 저장의 대상이 됩니다.
-
-
-    {% include image.html file="data/user_data_share_01.png" caption="Save process" %}
+    {% include image.html file="data/user_data_share_12.png" caption="Save process" %}
 
 1. 최초 공유를 시도하는 경우라면 컬렉션(Collection)의 생성이 필요하며, 생성방법은 다음과 같습니다.
 
@@ -54,8 +49,8 @@ folder: user_data
     - 도시환경 → UE
 
 
-    {% include image.html file="data/user_data_share_02.png" caption="Collection popup" %}
-    {% include image.html file="data/user_data_share_03.png" caption="Collection detail info" %}
+    {% include image.html file="data/user_data_share_21.png" caption="Collection popup" %}
+    {% include image.html file="data/user_data_share_22.png" caption="Collection detail info" %}
 
 1. Collection 생성을 완료하고, 해당 Collection의 `Choose` 버튼을 누르면 공유가 진행됩니다. 
    성공적으로 공유가 완료되면 다음 그림과 같은 메시지가 뜰 것입니다.
@@ -78,7 +73,7 @@ folder: user_data
 내가 공유한 데이터가 올바르게 처리과정을 완료하였는지를 확인하는 방법은 다음과 같습니다. 
 
 1. `콘텐츠/데이터` - `데이터 관리` 메뉴로 이동합니다. 
-    {% include image.html file="data/user_data_share_05.png" caption="Data Management" %}
+    {% include image.html file="data/user_data_share_15.png" caption="Data Management" %}
 
 1. 처리과정 조회를 원하는 데이터셋이 포함된 컬렉션의 `Manage` 버튼을 누릅니다. 
 1. 자신이 공유한 데이터셋들의 상태를 확인합니다. 성공(S), 실패(F), 대기(Q)  
@@ -94,8 +89,8 @@ folder: user_data
 
 여기서 대표 이미지를 업로드해주시고 `Save` 버튼을 통해 저장해주시기 바랍니다.
 
-{% include image.html file="data/user_data_share_07.png" caption="Move to detail tab" %}
-{% include image.html file="data/user_data_share_08.png" caption="Thumbnail upload" %}
+{% include image.html file="data/user_data_share_18.png" caption="Move to detail tab" %}
+{% include image.html file="data/user_data_share_19.png" caption="Thumbnail upload" %}
 
 <br>
 
@@ -106,7 +101,7 @@ folder: user_data
 
 논문이 선택되면 `Upload Paper` 버튼을 눌러 논문을 업로드합니다.
 
-{% include image.html file="data/user_data_share_09.png" caption="Paper upload" %}
+{% include image.html file="data/user_data_share_20.png" caption="Paper upload" %}
 
 <br>
 
@@ -119,8 +114,8 @@ Collection은 어떤 주제에 대한 시뮬레이션들의 집합체를 의미�
 
 - `데이터 관리` 메뉴에서 생성한 Collection의 `Title을 클릭`하면 생성한 Collection 페이지로 이동합니다. 해당 페이지에서 `Info` 탭으로 이동하면 Collection을 처음 생성했기 때문에 빈 페이지일 것입니다. 여기서 `Edit Description` 버튼을 눌러 수정 페이지로 이동합니다.
 
-    {% include image.html file="data/user_data_share_10.png" caption="Move to Info tab" %}
+    {% include image.html file="data/user_data_share_16.png" caption="Move to Info tab" %}
 
 - 수정 페이지로 이동한 후, 다음 그림과 같이 페이지를 꾸며주시면 됩니다. 일반적인 문서 작업처럼 텍스트, 이미지, 테이블, 링크 등을 활용하실 수 있습니다. 그리고 페이지 작성 중 틈틈이 저장하시기를 추천드립니다.
 
-    {% include image.html file="data/user_data_share_11.png" caption="Collection design" %}
+    {% include image.html file="data/user_data_share_17.png" caption="Collection design" %}
