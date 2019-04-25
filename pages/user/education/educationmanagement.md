@@ -23,6 +23,11 @@ folder: user
 
 강좌 생성에 필요한 항목을 입력 후 강좌 생성요청을 통해 강좌를 신청할 수 있으며, EDISON 관리자의 승인을 생성이 완료됩니다.
 
+지도교수님이 검색되지 않는 경우 지도교수 등록신청을 해야합니다. 아래 양식을 작성하여 inojeon@kisti.re.kr 로 신청해주시면 등록이 됩니다.
+
+<a target="\_blank" class="noCrossRef" href="{{ "files/professor.xlsx"}}"><button type="button" class="btn btn-default" aria-label="Left Align"><span
+    class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> 교수이력양식 Download</button></a>
+
 ## 강좌 관리하기
 
 승인이 완료된 강좌는 [My EDISON > 강좌 현황]의 상태의 **승인 완료** 상태로 변경되며, 선택시 생성한 강좌의 상세보기 페이지로 이동하게 됩니다.
