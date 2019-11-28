@@ -62,15 +62,15 @@ entries:
         output: web, pdf
 
       - title: "포틀릿 xml 파일 설정"
-        url: /workbenchan_analyzerguide3.html
+        url: /workbench_analyzerguide3.html
         output: web, pdf
 
       - title: "Wrapper 파일"
-        url: /workbenchan_analyzerguide4.html
+        url: /workbench_analyzerguide4.html
         output: web, pdf
 
       - title: "가시화 파일 설정"
-        url: /workbenchan_analyzerguide5.html
+        url: /workbench_analyzerguide5.html
         output: web, pdf
 
   - title: 워크벤치 이벤트 정의
