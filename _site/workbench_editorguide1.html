@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="workbenchanalyzer,  ">
-<title>분석기 구조 설명 | EDISON platform for documentation</title>
+<meta name="description" content="에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼">
+<meta name="keywords" content="workbencheditor,  ">
+<title>프로젝트 생성 | EDISON platform for documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,23 +83,11 @@
     <script>
         $(document).ready(function() {
             $("#tg-sb-link").click(function() {
-                //$("#tg-sb-sidebar").toggle();
-                //$("#tg-sb-content").toggleClass('col-md-9');
-                //$("#tg-sb-content").toggleClass('col-md-12');
-
-
-                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
-                  //EN
-                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                }else{
-                  //KO
-                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
-                }
-
-
-
-                <!--Language Translate using PAPAGO naver API-->
-
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
             });
         });
     </script>
@@ -148,7 +136,7 @@
                         
                         
                         
-                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        <li><a href="ai_intro.html">인공지능 특화 사이트</a></li>
                         
                         
                     </ul>
@@ -160,6 +148,21 @@
                         
                         
                         <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                        
+                        <li><a href="portalmanager1.html">포털 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="">Liferay</a></li>
                         
                         
                     </ul>
@@ -184,24 +187,13 @@
                     </ul>
                 </li>
                 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="admin_intro.html">Admin</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
                 
                 
 			<li>
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the 분석기 구조 설명 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the 프로젝트 생성 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
 
 </li>
 
@@ -219,7 +211,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="분석기 구조 설명">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="프로젝트 생성">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -313,6 +305,34 @@
       <a href="#">워크벤치 편집기 개발</a>
       <ul>
           
+          
+          
+          <li class="active"><a href="workbench_editorguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide2.html">자바 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide3.html">포틀릿 xml 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide4.html">visualizer_wrapper 파일 설정</a></li>
+          
+          
+          
+          
       </ul>
    </li>
     
@@ -331,49 +351,28 @@
           
           
           
-          <li><a href="workbench_analyzerguide2.html">프로젝트 기본 설정</a></li>
+          <li><a href="workbench_analyzerguide2.html">자바 파일 설정</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide3.html">스크립트 단위의 뷰 설정</a></li>
+          <li><a href="workbench_analyzerguide3.html">포틀릿 xml 파일 설정</a></li>
           
           
           
           
           
           
-          <li class="active"><a href="workbenchan_alyzerguide4.html">이벤트 처리</a></li>
+          <li><a href="workbench_analyzerguide4.html">Wrapper 파일</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide5.html">초기값 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide6.html">파일 탐색기 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbenchan_alyzerguide7.html">이벤트 처리 함수</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide8.html">공용 함수</a></li>
+          <li><a href="workbench_analyzerguide5.html">가시화 파일 설정</a></li>
           
           
           
@@ -465,13 +464,15 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">분석기 구조 설명</h1>
+   <h1 class="post-title-main">프로젝트 생성</h1>
 </div>
 
 
 
 <div class="post-content">
 
+   
+    <div class="summary">에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼</div>
    
 
     
@@ -502,92 +503,57 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <p>DISON 플랫폼에서 워크벤치와 연동되는 분석기는 모듈 단위로 개발 될 수 있으며, 각 모듈은 Liferay 포틀릿으로 구분됩다.
-각 포틀릿에서 생성된 가시화 및 서비스 등은 EDISON 플랫폼에서 제공되는 서비스와 연동되어 개발될 수 있습니다.</p>
+   <p><a href="https://edison.re.kr">EDISON</a> 워크벤치 기반 전처리기(Pre-Processor) 개발 매뉴얼 입니다.</p>
 
-<h3 id="분석기와-edison-연동-시스템-구조">분석기와 EDISON 연동 시스템 구조</h3>
-<p>EDSION 워크벤치 시뮬레이션 시스템과 연동되는 시스템 구조는 다음 그림과 같이 표현될 수 있습니다.</p>
+<p>Liferay 6.2.5 포틀릿 기반으로 개발 하는 방법에 대해 순차적으로 설명 되어 있습니다.</p>
 
-<p><img src="/images/analyzerguide/analyzer architecture.png" alt="imagetestYejin" title="연동 구조" /><br /></p>
-
-<p>분석기는 전체 이벤트를 처리하는 이벤트 처리부분과 내부적으로 데이터를 가시화하고 분석 할 수 있는 Analyzer 구현 부분으로 나눠질 수 있습니다.</p>
-
-<p>EDISON 플랫폼에서 파생되는 이벤트를 받아들이고 적절한 시기에 사용자에게 데이터 분석을 위한 툴을 제공하는 부분을 포함하고 있습니다.</p>
-
-<p>따라서 EDISON 워크벤치와 연동되는 분석기 모듈을 개발하기 위해서는 이벤트를 처리하는 부분과 실제 데이터 가시활르 위한 부분을 나눠서 개발을 해야 합니다.</p>
-
-<h3 id="분석기-이벤트-처리-부분">분석기 이벤트 처리 부분</h3>
-<p>워크벤치의 분석기를 개발 하는데 있어 이벤트를 처리하는 부분은 자바 스크립트로 이루어져 있으며, Liferay 포틀릿 기반으로 이벤트를 받아들입니다.</p>
-
-<p>다음 예제 코드는 워크벤치가 실행되면서 분석기를 호출하고 이에 대한 응답을 하는 코드입니다.
-Liferay 에서 제공하는 <code class="highlighter-rouge">Liferay.fire()</code>함수와 <code class="highlighter-rouge">Liferay.on()</code>기반으로 이벤트 프로세싱을 제공합니다.</p>
+<h2 id="liferay-62-기반-프로젝트-구성">Liferay 6.2 기반 프로젝트 구성</h2>
+<p>개발 환경은 아래와 같습니다.</p>
 
 <ul>
-  <li>샘플 예제
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Liferay</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span>
-	<span class="nx">OSP</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">OSP_HANDSHAKE</span><span class="p">,</span>
-	<span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-		<span class="kd">var</span> <span class="nx">myId</span> <span class="o">=</span> <span class="s1">'&lt;%=portletDisplay.getId()%&gt;'</span><span class="p">;</span>
-		<span class="k">if</span><span class="p">(</span> <span class="nx">e</span><span class="p">.</span><span class="nx">targetPortlet</span> <span class="o">!==</span> <span class="nx">myId</span> <span class="p">){</span>
-			<span class="k">return</span>
-		<span class="p">}</span>
-		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'[NGLViewer]OSP_HANDSHAKE: ['</span><span class="o">+</span><span class="nx">e</span><span class="p">.</span><span class="nx">portletId</span><span class="o">+</span><span class="s1">', '</span><span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()</span><span class="o">+</span><span class="s1">']'</span><span class="p">);</span>
-		<span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">connector</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">portletId</span><span class="p">;</span>
-
-		<span class="k">if</span><span class="p">(</span> <span class="nx">e</span><span class="p">.</span><span class="nx">mode</span> <span class="p">)</span>
-			<span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">action</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">mode</span><span class="p">;</span>
-		<span class="k">else</span>
-			<span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">action</span> <span class="o">=</span> <span class="s1">'VIEW'</span><span class="p">;</span>
-		<span class="kd">var</span> <span class="nx">events</span> <span class="o">=</span> <span class="p">[</span>
-			<span class="nx">OSP</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">OSP_EVENTS_REGISTERED</span><span class="p">,</span>
-			<span class="nx">OSP</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">OSP_LOAD_DATA</span>
-		<span class="p">];</span>
-		<span class="kd">var</span> <span class="nx">eventData</span> <span class="o">=</span> <span class="p">{</span>
-			<span class="na">portletId</span><span class="p">:</span> <span class="nx">myId</span><span class="p">,</span>
-			<span class="na">targetPortlet</span><span class="p">:</span> <span class="o">&lt;</span><span class="na">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">connector</span><span class="p">,</span>
-			<span class="na">data</span><span class="p">:</span> <span class="nx">events</span>
-      <span class="p">};</span>
-      <span class="nx">Liferay</span><span class="p">.</span><span class="nx">fire</span><span class="p">(</span> <span class="nx">OSP</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">OSP_REGISTER_EVENTS</span><span class="p">,</span> <span class="nx">eventData</span> <span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">);</span>
-</code></pre></div>    </div>
-  </li>
-  <li><code class="highlighter-rouge">Liferay.fire()</code> : 이벤트를 발생시키는 Liferay 자바스크립트 라이브러리 함수입니다.</li>
-  <li><code class="highlighter-rouge">Liferay.on()</code> : 이벤트를 리스닝 하는 Liferay 자바스크립트 라이브러리 함수입니다.</li>
+  <li><code class="highlighter-rouge">eclipse-neon</code></li>
+  <li><code class="highlighter-rouge">liferay-portal-6.2-ce-ga6</code></li>
+  <li><code class="highlighter-rouge">liferay-plugins-sdk-6.2</code></li>
 </ul>
 
-<h3 id="데이터-처리-부분">데이터 처리 부분</h3>
+<h2 id="1-liferay-plugin-project--생성">1. Liferay plugin Project  생성</h2>
+<p>이클립스 liferay 개발 환경에서 <code class="highlighter-rouge">Liferay Plugins Projects</code>를 생성합니다.
+<br />이클립스 환경에서 New -&gt; Liferay Plugin Project를 선택합니다.<br /></p>
 
-<p>실제 서버에서 계산과학공학 시뮬레이션이 실행되고 결과 값을 분석하기 위해서는 시뮬레이션 결과를 호출하고 적절한 데이터를 받아 가시화 하는 데이터 처리 구현 부분입니다.
-계산 결과 데이터를 수신하고 가시화 하기 위해서는 데이터 호출 및 응답에 대한 코드 구현이 필수적입니다.</p>
+<figure><img class="docimage" src="images/workbench_dev/editor_dev/1.png" alt="" /></figure>
 
-<p>이미 이전 단계에서 추가한 OSP 라이브러리를 기반으로 데이터를 호출하고 적절한 데이터를 받는 코드 부분이 구현 되어야 합니다.</p>
+<p><br /><br />프로젝트 이름을 작성하고 include sample code 체크를 해지합니다. 그 후에 <code class="highlighter-rouge">Next</code>버튼을 클릭합니다.<br /></p>
+<figure><img class="docimage" src="images/workbench_dev/editor_dev/2.png" alt="" /></figure>
 
-<p>이러한 데이터를 구현하기 위해서는 다양한 스크립트 함수들이 필요하며, 해당 함수들을 순차대로 정리하면 다음과 같습니다.</p>
+<p><br /><br />Liferay MVC를 선택하여 최종적으로 <code class="highlighter-rouge">Finish</code>버튼을 클릭하여 프로젝트 생성을 마무리 합니다.<br /></p>
 
-<h3 id="데이터-처리를-위해-정의가-필요한-함수">데이터 처리를 위해 정의가 필요한 함수</h3>
+<h2 id="2-edison-워크벤치-연동을-위한-editor-포틀릿-생성">2. EDISON 워크벤치 연동을 위한 Editor 포틀릿 생성</h2>
+<p>EDISON 플랫폼의 워크벤치 연동을 위한 포틀릿을 생성합니다.
+<br />생성된 Liferay Plugins Projects 내에 Liferay Portlet을 생성합니다.<br /></p>
+<figure><img class="docimage" src="images/workbench_dev/editor_dev/3.png" alt="" /></figure>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">함수명</th>
-      <th style="text-align: left">정의</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">loadXXXXFile(OSPInputData)</td>
-      <td style="text-align: left">실제 서버 사이드의 파일을 읽어오는 방법에 대한 정의<br />Output 포트의  path  타입에 따라 케이스를 나눠 처리 방법에 대한 정의가 되어 있음<br /> 폴더/확장자/파일</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">getFirstFileName(OSPInputData)</td>
-      <td style="text-align: left">결과 포트의 path  타일이 폴더 또는 확장자인 경우, 해당 폴더 내 첫번째 파일을 읽어오는 역할이 정의</td>
-    </tr>
-  </tbody>
-</table>
+<p><br /><br />현재 에디터 개발에 대한 매뉴얼은 EDISON 플랫폼에서 서비스 되고 있는 <code class="highlighter-rouge">TextEditor</code>를 기준으로 작성되었습니다. 따라서 클래스 이름과 <code class="highlighter-rouge">jsp</code> 파일명, 패키지 파일 명등은 <code class="highlighter-rouge">TextEditor</code>와 동일하게 진행됩니다. 특별히 추가할 인터페이스가 없다면 Finish를 선택하고 포틀릿 생성을 완료합니다.</p>
 
-<div class="bs-callout bs-callout-info" rules="groups"><b>데이터 처리 방법</b> <br /> 서버에서 시뮬레이션 결과로 생성된 결과 데이터는 OSP 라이브러리를 이용하여 전송받을 수 있으며, 해당 데이터를 받은 다음 iframe 으로 연결된 실제 데이터 가시봐 부분에 데이터를 전공하는 방법으로 분석기가 동작하게 됩니다.
-</div>
+<h2 id="3-library-설정">3. Library 설정</h2>
+<h3 id="scienceplatform-hook-servicejar-라이브러리-추가">SciencePlatform-hook-service.jar 라이브러리 추가</h3>
+<p>EDISON 플랫폼에서 워크벤치와 연동을 위해서는 워크벤치 시뮬레이션 서비스와 연동이 가능하도록 라이브러리를 추가 해야 합니다 <br />
+<code class="highlighter-rouge">SciencePlatform-hook-service.jar</code> 파일을 플러그인 프로젝트 내부에 <code class="highlighter-rouge">WEB-INF/lib</code> 폴더에 추가합니다.<br />
+해당 라이브러리 파일은 다음 링크에서 다운받을 수 있습니다.<br /></p>
+
+<ul>
+  <li><a href="OSPLibrary/SciencePlatform-hook-service.jar">SciencePlatform-hook-service.jar</a></li>
+</ul>
+
+<p>라이브러리 다운받아 추가하면 다음 그림과 같습니다.</p>
+<figure><img class="docimage" src="images/workbench_dev/editor_dev/4.png" alt="" /></figure>
+<p><br /></p>
+
+<h3 id="jstl-dependency-추가">jstl Dependency 추가</h3>
+<p>플러그인 프로젝트 내에 포함되어 있는 liferay-plugin-package.properties 파일에서 Portal Dependency Jars 에서 Add 버튼을 클릭하여 라이브러리를 추가합니다.<br />
+liferay-plugin-package.properties 파일에 “jstl-api.jar”, “jstl-impl.jar” 파일을 추가합니다. <br /></p>
+<figure><img class="docimage" src="images/workbench_dev/editor_dev/5.png" alt="" /></figure>
+<p><br /></p>
+
 
 
     <div class="tags">
@@ -599,8 +565,6 @@ Liferay 에서 제공하는 <code class="highlighter-rouge">Liferay.fire()</code
         <a href="tag_workbench.html" class="btn btn-default navbar-btn cursorNorm" role="button">workbench</a>
         
         
-        
-        <a href="tag_analyzer.html" class="btn btn-default navbar-btn cursorNorm" role="button">analyzer</a>
         
         
         
@@ -633,7 +597,7 @@ Liferay 에서 제공하는 <code class="highlighter-rouge">Liferay.fire()</code
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 KISTI. All rights reserved.
- Site last generated: Apr 15, 2019 <br />
+ Site last generated: Nov 28, 2019 <br />
 <p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
   <img src="images/edison_logo.png" alt="Company logo" /></p>
                 </div>
@@ -655,7 +619,7 @@ Liferay 에서 제공하는 <code class="highlighter-rouge">Liferay.fire()</code
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-115782577-19','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 
 </html>

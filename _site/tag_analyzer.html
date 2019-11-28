@@ -83,23 +83,11 @@
     <script>
         $(document).ready(function() {
             $("#tg-sb-link").click(function() {
-                //$("#tg-sb-sidebar").toggle();
-                //$("#tg-sb-content").toggleClass('col-md-9');
-                //$("#tg-sb-content").toggleClass('col-md-12');
-
-
-                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
-                  //EN
-                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                }else{
-                  //KO
-                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
-                }
-
-
-
-                <!--Language Translate using PAPAGO naver API-->
-
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
             });
         });
     </script>
@@ -148,7 +136,7 @@
                         
                         
                         
-                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        <li><a href="ai_intro.html">인공지능 특화 사이트</a></li>
                         
                         
                     </ul>
@@ -160,6 +148,21 @@
                         
                         
                         <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                        
+                        <li><a href="portalmanager1.html">포털 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="">Liferay</a></li>
                         
                         
                     </ul>
@@ -179,17 +182,6 @@
                         
                         
                         <li><a href="datadev_view_manage.html">Simulation Data</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="admin_intro.html">Admin</a></li>
                         
                         
                     </ul>
@@ -313,6 +305,34 @@
       <a href="#">워크벤치 편집기 개발</a>
       <ul>
           
+          
+          
+          <li><a href="workbench_editorguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide2.html">자바 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide3.html">포틀릿 xml 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide4.html">visualizer_wrapper 파일 설정</a></li>
+          
+          
+          
+          
       </ul>
    </li>
     
@@ -331,49 +351,28 @@
           
           
           
-          <li><a href="workbench_analyzerguide2.html">프로젝트 기본 설정</a></li>
+          <li><a href="workbench_analyzerguide2.html">자바 파일 설정</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide3.html">스크립트 단위의 뷰 설정</a></li>
+          <li><a href="workbench_analyzerguide3.html">포틀릿 xml 파일 설정</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide4.html">이벤트 처리</a></li>
+          <li><a href="workbench_analyzerguide4.html">Wrapper 파일</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide5.html">초기값 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide6.html">파일 탐색기 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbenchan_alyzerguide7.html">이벤트 처리 함수</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide8.html">공용 함수</a></li>
+          <li><a href="workbench_analyzerguide5.html">가시화 파일 설정</a></li>
           
           
           
@@ -528,10 +527,6 @@ $('#toc').on('click', 'a', function() {
      
    
     
-   
-    
-   
-    
         
      
         
@@ -554,18 +549,6 @@ $('#toc').on('click', 'a', function() {
     
    
     
-        
-     
-        
-     
-   
-    
-   
-    
-   
-    
-   
-    
    
     
    
@@ -574,18 +557,6 @@ $('#toc').on('click', 'a', function() {
      
         
      
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
    
     
    
@@ -626,6 +597,10 @@ $('#toc').on('click', 'a', function() {
     
    
     
+        
+     
+        
+     
    
     
    
@@ -668,6 +643,254 @@ $('#toc').on('click', 'a', function() {
     
    
     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
    
     
         
@@ -686,9 +909,9 @@ $('#toc').on('click', 'a', function() {
      
         
 
-        <tr><td><a href="workbench_analyzerguide2.html">프로젝트 기본 설정</a></td>
+        <tr><td><a href="workbench_analyzerguide2.html">자바 파일 설정</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> EDISON 워크벤치 기반 분석기(Post-Processor) 개발 매뉴얼 입니다. Liferay 6.2.5 포틀릿 기반으로 개발 하는 방법에 대해 순차적으로 설명 되어 있습니다. Java 코드 추가 1 (파일 관리) 생성된 프로젝트에서 포틀릿 클래스에 파일 전송 및 파일 다운로드 등을 위한 자바 코드를 추가 합니다. MVCPortlet을 extends 하게 되면 그 중 미리... </td>
+          <td> 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼 </td>
         </tr>
         
      
@@ -698,9 +921,9 @@ $('#toc').on('click', 'a', function() {
      
         
 
-        <tr><td><a href="workbenchan_alyzerguide3.html">스크립트 단위의 뷰 설정</a></td>
+        <tr><td><a href="workbench_analyzerguide3.html">포틀릿 xml 파일 설정</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> 이전에 설정되었던 부분은 서버 사이드에서 실행되는 컨트롤 코드 부분이었습니다. 워크벤치 기반 분석기 개발을 위해서는 스크립트 단위의 이벤트 프로세싱을 통해 이루어 집니다. 따라서 뷰 부분의 스크립트 단위로 코드를 개발하며, 해당 뷰 부분에서 필요로 하는 기본 코드들이 있습니다. 따라서 그에 따른 스크립트 기본 소스 코드들을 추가하는 방법을 서술하도록 하겠습니다. init.jsp... </td>
+          <td> 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼 </td>
         </tr>
         
      
@@ -710,69 +933,9 @@ $('#toc').on('click', 'a', function() {
      
         
 
-        <tr><td><a href="workbenchan_alyzerguide4.html">분석기 구조 설명</a></td>
+        <tr><td><a href="workbench_analyzerguide4.html">Wrapper 파일</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> DISON 플랫폼에서 워크벤치와 연동되는 분석기는 모듈 단위로 개발 될 수 있으며, 각 모듈은 Liferay 포틀릿으로 구분됩다. 각 포틀릿에서 생성된 가시화 및 서비스 등은 EDISON 플랫폼에서 제공되는 서비스와 연동되어 개발될 수 있습니다. 분석기와 EDISON 연동 시스템 구조 EDSION 워크벤치 시뮬레이션 시스템과 연동되는 시스템 구조는 다음 그림과 같이 표현될 수 있습니다.... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-
-        <tr><td><a href="workbenchan_alyzerguide5.html">초기값 설정</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> EDISON 워크벤치와 연동을 하며 워크벤치에서 요구하는 이벤트를 처리하기 위해서는 기본적으로 셋팅이 완료되어야 하는 몇 가지 초기 값이 있습니다. 데이터 전송 및 라이브러리 사용 다음은 데이터 전송 및 기타 라이브러리들을 사용하기 위한 기본 코드 입니다. testview.jsp파일 내부에 제일 위쪽 부분에 해당 라이브러리 호출 부분을 포함합니다. &lt;pre... </td>
+          <td> 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼 </td>
         </tr>
         
      
@@ -782,9 +945,9 @@ $('#toc').on('click', 'a', function() {
      
         
 
-        <tr><td><a href="workbench_analyzerguide6.html">파일 탐색기 설정</a></td>
+        <tr><td><a href="workbench_analyzerguide5.html">가시화 파일 설정</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> 파일 메뉴 설정 기본적으로 분석기를 EDISON 워크벤치와 연동을 하면서 필요한 파일 메뉴는 3가지 입니다. 현재 대부분의 워크벤치와 연동된 파일 메뉴는 로컬 파일 불러오기, 서버 파일 불러오기, 현재 파일 다운로드하기 가 있습니다. 이러한 파일 메뉴와 더불어 실제 파일을 불러와 가시화하는 가시화 부분을 호출하는 iframe도 같이 포함하여 정의합니다. 이러한 파일... </td>
+          <td> 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼 </td>
         </tr>
         
      
@@ -794,9 +957,9 @@ $('#toc').on('click', 'a', function() {
      
         
 
-        <tr><td><a href="workbenchan_alyzerguide7.html">이벤트 처리 함수</a></td>
+        <tr><td><a href="workbench_analyzerguide5.html">가시화 파일 설정</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> 이벤트 처리 개발하려는 분석기는 Liferay 에서 제공하는 이벤트 전송 및 수신 함수(Liferay.on(), Liferay.fire())를 사용하여 워크벤치와 연동하여 동작합니다. 자바 스크립트 단위로 동작을 하기 때문에 개발하려는 분석기 내에 필요한 이벤트를 처리하고 발생시키는 루틴을 넣어야 합니다. 분석기에서 사용되는 이벤트의 종류와 설명은 아래와 같습니다.    이벤트명 정의... </td>
+          <td> 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼 </td>
         </tr>
         
      
@@ -805,189 +968,37 @@ $('#toc').on('click', 'a', function() {
         
      
         
-
-        <tr><td><a href="workbench_analyzerguide8.html">공용 함수</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> 공용함수 이벤트에 대한 응답이나 데이터를 처리하고 실제 가시화를 하기 위한 공용 함수들이 필요합니다. 예를 들어 워크벤치와 연동되어 시뮬레이션을 수행할 때, 시뮬레이션이 종료되고 결과를 확인하기 위해서는 워크벤치에서 데이터를 로드하라는 OSP_LOAD_DATA 이벤트를 분석기에 보내게 됩니다. 해당 이벤트를 해석하고 데이터를 로드하는 함수를 정의하고 로드된 데이터를 통해 시뮬레이션 분석을 위한 가시화를 진행할 수... </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
-     
-   
-    
-        
      
    
     
         
      
-   
-    
-        
-     
-   
-    
         
      
    
     
         
      
-   
-    
         
      
    
     
         
      
-   
-    
         
      
    
     
-        
-     
    
     
-        
-     
    
     
-        
-     
    
     
-        
-     
    
     
-        
-     
    
     
-        
-     
    
     
    
@@ -1216,6 +1227,8 @@ $('#toc').on('click', 'a', function() {
      
         
      
+   
+    
    
     
    
@@ -1241,6 +1254,8 @@ $('#toc').on('click', 'a', function() {
 
    </tbody>
 </table>
+
+<p>[]:</p>
 
 
 
@@ -1275,7 +1290,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 KISTI. All rights reserved.
- Site last generated: Apr 15, 2019 <br />
+ Site last generated: Nov 28, 2019 <br />
 <p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
   <img src="images/edison_logo.png" alt="Company logo" /></p>
                 </div>
@@ -1297,7 +1312,7 @@ $('#toc').on('click', 'a', function() {
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-115782577-19','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 
 </html>

@@ -46,11 +46,11 @@
 
 
 {
-"title": "출력 프로그래밍 개요",
-"tags": "",
+"title": "EDISON 플랫폼 소개",
+"tags": "EDISONPlatform",
 "keywords": "",
-"url": "solverdev_Science_App_Output_Programing.html",
-"summary": ""
+"url": "solverdev_intro.html",
+"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
 }
 ,
 
@@ -68,21 +68,21 @@
 
 
 {
-"title": "EDISON 플랫폼 소개",
-"tags": "EDISONPlatform",
+"title": "출력 프로그래밍 개요",
+"tags": "",
 "keywords": "",
-"url": "solverdev_intro.html",
-"summary": "EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다."
+"url": "solverdev_Science_App_Output_Programing.html",
+"summary": ""
 }
 ,
 
 
 
 {
-"title": "C 언어",
+"title": "Datatype",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_intro.html",
+"url": "solverdev_management_datatype.html",
 "summary": ""
 }
 ,
@@ -101,10 +101,10 @@
 
 
 {
-"title": "R 언어",
+"title": "Fortran 언어",
 "tags": "",
 "keywords": "",
-"url": "solverdev_R_Programing_intro.html",
+"url": "solverdev_Fortran_Programing_intro.html",
 "summary": ""
 }
 ,
@@ -112,10 +112,10 @@
 
 
 {
-"title": "Fortran 언어",
+"title": "C 언어",
 "tags": "",
 "keywords": "",
-"url": "solverdev_Fortran_Programing_intro.html",
+"url": "solverdev_C_Programing_intro.html",
 "summary": ""
 }
 ,
@@ -134,10 +134,10 @@
 
 
 {
-"title": "Datatype",
+"title": "R 언어",
 "tags": "",
 "keywords": "",
-"url": "solverdev_management_datatype.html",
+"url": "solverdev_R_Programing_intro.html",
 "summary": ""
 }
 ,
@@ -181,29 +181,7 @@
 "title": "입력 파일이 1개인 경우",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_inputfile.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "입력 파일이 1개인 경우",
-"tags": "",
-"keywords": "",
 "url": "solverdev_Python_Programing_inputfile.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "입력 파일이 1개인 경우",
-"tags": "",
-"keywords": "",
-"url": "solverdev_R_Programing_inputfile.html",
 "summary": ""
 }
 ,
@@ -225,7 +203,29 @@
 "title": "입력 파일이 1개인 경우",
 "tags": "",
 "keywords": "",
+"url": "solverdev_C_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
 "url": "solverdev_Octave_Programing_inputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 1개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_inputfile.html",
 "summary": ""
 }
 ,
@@ -313,17 +313,6 @@
 "title": "입력 파일이 여러개인 경우",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_multiinputfile.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "입력 파일이 여러개인 경우",
-"tags": "",
-"keywords": "",
 "url": "solverdev_Python_Programing_multiinputfile.html",
 "summary": ""
 }
@@ -335,7 +324,7 @@
 "title": "입력 파일이 여러개인 경우",
 "tags": "",
 "keywords": "",
-"url": "solverdev_R_Programing_multiinputfile.html",
+"url": "solverdev_Fortran_Programing_multiinputfile.html",
 "summary": ""
 }
 ,
@@ -346,7 +335,18 @@
 "title": "입력 파일이 여러개인 경우",
 "tags": "",
 "keywords": "",
-"url": "solverdev_Fortran_Programing_multiinputfile.html",
+"url": "solverdev_C_Programing_multiinputfile.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "입력 파일이 여러개인 경우",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_multiinputfile.html",
 "summary": ""
 }
 ,
@@ -412,29 +412,7 @@
 "title": "SDE case study",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_sde.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "SDE case study",
-"tags": "",
-"keywords": "",
 "url": "solverdev_Python_Programing_sde.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "SDE case study",
-"tags": "",
-"keywords": "",
-"url": "solverdev_R_Programing_sde.html",
 "summary": ""
 }
 ,
@@ -456,7 +434,29 @@
 "title": "SDE case study",
 "tags": "",
 "keywords": "",
+"url": "solverdev_C_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
 "url": "solverdev_Octave_Programing_sde.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "SDE case study",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_sde.html",
 "summary": ""
 }
 ,
@@ -522,29 +522,7 @@
 "title": "Output progrming",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_output.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "Output progrming",
-"tags": "",
-"keywords": "",
 "url": "solverdev_Python_Programing_output.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "Output progrming",
-"tags": "",
-"keywords": "",
-"url": "solverdev_R_Programing_output.html",
 "summary": ""
 }
 ,
@@ -566,7 +544,29 @@
 "title": "Output progrming",
 "tags": "",
 "keywords": "",
+"url": "solverdev_C_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
 "url": "solverdev_Octave_Programing_output.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Output progrming",
+"tags": "",
+"keywords": "",
+"url": "solverdev_R_Programing_output.html",
 "summary": ""
 }
 ,
@@ -621,17 +621,6 @@
 "title": "oneD",
 "tags": "",
 "keywords": "",
-"url": "solverdev_C_Programing_oned.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "oneD",
-"tags": "",
-"keywords": "",
 "url": "solverdev_Python_Programing_oned.html",
 "summary": ""
 }
@@ -644,6 +633,17 @@
 "tags": "",
 "keywords": "",
 "url": "solverdev_Fortran_Programing_oned.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "oneD",
+"tags": "",
+"keywords": "",
+"url": "solverdev_C_Programing_oned.html",
 "summary": ""
 }
 ,
@@ -739,50 +739,6 @@
 
 
 {
-"title": "프로젝트 생성",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbench_analyzerguide1.html",
-"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
-}
-,
-
-
-
-{
-"title": "프로젝트 기본 설정",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbench_analyzerguide2.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "스크립트 단위의 뷰 설정",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbenchan_alyzerguide3.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "분석기 구조 설명",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbenchan_alyzerguide4.html",
-"summary": ""
-}
-,
-
-
-
-{
 "title": "HANDSHAKE",
 "tags": "workbenchevent",
 "keywords": "",
@@ -864,50 +820,6 @@
 "tags": "workbenchevent",
 "keywords": "",
 "url": "event_datachanged.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "초기값 설정",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbenchan_alyzerguide5.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "파일 탐색기 설정",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbench_analyzerguide6.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "이벤트 처리 함수",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbenchan_alyzerguide7.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "공용 함수",
-"tags": "workbenchanalyzer",
-"keywords": "",
-"url": "workbench_analyzerguide8.html",
 "summary": ""
 }
 ,
@@ -1398,6 +1310,116 @@
 
 
 
+{
+"title": "프로젝트 생성",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide1.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "자바 파일 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide2.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "포틀릿 xml 파일 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide3.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "Wrapper 파일",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide4.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "가시화 파일 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide5.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "가시화 파일 설정",
+"tags": "workbenchanalyzer",
+"keywords": "",
+"url": "workbench_analyzerguide5.html",
+"summary": "에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "프로젝트 생성",
+"tags": "workbencheditor",
+"keywords": "",
+"url": "workbench_editorguide1.html",
+"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "자바 파일 설정",
+"tags": "workbencheditor",
+"keywords": "",
+"url": "workbench_editorguide2.html",
+"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "포틀릿 xml 파일 설정",
+"tags": "workbencheditor",
+"keywords": "",
+"url": "workbench_editorguide3.html",
+"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "Wrapper 파일",
+"tags": "workbencheditor",
+"keywords": "",
+"url": "workbench_editorguide4.html",
+"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
 
 
 {
@@ -1405,6 +1427,72 @@
 "tags": "",
 "keywords": "",
 "url": "solverdev_Python_Programing_qna.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "구축된 데이터셋을 이용하여 기계학습 모델 만들기",
+"tags": "",
+"keywords": "",
+"url": "ai_analysis_easy.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Jupyter 기반 데이터 분석 및 개발 환경",
+"tags": "",
+"keywords": "",
+"url": "ai_analysis_jupyter.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "사용자 데이터셋을 이용하여 기계학습 모델 만들기",
+"tags": "",
+"keywords": "",
+"url": "ai_analysis_newdata.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "인공지능 특화 사이트 사용자 매뉴얼",
+"tags": "",
+"keywords": "",
+"url": "ai_intro.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "AI 플랫폼 검색 - 프로그래밍 코드",
+"tags": "",
+"keywords": "",
+"url": "ai_search_code.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "AI 플랫폼 검색 - 데이터셋",
+"tags": "",
+"keywords": "",
+"url": "ai_search_data.html",
 "summary": ""
 }
 ,
@@ -1766,7 +1854,7 @@
 
 
 {
-"title": "소재 데이터 뷰",
+"title": "Material Data View",
 "tags": "",
 "keywords": "",
 "url": "mat_search_view.html",
@@ -2113,6 +2201,17 @@
 "tags": "",
 "keywords": "",
 "url": "pagessolverDevnote.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "시뮬레이션 재실행",
+"tags": "",
+"keywords": "",
+"url": "pagesuserdatauser_test.html",
 "summary": ""
 }
 ,

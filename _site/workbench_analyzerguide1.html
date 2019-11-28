@@ -83,23 +83,11 @@
     <script>
         $(document).ready(function() {
             $("#tg-sb-link").click(function() {
-                //$("#tg-sb-sidebar").toggle();
-                //$("#tg-sb-content").toggleClass('col-md-9');
-                //$("#tg-sb-content").toggleClass('col-md-12');
-
-
-                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
-                  //EN
-                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                }else{
-                  //KO
-                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
-                }
-
-
-
-                <!--Language Translate using PAPAGO naver API-->
-
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
             });
         });
     </script>
@@ -148,7 +136,7 @@
                         
                         
                         
-                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        <li><a href="ai_intro.html">인공지능 특화 사이트</a></li>
                         
                         
                     </ul>
@@ -160,6 +148,21 @@
                         
                         
                         <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                        
+                        <li><a href="portalmanager1.html">포털 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="">Liferay</a></li>
                         
                         
                     </ul>
@@ -179,17 +182,6 @@
                         
                         
                         <li><a href="datadev_view_manage.html">Simulation Data</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="admin_intro.html">Admin</a></li>
                         
                         
                     </ul>
@@ -313,6 +305,34 @@
       <a href="#">워크벤치 편집기 개발</a>
       <ul>
           
+          
+          
+          <li><a href="workbench_editorguide1.html">프로젝트 생성</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide2.html">자바 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide3.html">포틀릿 xml 파일 설정</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="workbench_editorguide4.html">visualizer_wrapper 파일 설정</a></li>
+          
+          
+          
+          
       </ul>
    </li>
     
@@ -331,49 +351,28 @@
           
           
           
-          <li><a href="workbench_analyzerguide2.html">프로젝트 기본 설정</a></li>
+          <li><a href="workbench_analyzerguide2.html">자바 파일 설정</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide3.html">스크립트 단위의 뷰 설정</a></li>
+          <li><a href="workbench_analyzerguide3.html">포틀릿 xml 파일 설정</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide4.html">이벤트 처리</a></li>
+          <li><a href="workbench_analyzerguide4.html">Wrapper 파일</a></li>
           
           
           
           
           
           
-          <li><a href="workbenchan_alyzerguide5.html">초기값 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide6.html">파일 탐색기 설정</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbenchan_alyzerguide7.html">이벤트 처리 함수</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="workbench_analyzerguide8.html">공용 함수</a></li>
+          <li><a href="workbench_analyzerguide5.html">가시화 파일 설정</a></li>
           
           
           
@@ -512,74 +511,51 @@ $('#toc').on('click', 'a', function() {
 <p>개발 환경은 아래와 같습니다.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">이클립스 Neon 3 Release (4.6.3)</code></li>
+  <li><code class="highlighter-rouge">liferay-developer-studio</code></li>
   <li><code class="highlighter-rouge">liferay-portal-6.2-ce-ga6</code></li>
   <li><code class="highlighter-rouge">liferay-plugins-sdk-6.2</code></li>
 </ul>
 
 <h2 id="1-liferay-plugin-project--생성">1. Liferay plugin Project  생성</h2>
-<p>이클립스 환경에서 <code class="highlighter-rouge">Liferay Plugins Projects</code>를 생성합니다.
+<p>liferay-developer-studio 환경에서 <code class="highlighter-rouge">Liferay Plugins Projects</code>를 생성합니다.
 <br />이클립스 환경에서 New -&gt; Liferay Plugin Project를 선택합니다.<br /></p>
 
-<figure><img class="docimage" src="images/analyzerguide/1.png" alt="" /></figure>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/1.png" alt="" /></figure>
 
 <p><br /><br />프로젝트 이름을 작성하고 include sample code 체크를 해지합니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/2.png" alt="" /></figure>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/2.png" alt="" /></figure>
 
 <p><br /><br />프로젝트 이름을 작성하고 Liferay MVC를 선택하여 최종적으로 프로젝트 생성을 마무리 합니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/3.png" alt="" /></figure>
-
-<p><br /><br />생성이 완료된 플러그인 프로젝트의 구성은 다음과 같습니다.</p>
-<figure><img class="docimage" src="images/analyzerguide/4.png" alt="" /></figure>
-<p><br /><br /></p>
 
 <h2 id="2-edison-워크벤치-연동을-위한-analyzer-포틀릿-생성">2. EDISON 워크벤치 연동을 위한 Analyzer 포틀릿 생성</h2>
 <p>EDISON 플랫폼의 워크벤치 연동을 위한 포틀릿을 생성합니다.
 <br />생성된 Liferay Plugins Projects 내에 Liferay Portlet을 생성합니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/5.png" alt="" /></figure>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/3.png" alt="" /></figure>
 
 <p><br /><br />포틀릿 클래스명, 패키지명은 자유롭게 원하는 형태로 생성합니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/6.png" alt="" /></figure>
-
-<p><br /><br />포틀릿 클래스 명에 따라 자동으로 설정되는 값입니다.<br /> 나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/7.png" alt="" /></figure>
-
-<p><br /><br />마찬가지로 자동으로 설정되는 값입니다. <br />나중에 수정할 수 있으니 현재는 Next를 누르고 넘어갑니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/8.png" alt="" /></figure>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/4.png" alt="" /></figure>
 
 <p><br /><br />특별히 추가할 인터페이스가 없다면 Finish를 선택하고 포틀릿 생성을 완료합니다.</p>
-<figure><img class="docimage" src="images/analyzerguide/9.png" alt="" /></figure>
-<p><br /><br /></p>
 
-<h2 id="3-포틀릿-리소스-접근-설정">3. 포틀릿 리소스 접근 설정</h2>
-<p>EDISON 플랫폼에서 워크벤치와 연동을 위해서는 각 포틀릿간의 외부 접근이 가능하도록 권한 설정을 해 주어야 합니다. <br />
-따라서 외부(다른 포틀릿)에서 개발하려는 포틀릿으로 접근하기 위해서는 포틀릿의 외부 권한을 설정하여야 합니다.
-설정하는 방법은 아래와 같습니다.<br />
-<code class="highlighter-rouge">liferay-portlet.xml</code> 파일 내부에 아래 코드를 추가합니다.</p>
+<h2 id="3-library-설정">3. Library 설정</h2>
+<h3 id="scienceplatform-hook-servicejar-라이브러리-추가">SciencePlatform-hook-service.jar 라이브러리 추가</h3>
+<p>EDISON 플랫폼에서 워크벤치와 연동을 위해서는 워크벤치 시뮬레이션 서비스와 연동이 가능하도록 라이브러리를 추가 해야 합니다 <br />
+<code class="highlighter-rouge">SciencePlatform-hook-service.jar</code> 파일을 플러그인 프로젝트 내부에 <code class="highlighter-rouge">WEB-INF/lib</code> 폴더에 추가합니다.<br />
+해당 라이브러리 파일은 다음 링크에서 다운받을 수 있습니다.<br /></p>
 
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;add-default-resource&gt;</span>true<span class="nt">&lt;/add-default-resource&gt;</span>
-</code></pre></div></div>
-<p>아래의 그림과 같이 xml 파일 내부에 생성한 포틀릿 내 해당 코드를 추가합니다.</p>
-<figure><img class="docimage" src="images/analyzerguide/11.png" alt="" /></figure>
+<ul>
+  <li><a href="OSPLibrary/SciencePlatform-hook-service.jar">SciencePlatform-hook-service.jar</a></li>
+</ul>
+
+<p>라이브러리 다운받아 추가하면 다음 그림과 같습니다.</p>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/5.png" alt="" /></figure>
 <p><br /></p>
 
-<h2 id="4-기본-플러그인-추가-설정">4. 기본 플러그인 추가 설정</h2>
-<p>현재 Liferay Plugin Project에서 기본적으로 필요한 플러그인들을 추가합니다.<br />
-3번과 마찬가지로 xml 파일을 변경하는 것으로, liferay-plugin-package.properties 파일을 수정합니다.<br />
-기본적으로 이클립스에서 제공해주는 UI 환경에서 플러그인을 추가합니다. 해당 화면은 아래와 같습니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/12.png" alt="" /></figure>
+<h3 id="jstl-dependency-추가">jstl Dependency 추가</h3>
+<p>플러그인 프로젝트 내에 포함되어 있는 liferay-plugin-package.properties 파일에서 Portal Dependency Jars 에서 Add 버튼을 클릭하여 라이브러리를 추가합니다.<br />
+liferay-plugin-package.properties 파일에 “jstl-api.jar”, “jstl-impl.jar” 파일을 추가합니다. <br /></p>
+<figure><img class="docimage" src="images/workbench_dev/analyzer_dev/6.png" alt="" /></figure>
 <p><br /></p>
-
-<p>Portal Dependency Jars 섹션에서 Add…버튼을 클릭한 후, jstl 을 검색해서 나오는 jstl-api.jar, jstl-impl.jar파일 두개를 추가합니다.<br /></p>
-<figure><img class="docimage" src="images/analyzerguide/13.png" alt="" /></figure>
-<p><br /></p>
-
-<h2 id="5-워크벤치-연동을-위한-플러그인-추가-설정">5. 워크벤치 연동을 위한 플러그인 추가 설정</h2>
-<p>워크벤치 연동을 위해 필요한 라이브러리들을 현재 생성한 프로젝트 내 WEB-INF/lib 내 추가합니다.</p>
-<figure><img class="docimage" src="images/analyzerguide/14.png" alt="" /></figure>
-<p><br /></p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> 필요 라이브러리들을 추가합니다.<br /><a href="/OSPLibrary/commons-beanutils.jar">commons-beanutils.jar</a><br /><a href="/OSPLibrary/commons-collections.jar">commons-collections.jar</a><br /><a href="/OSPLibrary/commons-exec-1.1.jar">commons-exec-1.1.jar</a><br /><a href="/OSPLibrary/commons-fileupload.jar">commons-fileupload.jar</a><br /><a href="/OSPLibrary/commons-io.jar">commons-io.jar</a><br /><a href="/OSPLibrary/commons-lang.jar">commons-lang.jar</a><br /><a href="/OSPLibrary/SciencePlatform-hook-service.jar">SciencePlatform-hook-service.jar</a><br /></div>
 
 
 
@@ -626,7 +602,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 KISTI. All rights reserved.
- Site last generated: Apr 15, 2019 <br />
+ Site last generated: Nov 28, 2019 <br />
 <p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
   <img src="images/edison_logo.png" alt="Company logo" /></p>
                 </div>
@@ -648,7 +624,7 @@ $('#toc').on('click', 'a', function() {
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-115782577-19','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 
 </html>

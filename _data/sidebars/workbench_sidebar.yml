@@ -48,7 +48,21 @@ entries:
   - title: 워크벤치 편집기 개발
     output: web, pdf
     folderitems:
+      - title: "프로젝트 생성"
+        url: /workbench_editorguide1.html
+        output: web, pdf
 
+      - title: "자바 파일 설정"
+        url: /workbench_editorguide2.html
+        output: web, pdf
+
+      - title: "포틀릿 xml 파일 설정"
+        url: /workbench_editorguide3.html
+        output: web, pdf
+
+      - title: "visualizer_wrapper 파일 설정"
+        url: /workbench_editorguide4.html
+        output: web, pdf
 
   - title: 워크벤치 분석기 개발
     output: web, pdf

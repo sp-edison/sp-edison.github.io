@@ -83,23 +83,11 @@
     <script>
         $(document).ready(function() {
             $("#tg-sb-link").click(function() {
-                //$("#tg-sb-sidebar").toggle();
-                //$("#tg-sb-content").toggleClass('col-md-9');
-                //$("#tg-sb-content").toggleClass('col-md-12');
-
-
-                if($("#tg-sb-icon").hasClass('fa-toggle-on')){
-                  //EN
-                  $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                }else{
-                  //KO
-                    $("#tg-sb-icon").toggleClass('fa-toggle-off');
-                }
-
-
-
-                <!--Language Translate using PAPAGO naver API-->
-
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
             });
         });
     </script>
@@ -148,7 +136,7 @@
                         
                         
                         
-                        <li><a href="user_intro.html">인공지능 특화 사이트</a></li>
+                        <li><a href="ai_intro.html">인공지능 특화 사이트</a></li>
                         
                         
                     </ul>
@@ -160,6 +148,21 @@
                         
                         
                         <li><a href="sitemanager1.html">사이트 관리자</a></li>
+                        
+                        
+                        
+                        <li><a href="portalmanager1.html">포털 관리자</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Admin<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="">Liferay</a></li>
                         
                         
                     </ul>
@@ -179,17 +182,6 @@
                         
                         
                         <li><a href="datadev_view_manage.html">Simulation Data</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="admin_intro.html">Admin</a></li>
                         
                         
                     </ul>
@@ -682,19 +674,15 @@ $('#toc').on('click', 'a', function() {
 <p>내가 실행한 시뮬레이션 결과 데이터를 다른 사용자들과 공유하기 위한 과정은 다음과 같습니다.</p>
 
 <ol>
-  <li>로그인 후 <code class="highlighter-rouge">My EDISON</code> 메뉴로 이동합니다.</li>
   <li>
-    <p>좌측의 <code class="highlighter-rouge">시뮬레이션 파일</code> 탭에서 다른 사용자와 공유를  원하는 시뮬레이션(Simulation) 혹은 작업(Job)을 선택합니다.</p>
+    <p>EDISON Workbench에서 저장을 원하는 시뮬레이션을 선택 후 <code class="highlighter-rouge">Open Data</code> 버튼을 클릭합니다.</p>
 
     <p>※ 시뮬레이션 실행 시 설정했던 [시뮬레이션 명- 잡 명]이 제목으로 자동 설정됩니다. 그러므로 시뮬레이션의 이름과 작업의 이름을 다른 것들과 충분히 구분할 수 있는 의미 있는 값 (예, 시뮬레이션 주제, 파라미터 값)으로 변경해주시길 바랍니다. 시뮬레이션과 작업 이름은 워크벤치 (Workbench)에서 변경이 가능합니다.</p>
   </li>
   <li>
-    <p>공유할 시뮬레이션 혹은 작업을 선택한 후, <code class="highlighter-rouge">Register &amp; Share Data</code> 버튼을 누릅니다. 
-그러며 시뮬레이션 결과 데이터가 포함된 컬렉션(Collection)을 선택하라는 팝업이 뜹니다.</p>
+    <p><code class="highlighter-rouge">Open Data</code> 버튼을 누르면 시뮬레이션 결과 데이터가 저장될 컬렉션(Collection)을 선택하라는 팝업이 뜹니다.</p>
 
-    <p>※ Simulation 목록에서 ‘Register &amp; Share Data’ 버튼을 누르면 Simulation 하위의 성공적으로 종료된 모든 Job 들이 저장의 대상이 됩니다. 그리고 Job 목록에서 ‘Register &amp; Share Data’ 버튼을 누르면 개별 Job이 저장의 대상이 됩니다.</p>
-
-    <figure><img class="docimage" src="images/data/user_data_share_01.png" alt="" /><figcaption>Save process</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_12.png" alt="" /><figcaption>Save process</figcaption></figure>
   </li>
   <li>
     <p>최초 공유를 시도하는 경우라면 컬렉션(Collection)의 생성이 필요하며, 생성방법은 다음과 같습니다.</p>
@@ -710,9 +698,9 @@ $('#toc').on('click', 'a', function() {
       <li>도시환경 → UE</li>
     </ul>
 
-    <figure><img class="docimage" src="images/data/user_data_share_02.png" alt="" /><figcaption>Collection popup</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_21.png" alt="" /><figcaption>Collection popup</figcaption></figure>
 
-    <figure><img class="docimage" src="images/data/user_data_share_03.png" alt="" /><figcaption>Collection detail info</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_22.png" alt="" /><figcaption>Collection detail info</figcaption></figure>
   </li>
   <li>
     <p>Collection 생성을 완료하고, 해당 Collection의 <code class="highlighter-rouge">Choose</code> 버튼을 누르면 공유가 진행됩니다. 
@@ -720,7 +708,9 @@ $('#toc').on('click', 'a', function() {
 
     <figure><img class="docimage" src="images/data/user_data_share_04.png" alt="" /><figcaption>Save success</figcaption></figure>
   </li>
-  <li>한번 컬렉션을 생성한 이후에는 다른 데이터셋(시뮬레이션 결과 데이터)를 공유하기 위해 기존의 컬렉션을 선택하여 활용할 수 있습니다.</li>
+  <li>
+    <p>한번 컬렉션을 생성한 이후에는 다른 데이터셋(시뮬레이션 결과 데이터)를 공유하기 위해 기존의 컬렉션을 선택하여 활용할 수 있습니다.</p>
+  </li>
 </ol>
 
 <p><br /></p>
@@ -737,7 +727,7 @@ $('#toc').on('click', 'a', function() {
 
 <ol>
   <li><code class="highlighter-rouge">콘텐츠/데이터</code> - <code class="highlighter-rouge">데이터 관리</code> 메뉴로 이동합니다.
-    <figure><img class="docimage" src="images/data/user_data_share_05.png" alt="" /><figcaption>Data Management</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_15.png" alt="" /><figcaption>Data Management</figcaption></figure>
   </li>
   <li>처리과정 조회를 원하는 데이터셋이 포함된 컬렉션의 <code class="highlighter-rouge">Manage</code> 버튼을 누릅니다.</li>
   <li>
@@ -756,9 +746,9 @@ $('#toc').on('click', 'a', function() {
 
 <p>여기서 대표 이미지를 업로드해주시고 <code class="highlighter-rouge">Save</code> 버튼을 통해 저장해주시기 바랍니다.</p>
 
-<figure><img class="docimage" src="images/data/user_data_share_07.png" alt="" /><figcaption>Move to detail tab</figcaption></figure>
+<figure><img class="docimage" src="images/data/user_data_share_18.png" alt="" /><figcaption>Move to detail tab</figcaption></figure>
 
-<figure><img class="docimage" src="images/data/user_data_share_08.png" alt="" /><figcaption>Thumbnail upload</figcaption></figure>
+<figure><img class="docimage" src="images/data/user_data_share_19.png" alt="" /><figcaption>Thumbnail upload</figcaption></figure>
 
 <p><br /></p>
 
@@ -769,7 +759,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>논문이 선택되면 <code class="highlighter-rouge">Upload Paper</code> 버튼을 눌러 논문을 업로드합니다.</p>
 
-<figure><img class="docimage" src="images/data/user_data_share_09.png" alt="" /><figcaption>Paper upload</figcaption></figure>
+<figure><img class="docimage" src="images/data/user_data_share_20.png" alt="" /><figcaption>Paper upload</figcaption></figure>
 
 <p><br /></p>
 
@@ -784,12 +774,12 @@ $('#toc').on('click', 'a', function() {
   <li>
     <p><code class="highlighter-rouge">데이터 관리</code> 메뉴에서 생성한 Collection의 <code class="highlighter-rouge">Title을 클릭</code>하면 생성한 Collection 페이지로 이동합니다. 해당 페이지에서 <code class="highlighter-rouge">Info</code> 탭으로 이동하면 Collection을 처음 생성했기 때문에 빈 페이지일 것입니다. 여기서 <code class="highlighter-rouge">Edit Description</code> 버튼을 눌러 수정 페이지로 이동합니다.</p>
 
-    <figure><img class="docimage" src="images/data/user_data_share_10.png" alt="" /><figcaption>Move to Info tab</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_16.png" alt="" /><figcaption>Move to Info tab</figcaption></figure>
   </li>
   <li>
     <p>수정 페이지로 이동한 후, 다음 그림과 같이 페이지를 꾸며주시면 됩니다. 일반적인 문서 작업처럼 텍스트, 이미지, 테이블, 링크 등을 활용하실 수 있습니다. 그리고 페이지 작성 중 틈틈이 저장하시기를 추천드립니다.</p>
 
-    <figure><img class="docimage" src="images/data/user_data_share_11.png" alt="" /><figcaption>Collection design</figcaption></figure>
+    <figure><img class="docimage" src="images/data/user_data_share_17.png" alt="" /><figcaption>Collection design</figcaption></figure>
   </li>
 </ul>
 
@@ -836,7 +826,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 KISTI. All rights reserved.
- Site last generated: Apr 15, 2019 <br />
+ Site last generated: Nov 28, 2019 <br />
 <p><img src="images/kisti_logo.png" alt="Company logo" style="margin-right: 15px !important;"/>
   <img src="images/edison_logo.png" alt="Company logo" /></p>
                 </div>
@@ -858,7 +848,7 @@ $('#toc').on('click', 'a', function() {
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-130499908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-115782577-19','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 
 </html>
