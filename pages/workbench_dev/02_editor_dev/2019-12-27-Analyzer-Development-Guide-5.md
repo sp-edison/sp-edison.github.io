@@ -1,19 +1,19 @@
 ---
-title: "가시화 파일 설정"
-permalink: workbench_analyzerguide5.html
+title: "text-editor 파일 설정"
+permalink: workbench_editorguide5.html
 sidebar: workbench_sidebar
 categories: workbench
-tags: [workbench, analyzer]
+tags: [workbench, editor]
 folder: workbench
-summary: 에디슨 워크벤치 기발 후처리기(Post-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼
+summary: 에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼
 ---
 
-[EDISON](https://edison.re.kr) 워크벤치 기반 분석기(Post-Processor) 개발 매뉴얼 입니다.
+[EDISON](https://edison.re.kr) 워크벤치 기반 전처리기(Pre-Processor) 개발 매뉴얼 입니다.
 
 Liferay 6.2.5 포틀릿 기반으로 개발 하는 방법에 대해 순차적으로 설명 되어 있습니다.
 
 
-## 1. load_visual.jsp 파일 설정
+## 1. text-editor.jsp 파일 설정
 
 이전 단계에서 실제 데이터를 가시화하는 후처리 모듈을 `<iframe>`태그 안에서 호출을 하였습니다.
 해당 코드 부분은 다음과 같습니다.
@@ -98,48 +98,94 @@ function loadJSMolFile( urlToLoad ){
 
 전체 코드를 확인하면 다음과 같습니다.
 ```html
-<!DOCTYPE html>
-<html style="height:100%; overflow:hidden;">
+<!DOCTYPE>
+
+<html>
 <head>
-<!-- 데이터를 visualize 하는 스크립팅 파일 추가  -->
-    <script src="<%=request.getContextPath()%>/js/jsmol/JSmol.min.js"></script>
-</head>
-<body style="height:100%; padding:0px; margin:0px; ">
-
-    <div id="canvas"></div>
-
-    <script>
-
-    var currentUrl;
-
-
-
-/***********************************************************************
- * Golbal functions
- ***********************************************************************/
-$(window).resize( function(e){
-	if(myJmol){
-		//$('#canvas').empty();
-		//console.log("[JSMol] resize Applet : "+ $('body').width() +' : '+$('body').height());
-		//parent.jsMolresize();
-		Jmol.resizeApplet(myJmol, [$('body').width(), $('body').height()]);
-		//console.log("[JSMol] resize Applet end.");
+	<script src="<%=request.getContextPath()%>/js/jquery/jquery-3.1.0.min.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
+	
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.inner-canvas {
+		margin: 0;
+		padding: 0;
+		width:100%;
+		height:100%;
+		overflow:none;
 	}
 	
-});
-function loadVisualFile( urlToLoad ){
-//url을 기반으로 파일을 받아와 비주얼을 진행하는 부분
-
-}
-
-function clearVisual(){
-//visual 부분을 초기화 하는 부분
-}
-
-</script>
-
+	.inner-canvas .canvas {
+		margin: 0;
+		padding: 0;
+		width:100%;
+		height:100%;
+		border:none;
+		resize:none;
+		overflow:none;
+	}
+	
+	</style>
+</head>
+<body style="height: 100%;">
+	<div class="inner-canvas">
+		<textarea id="canvas" class="canvas"></textarea>
+	</div>
+	<script>
+	$(document).ready(function(){
+// 		$('body').height(document.documentElement.clientHeight );
+	});
+	
+	var namespace;
+	var disabled = false;
+	
+	/***********************************************************************
+	 * Functions called by wrapper jsp 
+	 ***********************************************************************/
+	function setNamespace( ns ){
+		namespace = ns;
+	} 
+	
+	function disable( flag ){
+		$('#canvas').prop('readonly', flag );
+	}
+	
+	function setContent( content ){
+		//console.log( content );
+		$('#canvas').val( content );
+	}
+	
+	function getContent(){
+		return 	$('#canvas').val();
+	}
+	
+	function fireDataChangedEvent( content ){
+		setTimeout(
+				function(){
+					if( namespace ){
+						window.parent[namespace+'fireDataChangedEvent']( content );
+					}
+					else{
+						fireDataChangedEvent( content );
+					}
+				},
+				10
+			);
+	}
+	 
+	
+	$('#canvas').on('change', function(){
+		fireDataChangedEvent( this.value );
+	});
+	</script>
 </body>
 </html>
+
+
 ```
 
 

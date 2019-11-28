@@ -64,6 +64,10 @@ entries:
         url: /workbench_editorguide4.html
         output: web, pdf
 
+      - title: "text-editor 파일 설정"
+        url: /workbench_editorguide5.html
+        output: web, pdf
+
   - title: 워크벤치 분석기 개발
     output: web, pdf
     folderitems:

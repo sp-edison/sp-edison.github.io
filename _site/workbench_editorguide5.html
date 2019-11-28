@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="workbenchevent,  ">
-<title>REQUEST DATA CHANGED EVENT | EDISON platform for documentation</title>
+<meta name="description" content="에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼">
+<meta name="keywords" content="workbencheditor,  ">
+<title>text-editor 파일 설정 | EDISON platform for documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -193,7 +193,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the REQUEST DATA CHANGED EVENT page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:edison@kisti.re.kr?subject=EDISON documentation feedback&body=I have some feedback about the text-editor 파일 설정 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Need help?</a>
 
 </li>
 
@@ -211,7 +211,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="REQUEST DATA CHANGED EVENT">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="text-editor 파일 설정">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -335,7 +335,7 @@
           
           
           
-          <li><a href="workbench_editorguide5.html">text-editor 파일 설정</a></li>
+          <li class="active"><a href="workbench_editorguide5.html">text-editor 파일 설정</a></li>
           
           
           
@@ -444,7 +444,7 @@
           
           
           
-          <li class="active"><a href="event_datachanged.html">DATACHANGED</a></li>
+          <li><a href="event_datachanged.html">DATACHANGED</a></li>
           
           
           
@@ -471,13 +471,15 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">REQUEST DATA CHANGED EVENT</h1>
+   <h1 class="post-title-main">text-editor 파일 설정</h1>
 </div>
 
 
 
 <div class="post-content">
 
+   
+    <div class="summary">에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼</div>
    
 
     
@@ -508,39 +510,180 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h3 id="osp-data-changed-이벤트">OSP DATA CHANGED 이벤트</h3>
-<p>해당하는 포틀릿이 편집기인 경우, 사용자의 입력을 받게 됩니다. 사용자의 입력을 받아 입력 데이터가 변경되게 되면 해당 데이터의 변경을 워크벤치에 알려야 합니다.
-따라서 사용자의 입력에 따라 변경된 데이터를 JSON의 형태로 이벤트를 발생시켜 워크벤치에 전달합니다.</p>
+   <p><a href="https://edison.re.kr">EDISON</a> 워크벤치 기반 전처리기(Pre-Processor) 개발 매뉴얼 입니다.</p>
 
+<p>Liferay 6.2.5 포틀릿 기반으로 개발 하는 방법에 대해 순차적으로 설명 되어 있습니다.</p>
+
+<h2 id="1-text-editorjsp-파일-설정">1. text-editor.jsp 파일 설정</h2>
+
+<p>이전 단계에서 실제 데이터를 가시화하는 후처리 모듈을 <code class="highlighter-rouge">&lt;iframe&gt;</code>태그 안에서 호출을 하였습니다.
+해당 코드 부분은 다음과 같습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> 
+	<span class="na">class =</span><span class="s">"col-sm-12 osp-iframe-canvas"</span> 
+	<span class="na">id=</span><span class="s">"&lt;portlet:namespace/&gt;canvas"</span> <span class="na">style=</span><span class="s">"&lt;%=visualizerConfig.getDisplayStyle()%&gt;"</span>
+	<span class="na">src=</span><span class="s">"&lt;%=request.getContextPath()%&gt;/html/testvisualizer/load_visual.jsp"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/iframe&gt;</span>
+</code></pre></div></div>
+<p><br />
+위의 내용과 마찬가지로 현재 같은 폴더 내에 <code class="highlighter-rouge">load_visual.jsp</code> 파일을 새로 생성하여 가시화 하는 소스코드를 추가합니다.
+기본적인 구조는 html 파일과 마찬가지로 동작할 수 있습니다. 외부 스크립트 라이브러리를 추가하고 싶은 경우에는 아래 코드와 같이 추가합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 데이터를 visualize 하는 스크립팅 파일 추가  --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"&lt;%=request.getContextPath()%&gt;/js/jsmol/JSmol.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="2-loadvisualfile-함수-설정">2. loadVisualFile 함수 설정</h2>
+
+<p>앞선 단계에서 파일이나 파일의 url을 전달하면 해당 파일에 대해 가시화 하는 모듈을 추가하였습니다. 
+워크벤치 시뮬레이션에서 파일 로드를 호출하면 자동으로 호출되는 로드 함수를 앞선 단계에서 <code class="highlighter-rouge">&lt;portlet:namespace/&gt;visualizer.callIframeFunc( 'loadVisualFile', null, jsonData.content_ );</code>의 코드에서 정의하였습니다.
+따라서 결과 데이터 가시화 사용자 요청이 들어오게 되면 바로 아래의 함수를 호출하게 됩니다. <br /></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function loadVisualFile( urlToLoad ){
+//url을 기반으로 파일을 받아와 비주얼을 진행하는 부분
+
+}
+</code></pre></div></div>
+
+<p>분자 및 원자 모듈의 가시화를 하는 <code class="highlighter-rouge">JSMol</code>포틀릿의 예제를 보면 아래와 같은 코드로 데이터를 호출받아 가시화 한다.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function loadJSMolFile( urlToLoad ){
+        console.log( '[JSMOL]URL To Load: '+ urlToLoad );
+        if( !urlToLoad )    return;
+        currentUrl = urlToLoad;
+        
+        var Info = {
+                  color: '#000000',
+                  height: $('body').height(),
+                  width: $('body').width(),
+                  //script: "load "+"/jsmol-portlet/temp/ospjm2548440710626419920.tmp",
+                  //script: "load "+ fileInfos.tempFilePath.replace(/\\/g, '/'),
+                  script: 'load '+ currentUrl,
+                  //script: "load " + '/jsmol-portlet/js/jsmol/data/1crn.pdb',
+                  use: 'HTML5',
+                  j2sPath: '<span class="nt">&lt;</span><span class="err">%=</span><span class="na">request</span><span class="err">.</span><span class="na">getContextPath</span><span class="err">()%</span><span class="nt">&gt;</span>/js/jsmol/j2s',
+                  jarPath: '<span class="nt">&lt;</span><span class="err">%=</span><span class="na">request</span><span class="err">.</span><span class="na">getContextPath</span><span class="err">()%</span><span class="nt">&gt;</span>/js/jsmol/java',
+                  jarFile: 'JmolAppletSigned0.jar',
+                  isSigned: true,
+                  serverURL: '<span class="nt">&lt;</span><span class="err">%=</span><span class="na">request</span><span class="err">.</span><span class="na">getContextPath</span><span class="err">()%</span><span class="nt">&gt;</span>/js/jsmol/php/jsmol.php',
+                  disableInitialConsole: true
+        };
+       
+       
+      
+        if(myJmol <span class="err">&amp;&amp;</span> myJmol._applet){
+        	console.log("[JSMOL] test update 1 ", myJmol);
+        	  console.log("[JSMOL] test if : "+ myJmol._applet);
+        	//Jmol.setInfo(myJmol, Info, true);
+        	//Jmol.loadFile(myJmol, currentUrl, Info);
+        	//Jmol.script(myJmol,Info);
+        	console.log("[JSMOL] update file 1");
+        	Jmol.loadFile(myJmol, currentUrl);
+        	console.log("[JSMOL] update file 2");
+		}
+		else{
+			console.log("[JSMOL] test update 2 create ");
+			Jmol.setDocument(0);
+			myJmol = Jmol.getApplet('myJmol', Info);
+			console.log("[JSMOL] create jmol object", myJmol);
+			$('#canvas').html( Jmol.getAppletHtml(myJmol) );
+		}
+</code></pre></div></div>
+
+<h2 id="3-전체-코드">3. 전체 코드</h2>
+
+<p>전체 코드를 확인하면 다음과 같습니다.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;</span><span class="err">!</span><span class="na">DOCTYPE</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery-3.1.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"&lt;%=request.getContextPath()%&gt;/js/jquery/jquery-ui-1.12.1.custom/jquery-ui.min.css"</span><span class="nt">/&gt;</span>
+	
+	<span class="nt">&lt;style&gt;</span>
+	<span class="nt">body</span> <span class="p">{</span>
+		<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+		<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.inner-canvas</span> <span class="p">{</span>
+		<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+		<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+		<span class="nl">width</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+		<span class="nl">height</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+		<span class="nl">overflow</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+	<span class="p">}</span>
+	
+	<span class="nc">.inner-canvas</span> <span class="nc">.canvas</span> <span class="p">{</span>
+		<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+		<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+		<span class="nl">width</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+		<span class="nl">height</span><span class="p">:</span><span class="m">100%</span><span class="p">;</span>
+		<span class="nl">border</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+		<span class="nl">resize</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+		<span class="nl">overflow</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
+	<span class="p">}</span>
+	
+	<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">"height: 100%;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner-canvas"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"canvas"</span> <span class="na">class=</span><span class="s">"canvas"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;script&gt;</span>
+	<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="c1">// 		$('body').height(document.documentElement.clientHeight );</span>
+	<span class="p">});</span>
+	
+	<span class="kd">var</span> <span class="nx">namespace</span><span class="p">;</span>
+	<span class="kd">var</span> <span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+	
+	<span class="cm">/***********************************************************************
+	 * Functions called by wrapper jsp 
+	 ***********************************************************************/</span>
+	<span class="kd">function</span> <span class="nx">setNamespace</span><span class="p">(</span> <span class="nx">ns</span> <span class="p">){</span>
+		<span class="nx">namespace</span> <span class="o">=</span> <span class="nx">ns</span><span class="p">;</span>
+	<span class="p">}</span> 
+	
+	<span class="kd">function</span> <span class="nx">disable</span><span class="p">(</span> <span class="nx">flag</span> <span class="p">){</span>
+		<span class="nx">$</span><span class="p">(</span><span class="s1">'#canvas'</span><span class="p">).</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'readonly'</span><span class="p">,</span> <span class="nx">flag</span> <span class="p">);</span>
+	<span class="p">}</span>
+	
+	<span class="kd">function</span> <span class="nx">setContent</span><span class="p">(</span> <span class="nx">content</span> <span class="p">){</span>
+		<span class="c1">//console.log( content );</span>
+		<span class="nx">$</span><span class="p">(</span><span class="s1">'#canvas'</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span> <span class="nx">content</span> <span class="p">);</span>
+	<span class="p">}</span>
+	
+	<span class="kd">function</span> <span class="nx">getContent</span><span class="p">(){</span>
+		<span class="k">return</span> 	<span class="nx">$</span><span class="p">(</span><span class="s1">'#canvas'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+	<span class="p">}</span>
+	
+	<span class="kd">function</span> <span class="nx">fireDataChangedEvent</span><span class="p">(</span> <span class="nx">content</span> <span class="p">){</span>
+		<span class="nx">setTimeout</span><span class="p">(</span>
+				<span class="kd">function</span><span class="p">(){</span>
+					<span class="k">if</span><span class="p">(</span> <span class="nx">namespace</span> <span class="p">){</span>
+						<span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">[</span><span class="nx">namespace</span><span class="o">+</span><span class="s1">'fireDataChangedEvent'</span><span class="p">](</span> <span class="nx">content</span> <span class="p">);</span>
+					<span class="p">}</span>
+					<span class="k">else</span><span class="p">{</span>
+						<span class="nx">fireDataChangedEvent</span><span class="p">(</span> <span class="nx">content</span> <span class="p">);</span>
+					<span class="p">}</span>
+				<span class="p">},</span>
+				<span class="mi">10</span>
+			<span class="p">);</span>
+	<span class="p">}</span>
+	 
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s1">'#canvas'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'change'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+		<span class="nx">fireDataChangedEvent</span><span class="p">(</span> <span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="p">);</span>
+	<span class="p">});</span>
+	<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+
+</code></pre></div></div>
+
+<p>샘플 코드는 아래의 링크를 통해 다운로드 받을 수 있습니다.</p>
 <ul>
-  <li>샘플 예제
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">fireTextChangedEvent</span><span class="p">(</span> <span class="nx">data</span> <span class="p">){</span>
-      <span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">ViewStructure</span><span class="p">();</span>
-
-      <span class="kd">var</span> <span class="nx">inputData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OSP</span><span class="p">.</span><span class="nx">InputData</span><span class="p">();</span>
-      <span class="nx">inputData</span><span class="p">.</span><span class="nx">type</span><span class="p">(</span> <span class="nx">OSP</span><span class="p">.</span><span class="nx">Enumeration</span><span class="p">.</span><span class="nx">PathType</span><span class="p">.</span><span class="nx">FILE_CONTENT</span> <span class="p">);</span>
-      <span class="k">if</span><span class="p">(</span> <span class="nx">$</span><span class="p">.</span><span class="nx">isEmptyObject</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">initData</span><span class="p">)</span> <span class="p">){</span>
-          <span class="nx">inputData</span><span class="p">.</span><span class="nx">repositoryType</span><span class="p">(</span><span class="s1">'&lt;%=OSPRepositoryTypes.USER_HOME.toString()%&gt;'</span><span class="p">);</span>
-      <span class="p">}</span>
-      <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">initData</span><span class="p">.</span><span class="nx">repositoryType_</span> <span class="p">){</span>
-          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"[ATOM EDITOR] test re[psotpry Type]]"</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">initData</span><span class="p">);</span>
-          <span class="nx">inputData</span><span class="p">.</span><span class="nx">repositoryType</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">initData</span><span class="p">.</span><span class="nx">repositoryType_</span><span class="p">);</span>
-      <span class="p">}</span>
-      <span class="k">else</span><span class="p">{</span>
-          <span class="nx">inputData</span><span class="p">.</span><span class="nx">repositoryType</span><span class="p">(</span><span class="s1">'&lt;%=OSPRepositoryTypes.USER_HOME.toString()%&gt;'</span><span class="p">);</span>
-      <span class="p">}</span>
-      <span class="nx">inputData</span><span class="p">.</span><span class="nx">context</span><span class="p">(</span> <span class="nx">data</span> <span class="p">);</span>
-
-
-      <span class="kd">var</span> <span class="nx">eventData</span> <span class="o">=</span> <span class="p">{</span>
-           			<span class="na">portletId</span><span class="p">:</span> <span class="s1">'&lt;%=portletDisplay.getId()%&gt;'</span><span class="p">,</span>
-           			<span class="na">targetPortlet</span><span class="p">:</span> <span class="o">&lt;</span><span class="na">portlet</span><span class="p">:</span><span class="nx">namespace</span><span class="o">/&gt;</span><span class="nx">connector</span><span class="p">,</span>
-           			<span class="na">data</span><span class="p">:</span> <span class="nx">OSP</span><span class="p">.</span><span class="nx">Util</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">(</span><span class="nx">inputData</span><span class="p">)</span>
-      <span class="p">};</span>
-      <span class="nx">Liferay</span><span class="p">.</span><span class="nx">fire</span><span class="p">(</span> <span class="nx">OSP</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">OSP_DATA_CHANGED</span><span class="p">,</span> <span class="nx">eventData</span> <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>    </div>
-  </li>
+  <li><a href="OSPLibrary/ExamplePost-portlet.zip">ExamplePost-portlet.zip</a></li>
 </ul>
 
 
@@ -553,8 +696,6 @@ $('#toc').on('click', 'a', function() {
         <a href="tag_workbench.html" class="btn btn-default navbar-btn cursorNorm" role="button">workbench</a>
         
         
-        
-        <a href="tag_event.html" class="btn btn-default navbar-btn cursorNorm" role="button">event</a>
         
         
         
