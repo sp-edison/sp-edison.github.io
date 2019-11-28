@@ -57,32 +57,20 @@ entries:
         url: /workbench_analyzerguide1.html
         output: web, pdf
 
-      - title: "프로젝트 기본 설정"
+      - title: "자바 파일 설정"
         url: /workbench_analyzerguide2.html
         output: web, pdf
 
-      - title: "스크립트 단위의 뷰 설정"
+      - title: "포틀릿 xml 파일 설정"
         url: /workbenchan_alyzerguide3.html
         output: web, pdf
 
-      - title: "이벤트 처리"
+      - title: "Wrapper 파일"
         url: /workbenchan_alyzerguide4.html
         output: web, pdf
 
-      - title: "초기값 설정"
+      - title: "가시화 파일 설정"
         url: /workbenchan_alyzerguide5.html
-        output: web, pdf
-
-      - title: "파일 탐색기 설정"
-        url: /workbench_analyzerguide6.html
-        output: web, pdf
-
-      - title: "이벤트 처리 함수"
-        url: /workbenchan_alyzerguide7.html
-        output: web, pdf
-
-      - title: "공용 함수"
-        url: /workbench_analyzerguide8.html
         output: web, pdf
 
   - title: 워크벤치 이벤트 정의
