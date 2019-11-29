@@ -180,8 +180,6 @@ $('#<portlet:namespace/>canvas').load(function(){
 가시화 모듈의 초기화를 담당하는 함수인 `<portlet:namespace/>processInitAction`의 함수 정의가 포함되어 있습니다. <br>
 `<portlet:namespace/>visualizer.callIframeFunc` 함수의 경우, 해당 이벤트가 발생하였을 때, `<iframe>` 태그에서 호출하는 가시화 모듈 내에 존재하는 데이터 로딩 가시화 함수를 지정합니다.<br>
 
-`loadVisualFile`함수는 실제 가시화를 담당하는 부분의 함수를 의미합니다.
-
 
 ```html
 /***********************************************************************
@@ -198,9 +196,7 @@ function <portlet:namespace/>loadCanvas( jsonData, changeAlert ){
 		case OSP.Enumeration.PathType.FILE_CONTENT:
 			if( jsonData.name_ )
 				<portlet:namespace/>setTitle( OSP.Util.mergePath(jsonData.parent_, jsonData.name_) );
-			
-			<portlet:namespace/>setTextEditorContent( Liferay.Util.unescapeHTML(jsonData.content_) );
-
+				<portlet:namespace/>setTextEditorContent( Liferay.Util.unescapeHTML(jsonData.content_) );
 			if( !<portlet:namespace/>disabled && changeAlert )
 				<portlet:namespace/>visualizer.fireDataChangedEvent();
 			break;
@@ -243,6 +239,10 @@ function <portlet:namespace/>processInitAction( jsonInitData, changeAlert ){
 
 ### 2.5. Editor 개발자 함수 정의
 
+Editor는 사용자가 입력한 데이터 값을 처리하여 워크벤치 기반 시뮬레이션 서비스의 입력값을 업데이트 하는 역할을 합니다. 이러한 과정에서 사용자가 입력한 데이터를 워크벤치 시뮬레이션 서비스에 전송하는 역할을 하는 함수가 필요합니다.
+`<portlet:namespace/>fireDataChangedEvent` 함수는 사용자가 입력한 데이터 값을 워크벤치에 전달해 주는 역할을 합니다. `<iframe>`에서 호출하는 `jsp`모듈 내부에서 사용자 UI 입력을 받거나 특정 사용자 입력에 따라 호출되는 함수입니다.
+또한 `<portlet:namespace/>setTextEditorContent`함수는 샘플데이터나 시뮬레이션이 종료된 경우 서버에서 데이터를 전송받게 됩니다. 이러한 데이터를 전송받아 Editor에 데이터를 설정하는 함수입니다.
+
 ```html
  /***********************************************************************
   * Functions called by iframe jsp 
@@ -262,6 +262,14 @@ function <portlet:namespace/>setTextEditorContent( content ){
 	<portlet:namespace/>visualizer.callIframeFunc('setContent', null, content );
 }
 
+```
+
+### 2.6. 이벤트 함수 정의
+사용자의 각 이벤트를 처리하는 코드입니다. 메뉴로 제공되는 sample, Open local file, Open Server file, Save, Save as..., Save at local, Download의 메뉴를 선택하였을 때 처리하는 함수를 정의한 내용입니다.
+기본적으로 워크벤치 시뮬레이션 서비스에서 제공되는 함수는 `<portlet:namespace/>visualizer`에서 호출되는 형태를 가지고 있습니다. 특별한 경우를 제외하고는 모두 라이브러리에서 제공되는 함수를 사용합니다.
+
+
+```html
 /***********************************************************************
  * Window Event binding functions 
  ***********************************************************************/
@@ -313,6 +321,19 @@ $('#<portlet:namespace/>download').click(function(){
 	<portlet:namespace/>visualizer.downloadCurrentFile();
 });
 
+```
+
+### 2.7. 이벤트 처리 함수
+아래의 코드는 이벤트를 처리하는 함수 입니다. 
+- `<portlet:namespace/>loadDataEventHandler` : 데이터를 로드하는 이벤트를 처리
+- `<portlet:namespace/>requestDataEventHandler` : 데이터를 로드해 달라고 요청하는 이벤트 처리
+- `<portlet:namespace/>responseDataEventHandler` : 데이터 요청에 대한 응답 이벤트 처리
+- `<portlet:namespace/>initializeEventHandler` : 데이터 초기화 이벤트 처리
+- `<portlet:namespace/>disableControlsEventHandler` : 작업이 끝난 시뮬레이션의 입력값을 변경시키지 못하도록 처리
+
+
+
+```html
 /***********************************************************************
  * Handling OSP Events and event handlers
  ***********************************************************************/
@@ -363,7 +384,7 @@ function <portlet:namespace/>disableControlsEventHandler( data, params ){
 ```
 
 
-### 2.6. 전체 코드
+### 2.8. 전체 코드
 
 전체 코드를 확인하면 아래와 같습니다.<br>
 ```html

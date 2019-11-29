@@ -768,12 +768,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/workbench_editorguide5.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/workbench_editorguide1.html</loc>
   </url>
   
@@ -793,6 +787,12 @@
   
   <url>
     <loc>http://localhost:4000/workbench_editorguide4.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/workbench_editorguide5.html</loc>
   </url>
   
   

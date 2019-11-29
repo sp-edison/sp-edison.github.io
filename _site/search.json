@@ -1366,17 +1366,6 @@
 
 
 {
-"title": "text-editor 파일 설정",
-"tags": "workbencheditor",
-"keywords": "",
-"url": "workbench_editorguide5.html",
-"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
-}
-,
-
-
-
-{
 "title": "프로젝트 생성",
 "tags": "workbencheditor",
 "keywords": "",
@@ -1414,6 +1403,17 @@
 "tags": "workbencheditor",
 "keywords": "",
 "url": "workbench_editorguide4.html",
+"summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
+}
+,
+
+
+
+{
+"title": "text-editor 파일 설정",
+"tags": "workbencheditor",
+"keywords": "",
+"url": "workbench_editorguide5.html",
 "summary": "에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼"
 }
 ,
