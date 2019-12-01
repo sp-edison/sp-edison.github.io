@@ -5,7 +5,7 @@ sidebar: workbench_sidebar
 categories: workbench
 tags: [workbench, editor]
 folder: workbench
-summary: 에디슨 워크벤치 기발 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼
+summary: 에디슨 워크벤치 기반 에디터(Pre-Processor)를 개발하기 위한 프로젝트 생성 및 기본 설정에 대한 매뉴얼
 ---
 
 [EDISON](https://edison.re.kr) 워크벤치 기반 전처리기(Pre-Processor) 개발 매뉴얼 입니다.
